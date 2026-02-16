@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+/* ========== BRAND TOKENS ========== */
+/* PLACEHOLDER: Replace these with your actual brand colours */
+:root {
+  --color-brand-bg: #0a0a0c;
+  --color-brand-surface: #111116;
+  --color-brand-surface-elevated: #18181f;
+  --color-brand-accent: #c8ff3c;
+  --color-brand-accent-hover: #d4ff66;
+  --color-brand-accent-dim: rgba(200, 255, 60, 0.12);
+  --color-brand-border: rgba(255, 255, 255, 0.06);
+  --color-brand-border-hover: rgba(255, 255, 255, 0.12);
+  --color-text-primary: #e4e4e7;
+  --color-text-muted: #71717a;
+  --color-text-heading: #fafafa;
+  --color-red: #ff4d4d;
+}
+
+@theme inline {
+  --color-brand-bg: var(--color-brand-bg);
+  --color-brand-surface: var(--color-brand-surface);
+  --color-brand-surface-elevated: var(--color-brand-surface-elevated);
+  --color-brand-accent: var(--color-brand-accent);
+  --color-brand-accent-hover: var(--color-brand-accent-hover);
+  --color-brand-accent-dim: var(--color-brand-accent-dim);
+  --color-brand-border: var(--color-brand-border);
+  --color-brand-border-hover: var(--color-brand-border-hover);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-heading: var(--color-text-heading);
+  --color-red: var(--color-red);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+/* ========== BASE RESETS ========== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-brand-bg);
+    color: var(--color-text-primary);
+    font-family: var(--font-body), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.025;
+    pointer-events: none;
+    z-index: 9999;
+  }
+}
+
+/* ========== ACCESSIBILITY ========== */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  z-index: 10000;
+  border-radius: 0.5rem;
+  background: var(--color-brand-accent);
+  padding: 0.75rem 1.25rem;
+  font-weight: 600;
+  color: var(--color-brand-bg);
+  text-decoration: none;
+  transition: top 0.3s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+}
