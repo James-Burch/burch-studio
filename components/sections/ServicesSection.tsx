@@ -21,7 +21,7 @@ export function ServicesSection() {
         </ScrollReveal>
 
         {/* Service cards grid */}
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {SERVICES.map((service, i) => (
             <ScrollReveal key={service.title} delay={i * 0.1} className="flex">
               <article className="group relative flex flex-col overflow-hidden rounded-[20px] border border-brand-border bg-brand-surface px-8 pt-10 pb-9 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-border-hover">

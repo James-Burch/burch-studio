@@ -84,17 +84,23 @@ export default function About() {
 
               <ScrollReveal delay={0.25}>
                 <p className="mb-6 text-[1.05rem] leading-[1.75] text-text-muted">
-                  {ABOUT_CONTENT.approach}
+                  {ABOUT_CONTENT.whySaas}
                 </p>
               </ScrollReveal>
 
               <ScrollReveal delay={0.3}>
+                <p className="mb-6 text-[1.05rem] leading-[1.75] text-text-muted">
+                  {ABOUT_CONTENT.approach}
+                </p>
+              </ScrollReveal>
+
+              <ScrollReveal delay={0.35}>
                 <p className="mb-10 text-[0.92rem] leading-[1.7] text-text-muted/70 italic">
                   {ABOUT_CONTENT.techNote}
                 </p>
               </ScrollReveal>
 
-              <ScrollReveal delay={0.35}>
+              <ScrollReveal delay={0.4}>
                 <Button variant="primary" href="/contact">
                   Let&apos;s Work Together{" "}
                   <span className="inline-block">→</span>

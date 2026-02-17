@@ -41,7 +41,7 @@ export default function Services() {
       {/* Service cards — larger versions */}
       <section className="pb-25 md:pb-32">
         <div className="mx-auto max-w-300 px-5 sm:px-8 lg:px-10">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             {SERVICES.map((service, i) => (
               <ScrollReveal
                 key={service.title}
@@ -53,7 +53,7 @@ export default function Services() {
                   className="group relative flex flex-col overflow-hidden rounded-[20px] border border-brand-border bg-brand-surface px-8 pt-10 pb-9 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-border-hover"
                 >
                   {/* Top accent bar on hover */}
-                  <div className="absolute top-0 right-0 left-0 h-[3px] origin-left scale-x-0 bg-brand-accent transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100" />
+                  <div className="absolute top-0 right-0 left-0 h-0.75 origin-left scale-x-0 bg-brand-accent transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100" />
 
                   {/* Icon */}
                   <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[14px] bg-brand-accent-dim text-2xl">
@@ -84,7 +84,7 @@ export default function Services() {
       <section className="pb-25 md:pb-32">
         <div className="mx-auto max-w-300 px-5 sm:px-8 lg:px-10">
           <ScrollReveal>
-            <div className="relative overflow-hidden rounded-3xl border border-brand-accent/12 bg-gradient-to-br from-brand-accent/8 to-brand-accent/2 px-10 py-16 text-center">
+            <div className="relative overflow-hidden rounded-3xl border border-brand-accent/12 bg-linear-to-br from-brand-accent/8 to-brand-accent/2 px-10 py-16 text-center">
               <div
                 className="pointer-events-none absolute top-[-50%] left-1/2 h-150 w-150 -translate-x-1/2"
                 style={{

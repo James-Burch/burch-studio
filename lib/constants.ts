@@ -19,7 +19,7 @@ import type {
 
 export const SITE_CONFIG = {
   name: "Burch Studio",
-  tagline: "Web design for local trades",
+  tagline: "Web design & development studio",
   url: "https://burch-studio.co.uk",
   email: "contact@burch-studio.co.uk",
   phone: "+44 7407 195061",
@@ -47,9 +47,9 @@ export const NAV_CTA = {
 // ==========================================
 
 export const HOME_META: PageMeta = {
-  title: "Burch Studio — Web Design for Local Trades | Peterborough",
+  title: "Burch Studio — Web Design & Development | UK",
   description:
-    "Modern, mobile-first websites for plumbers, electricians & trade businesses in Peterborough. Built to rank on Google and win you more work.",
+    "Modern websites and web applications for businesses of all sizes. From trade business sites to full-scale SaaS platforms — built to perform.",
   canonical: SITE_CONFIG.url,
 };
 
@@ -58,19 +58,18 @@ export const HOME_META: PageMeta = {
 // ==========================================
 
 export const HERO = {
-  tag: "Web design for trades",
+  tag: "Web design & development studio",
   headlineWords: [
-    { text: "Your", accent: false },
-    { text: "website", accent: false },
-    { text: "should", accent: false },
-    { text: "be", accent: false },
-    { text: "your", accent: false },
-    { text: "hardest-working", accent: true },
-    { text: "employee.", accent: true },
+    { text: "We", accent: false },
+    { text: "build", accent: false },
+    { text: "websites", accent: false },
+    { text: "that", accent: false },
+    { text: "actually", accent: true },
+    { text: "work.", accent: true },
   ] satisfies HeroWord[],
   subtext:
-    "We build mobile-first websites for plumbers, electricians and trade businesses in Peterborough — designed to rank on Google and turn visitors into paying customers.",
-  primaryCTA: { label: "Get a Free Audit", href: "/contact" },
+    "From mobile-first websites for local businesses to full-scale web applications and SaaS platforms — we build fast, modern, production-ready software.",
+  primaryCTA: { label: "Get in Touch", href: "/contact" },
   secondaryCTA: { label: "See What We Do", href: "/services" },
 } as const;
 
@@ -121,10 +120,10 @@ export const PROBLEMS: ProblemCardData[] = [
 // ==========================================
 
 export const SERVICES_HEADER: SectionHeader = {
-  label: "The Solution",
-  heading: "Here's how we fix it.",
+  label: "What We Do",
+  heading: "Here's how we help.",
   subtext:
-    "Three services designed to get your trade business found online, looking professional, and winning more work.",
+    "Whether you need a website that wins local customers or a platform that scales to thousands of users — we've got you covered.",
 };
 
 export const SERVICES: ServiceCardData[] = [
@@ -140,7 +139,7 @@ export const SERVICES: ServiceCardData[] = [
     icon: "🔍",
     title: "SEO & Google Ranking",
     description:
-      'Show up when someone searches "plumber near me" or "electrician Peterborough". Local SEO, technical optimisation, and content that ranks.',
+      'Get found when it matters. Local SEO, technical optimisation, and content strategy that puts your business in front of the right people.',
     href: "/services/seo",
     linkText: "Learn more",
   },
@@ -150,6 +149,14 @@ export const SERVICES: ServiceCardData[] = [
     description:
       "Custom domain, professional email, SSL security, and consistent branding that makes your business look as good online as the service you deliver.",
     href: "/services/branding",
+    linkText: "Learn more",
+  },
+  {
+    icon: "🚀",
+    title: "Web Applications & SaaS",
+    description:
+      "Full-stack web applications and SaaS platforms built with Next.js, TypeScript, and PostgreSQL. Scalable architecture, secure by design.",
+    href: "/services/web-apps",
     linkText: "Learn more",
   },
 ];
@@ -194,7 +201,7 @@ export const TESTIMONIALS_HEADER: SectionHeader = {
   label: "Results",
   heading: "What our clients say.",
   subtext:
-    "Don't just take our word for it — here's what trade businesses have to say.",
+    "Don't just take our word for it — here's what our clients have to say.",
 };
 
 export const TESTIMONIALS_DISCLAIMER =
@@ -235,17 +242,17 @@ export const CTA_BANNER = {
 // ==========================================
 
 export const SERVICES_HUB_META: PageMeta = {
-  title: "Our Services | Website Design, SEO & Branding | Burch Studio",
+  title: "Our Services | Web Design, SEO, Branding & Web Apps | Burch Studio",
   description:
-    "Website design, SEO and branding services for trade businesses. Mobile-first, built to convert, designed to rank.",
+    "Website design, SEO, branding and web application development. From local business sites to scalable SaaS platforms.",
   canonical: `${SITE_CONFIG.url}/services`,
 };
 
 export const SERVICES_HUB_HERO: SectionHeader = {
   label: "Our Services",
-  heading: "Everything your trade business needs online.",
+  heading: "Everything you need to succeed online.",
   subtext:
-    "From a website that wins you work, to SEO that gets you found, to branding that builds trust — we've got you covered.",
+    "From a website that wins you work, to SEO that gets you found, to full-scale web applications — we build it all.",
 };
 
 export const SERVICES_HUB_BOTTOM_CTA = {
@@ -365,9 +372,9 @@ export const WEB_DESIGN_PROCESS: ProcessStepData[] = [
 // ==========================================
 
 export const SEO_META: PageMeta = {
-  title: "Local SEO for Trade Businesses | Burch Studio Peterborough",
+  title: "Local SEO for Trade Businesses | Burch Studio UK",
   description:
-    "Get found on Google. Local SEO services for tradesmen in Peterborough and Cambridgeshire.",
+    "Get found on Google. Local SEO services for tradesmen in the U.K.",
   canonical: `${SITE_CONFIG.url}/services/seo`,
 };
 
@@ -375,7 +382,7 @@ export const SEO_HERO: SectionHeader = {
   label: "SEO & Google Ranking",
   heading: "Get found when it matters most.",
   subtext:
-    'Show up when local customers search "plumber near me" or "electrician Peterborough". We make sure Google knows your business exists.',
+    'Show up when local customers search "plumber near me" or "electrician near me". We make sure Google knows your business exists.',
 };
 
 export const SEO_PROBLEMS_HEADER: SectionHeader = {
@@ -517,22 +524,24 @@ export const ABOUT_META: PageMeta = {
 
 export const ABOUT_HERO: SectionHeader = {
   label: "About",
-  heading: "Built by someone who gets it.",
+  heading: "Built by someone who ships.",
   subtext:
-    "I'm James — a freelance web developer helping trade businesses stop losing customers to bad websites.",
+    "I'm James — a full-stack developer building everything from local business websites to enterprise SaaS platforms.",
 };
 
 export const ABOUT_CONTENT = {
   intro:
-    "I started Burch Studio because I kept seeing the same thing — brilliant tradespeople doing outstanding work, but losing customers to competitors with better websites.",
+    "I started Burch Studio because I saw two gaps in the market. Trade businesses losing customers to terrible websites. And companies needing serious web applications built by someone who actually cares about the architecture.",
   background:
-    "I'm a developer based in the UK, specialising in Next.js, React, and TypeScript. I build fast, modern websites that are designed to rank on Google and convert visitors into paying customers.",
+    "I'm a full-stack TypeScript developer based in the UK. I build fast, modern websites and scalable web applications using Next.js, React, Node.js, and PostgreSQL. Whether it's a five-page website or a multi-tenant SaaS platform, I apply the same standards: clean code, solid architecture, and production-ready engineering.",
   whyTrades:
-    "I work specifically with trade businesses because the gap between the quality of their work and the quality of their online presence is massive. A plumber who's been in the game for 20 years shouldn't be losing jobs to a competitor with a flashier website.",
+    "I work with trade businesses because the gap between the quality of their work and the quality of their online presence is massive. A plumber who's been in the game for 20 years shouldn't be losing jobs to a competitor with a flashier website.",
+  whySaas:
+    "On the other side, I build and lead development on complex web applications — multi-tenant platforms with event-driven architectures, role-based access control, background job pipelines, and strict security requirements. I bring the same clarity and discipline to both.",
   approach:
-    "I keep things simple. No jargon, no unnecessary features, no surprise invoices. Just honest conversations about what your business needs and a website that delivers it.",
+    "I keep things simple. No jargon, no unnecessary features, no surprise invoices. Just honest conversations about what your business needs and software that delivers it.",
   techNote:
-    "Every site I build uses the same modern technology stack used by companies like Vercel, Nike, and Netflix — Next.js, React, and TypeScript. That means your site is fast, secure, and built to last.",
+    "Core stack: Next.js, React, TypeScript, Node.js, PostgreSQL, containerised workers, and AWS cloud infrastructure. The same technologies used by companies like Vercel, Netflix, and Stripe.",
 } as const;
 
 // ==========================================
@@ -588,6 +597,78 @@ export const CONTACT_FAQS: FAQItem[] = [
 ];
 
 // ==========================================
+// WEB APPS SERVICE PAGE (/services/web-apps)
+// ==========================================
+
+export const WEB_APPS_META: PageMeta = {
+  title: "Web Applications & SaaS Development | Burch Studio",
+  description:
+    "Full-stack web application and SaaS platform development. Next.js, TypeScript, PostgreSQL. Scalable, secure, production-ready.",
+  canonical: `${SITE_CONFIG.url}/services/web-apps`,
+};
+
+export const WEB_APPS_HERO: SectionHeader = {
+  label: "Web Applications & SaaS",
+  heading: "Software built to scale.",
+  subtext:
+    "Full-stack web applications and SaaS platforms — architected for growth, engineered for reliability, built with modern TypeScript.",
+};
+
+export const WEB_APPS_PROBLEMS_HEADER: SectionHeader = {
+  label: "The Problem",
+  heading: "Why most web apps fail.",
+  subtext:
+    "Building a web application is hard. Building one that scales, stays secure, and doesn't fall apart under real-world usage is harder.",
+};
+
+export const WEB_APPS_PROBLEM_LIST = [
+  "Rushed architecture that crumbles when real users arrive",
+  "No separation of concerns — everything tangled together",
+  "Security as an afterthought, not a foundation",
+  "No plan for scaling beyond the first version",
+] as const;
+
+export const WEB_APPS_SOLUTION_HEADER: SectionHeader = {
+  label: "The Solution",
+  heading: "Production-ready from day one.",
+  subtext:
+    "Every application I build is designed around clear architecture, strict type safety, and the kind of engineering practices that hold up in production.",
+};
+
+export const WEB_APPS_SOLUTIONS: SolutionPoint[] = [
+  {
+    title: "Full-stack TypeScript",
+    description:
+      "Next.js and Node.js with strict TypeScript throughout. End-to-end type safety from database to UI.",
+  },
+  {
+    title: "Scalable architecture",
+    description:
+      "Event-driven models, background workers, and clear separation between monitoring, processing, and presentation layers.",
+  },
+  {
+    title: "Secure by design",
+    description:
+      "Role-based access control, secure authentication flows, audit logging, and encryption built in from the start — not bolted on later.",
+  },
+  {
+    title: "Database design",
+    description:
+      "PostgreSQL with well-designed schemas, proper migrations, and query optimisation. Data modelling that scales with your business.",
+  },
+  {
+    title: "Multi-tenant ready",
+    description:
+      "Strict data isolation between tenants, configurable per-tenant settings, and infrastructure that supports growth.",
+  },
+  {
+    title: "Cloud deployment",
+    description:
+      "AWS infrastructure with containerised workers, CI/CD pipelines, and monitoring. Production-ready from launch day.",
+  },
+];
+
+// ==========================================
 // FOOTER
 // ==========================================
 
@@ -598,6 +679,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
       { label: "Web Design", href: "/services/web-design" },
       { label: "SEO & Ranking", href: "/services/seo" },
       { label: "Branding", href: "/services/branding" },
+      { label: "Web Apps & SaaS", href: "/services/web-apps" },
     ],
   },
   {
