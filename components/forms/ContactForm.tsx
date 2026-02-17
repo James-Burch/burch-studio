@@ -222,7 +222,7 @@ export function ContactForm() {
             "w-full resize-y rounded-xl border bg-brand-surface-elevated px-4 py-3 text-[0.95rem] leading-[1.65] text-text-primary outline-none transition-colors duration-200 placeholder:text-text-muted/50 focus:border-brand-accent",
             errors.message ? "border-red" : "border-brand-border",
           )}
-          placeholder="Tell me about your project or what you need help with..."
+          placeholder="Tell us about your project or what you need help with..."
           aria-describedby={errors.message ? "message-error" : undefined}
           aria-invalid={errors.message ? "true" : undefined}
           {...register("message", {

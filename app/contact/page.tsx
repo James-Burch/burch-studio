@@ -94,8 +94,8 @@ export default function Contact() {
                     Response time
                   </h2>
                   <p className="text-[0.92rem] leading-[1.65] text-text-muted">
-                    I aim to get back to every enquiry within 24 hours. If
-                    it&apos;s urgent, give me a call.
+                    We aim to get back to every enquiry within 24 hours. If
+                    it&apos;s urgent, give us a call.
                   </p>
                 </div>
               </div>

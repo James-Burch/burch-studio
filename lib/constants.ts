@@ -139,7 +139,7 @@ export const SERVICES: ServiceCardData[] = [
     icon: "🔍",
     title: "SEO & Google Ranking",
     description:
-      'Get found when it matters. Local SEO, technical optimisation, and content strategy that puts your business in front of the right people.',
+      "Get found when it matters. Local SEO, technical optimisation, and content strategy that puts your business in front of the right people.",
     href: "/services/seo",
     linkText: "Learn more",
   },
@@ -465,7 +465,7 @@ export const BRANDING_PROBLEMS_HEADER: SectionHeader = {
 };
 
 export const BRANDING_PROBLEM_LIST = [
-  'A Gmail or Outlook email address instead of info@yourbusiness.co.uk',
+  "A Gmail or Outlook email address instead of info@yourbusiness.co.uk",
   '"Not Secure" warnings in the browser because there\'s no SSL certificate',
   "Inconsistent branding — different logos, colours, and fonts everywhere",
   "No Google Business Profile — invisible on Maps and local search",
