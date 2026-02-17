@@ -626,14 +626,14 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     technologies: ["HTML", "CSS", "JavaScript", "Responsive Design", "SEO"],
     liveUrl: "https://noblemortgages.co.uk/",
     problem:
-      "A mortgage broker competing against larger firms with an outdated, non-mobile-friendly website. Potential clients couldn't easily understand services or get quick mortgage estimates, and the site was generating almost no inbound leads.",
+      "A mortgage broker with no website at all, relying entirely on word of mouth and referrals. Potential clients had no way to find them online, understand their services, or get in touch outside of business hours.",
     solution:
       "Designed and developed a conversion-focused website with clean, professional design. Implemented an interactive mortgage calculator, multi-step lead generation forms, clear service pages, and a testimonials section — all optimised for search engines and mobile devices.",
     results: [
-      "250% increase in website enquiries",
-      "Improved Google search rankings for key terms",
+      "First professional web presence for the business",
+      "Generating inbound enquiries from day one",
       "95+ Google PageSpeed score",
-      "40% increase in qualified leads reported by client",
+      "Ranking on Google for local mortgage terms",
     ],
   },
   {
@@ -641,19 +641,19 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     title: "Refine Barbers",
     category: "Client Website",
     description:
-      "Modern booking website for a local barber shop. Real-time appointment scheduling, user authentication, and responsive mobile-first design.",
+      "Modern website for a local barber shop with no previous online presence. Clean, mobile-first design showcasing services, pricing, and a direct link to their Booksy booking platform.",
     image: "/images/refine-barbers.webp",
     technologies: ["React", "JavaScript", "Node.js", "CSS"],
     liveUrl: "https://refinebarbers-website.vercel.app",
     problem:
-      "A local barber shop losing customers due to an outdated phone-only booking system. Customers couldn't see availability, staff spent too much time managing appointments manually, and the business was missing growth opportunities through lack of digital presence.",
+      "A popular local barber shop with no website and zero online visibility. Customers could only find them through word of mouth, and there was no way to check services, pricing, or opening hours without calling or visiting in person.",
     solution:
-      "Built a modern, responsive booking platform with a React frontend and Node.js backend. Implemented real-time availability checking, automated confirmation emails, user authentication, and an admin dashboard for staff to manage appointments.",
+      "Built a clean, mobile-first website showcasing the shop's services, pricing, and team. Integrated a direct link to their existing Booksy booking platform so customers can book online without the shop needing to change their workflow.",
     results: [
-      "300% increase in online bookings in first month",
-      "40% reduction in no-shows through email reminders",
-      "Improved customer satisfaction scores",
-      "50+ regular customers using the platform",
+      "First online presence for the business",
+      "Customers can now check services and pricing anytime",
+      "Direct Booksy integration drives online bookings",
+      "Mobile-first design — works perfectly on phones",
     ],
   },
 ];
