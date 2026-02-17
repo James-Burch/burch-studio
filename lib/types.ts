@@ -85,6 +85,23 @@ export interface FAQItem {
 }
 
 // ==========================================
+// PORTFOLIO
+// ==========================================
+
+export interface PortfolioProject {
+  slug: string;
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  liveUrl?: string;
+  problem: string;
+  solution: string;
+  results: string[];
+}
+
+// ==========================================
 // SHARED / LAYOUT
 // ==========================================
 
