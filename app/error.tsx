@@ -13,7 +13,7 @@ export default function Error({
       <p className="mb-4 font-display text-[0.78rem] font-bold uppercase tracking-widest text-red">
         Error
       </p>
-      <h1 className="mb-4 font-display text-[clamp(2rem,5vw,3.5rem)] font-extrabold tracking-[-0.04em] text-text-heading">
+      <h1 className="mb-4 font-display text-[clamp(2rem,5vw,3.5rem)] font-bold tracking-[-0.04em] text-text-heading">
         Something went wrong.
       </h1>
       <p className="mb-10 max-w-100 text-[1.05rem] leading-[1.7] text-text-muted">

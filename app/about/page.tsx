@@ -61,7 +61,7 @@ export default function About() {
             {/* Content */}
             <div>
               <ScrollReveal>
-                <h2 className="mb-6 font-display text-[clamp(1.6rem,3vw,2.2rem)] font-extrabold tracking-[-0.035em] text-text-heading">
+                <h2 className="mb-6 font-display text-[clamp(1.6rem,3vw,2.2rem)] font-bold tracking-[-0.035em] text-text-heading">
                   Why we started Burch Studio
                 </h2>
               </ScrollReveal>
@@ -127,7 +127,7 @@ export default function About() {
               />
               <h2
                 id="about-cta-heading"
-                className="relative mb-4 font-display text-[clamp(1.8rem,4vw,2.8rem)] font-extrabold tracking-[-0.035em] text-text-heading"
+                className="relative mb-4 font-display text-[clamp(1.8rem,4vw,2.8rem)] font-bold tracking-[-0.035em] text-text-heading"
               >
                 {CTA_BANNER.heading}
               </h2>

@@ -28,7 +28,7 @@ export function SectionHeading({
       <p className="mb-4 font-display text-[0.78rem] font-bold uppercase tracking-[0.14em] text-brand-accent">
         {label}
       </p>
-      <h2 className="mb-5 font-display text-[clamp(2rem,4.5vw,3.2rem)] font-extrabold leading-[1.12] tracking-[-0.035em] text-text-heading">
+      <h2 className="mb-5 font-display text-[clamp(2rem,4.5vw,3.2rem)] font-bold leading-[1.12] tracking-[-0.035em] text-text-heading">
         {heading}
       </h2>
       {subtext && (

@@ -49,7 +49,7 @@ export function Hero() {
           {/* Headline — word-by-word reveal */}
           <h1
             id="hero-heading"
-            className="mb-6 font-display text-[clamp(2.6rem,6.5vw,4.5rem)] font-extrabold leading-[1.08] tracking-[-0.04em] text-text-heading"
+            className="mb-6 font-display text-[clamp(2.6rem,6.5vw,4.5rem)] font-bold leading-[1.08] tracking-[-0.04em] text-text-heading"
           >
             {HERO.headlineWords.map((word, i) => (
               <motion.span

@@ -20,7 +20,7 @@ export function Footer() {
           <div>
             <Link
               href="/"
-              className="font-display text-[1.35rem] font-extrabold tracking-[-0.03em] text-text-heading"
+              className="font-display text-[1.35rem] font-bold tracking-[-0.03em] text-text-heading"
               aria-label="Burch Studio home"
             >
               burch<span className="text-brand-accent">.</span>studio

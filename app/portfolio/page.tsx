@@ -63,7 +63,7 @@ export default function Portfolio() {
                     <p className="mb-2 font-display text-[0.78rem] font-bold uppercase tracking-widest text-brand-accent">
                       {project.category}
                     </p>
-                    <h2 className="mb-4 font-display text-[clamp(1.6rem,3vw,2.2rem)] font-extrabold tracking-[-0.035em] text-text-heading">
+                    <h2 className="mb-4 font-display text-[clamp(1.6rem,3vw,2.2rem)] font-bold tracking-[-0.035em] text-text-heading">
                       {project.title}
                     </h2>
                     <p className="mb-6 text-[0.95rem] leading-[1.7] text-text-muted">

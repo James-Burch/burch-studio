@@ -116,7 +116,7 @@ export default function Contact() {
           <ScrollReveal className="mb-12">
             <h2
               id="faq-heading"
-              className="font-display text-[clamp(1.8rem,3.5vw,2.5rem)] font-extrabold tracking-[-0.035em] text-text-heading"
+              className="font-display text-[clamp(1.8rem,3.5vw,2.5rem)] font-bold tracking-[-0.035em] text-text-heading"
             >
               Frequently asked questions
             </h2>

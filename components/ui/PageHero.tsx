@@ -50,7 +50,7 @@ export function PageHero({
           <p className="mb-4 font-display text-[0.78rem] font-bold uppercase tracking-[0.14em] text-brand-accent">
             {label}
           </p>
-          <h1 className="mb-5 max-w-180 font-display text-[clamp(2.2rem,5vw,3.8rem)] font-extrabold leading-[1.1] tracking-[-0.04em] text-text-heading">
+          <h1 className="mb-5 max-w-180 font-display text-[clamp(2.2rem,5vw,3.8rem)] font-bold leading-[1.1] tracking-[-0.04em] text-text-heading">
             {heading}
           </h1>
           {subtext && (

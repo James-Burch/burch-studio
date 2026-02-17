@@ -170,7 +170,7 @@ export default function WebApps() {
               />
               <h2
                 id="webapps-cta-heading"
-                className="relative mb-4 font-display text-[clamp(1.8rem,4vw,2.8rem)] font-extrabold tracking-[-0.035em] text-text-heading"
+                className="relative mb-4 font-display text-[clamp(1.8rem,4vw,2.8rem)] font-bold tracking-[-0.035em] text-text-heading"
               >
                 Got a project in mind?
               </h2>

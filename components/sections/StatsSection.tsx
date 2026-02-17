@@ -32,7 +32,7 @@ export function StatsSection() {
                   <div className="absolute top-[10%] right-0 hidden h-[80%] w-px bg-brand-border md:block" />
                 )}
 
-                <p className="mb-2.5 font-display text-[clamp(2.2rem,5vw,3.4rem)] font-extrabold leading-none tracking-[-0.04em] text-brand-accent">
+                <p className="mb-2.5 font-display text-[clamp(2.2rem,5vw,3.4rem)] font-bold leading-none tracking-[-0.04em] text-brand-accent">
                   {stat.value}
                 </p>
                 <p className="mx-auto max-w-45 text-[0.88rem] leading-normal text-text-muted">

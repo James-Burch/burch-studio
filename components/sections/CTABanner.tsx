@@ -23,7 +23,7 @@ export function CTABanner() {
 
             <h2
               id="cta-heading"
-              className="relative mb-4 font-display text-[clamp(1.8rem,4vw,2.8rem)] font-extrabold tracking-[-0.035em] text-text-heading"
+              className="relative mb-4 font-display text-[clamp(1.8rem,4vw,2.8rem)] font-bold tracking-[-0.035em] text-text-heading"
             >
               {CTA_BANNER.heading}
             </h2>

@@ -139,7 +139,7 @@ export default function SEO() {
                   {i < STATS.length - 1 && (
                     <div className="absolute top-[10%] right-0 hidden h-[80%] w-px bg-brand-border md:block" />
                   )}
-                  <p className="mb-2.5 font-display text-[clamp(2.2rem,5vw,3.4rem)] font-extrabold leading-none tracking-[-0.04em] text-brand-accent">
+                  <p className="mb-2.5 font-display text-[clamp(2.2rem,5vw,3.4rem)] font-bold leading-none tracking-[-0.04em] text-brand-accent">
                     {stat.value}
                   </p>
                   <p className="mx-auto max-w-45 text-[0.88rem] leading-normal text-text-muted">
@@ -166,7 +166,7 @@ export default function SEO() {
               />
               <h2
                 id="seo-cta-heading"
-                className="relative mb-4 font-display text-[clamp(1.8rem,4vw,2.8rem)] font-extrabold tracking-[-0.035em] text-text-heading"
+                className="relative mb-4 font-display text-[clamp(1.8rem,4vw,2.8rem)] font-bold tracking-[-0.035em] text-text-heading"
               >
                 Find out where you rank.
               </h2>

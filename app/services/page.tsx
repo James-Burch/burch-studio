@@ -94,7 +94,7 @@ export default function Services() {
                     "radial-gradient(circle, rgba(200, 255, 60, 0.06) 0%, transparent 70%)",
                 }}
               />
-              <h2 className="relative mb-4 font-display text-[clamp(1.8rem,4vw,2.8rem)] font-extrabold tracking-[-0.035em] text-text-heading">
+              <h2 className="relative mb-4 font-display text-[clamp(1.8rem,4vw,2.8rem)] font-bold tracking-[-0.035em] text-text-heading">
                 {SERVICES_HUB_BOTTOM_CTA.heading}
               </h2>
               <p className="relative mx-auto mb-9 max-w-125 text-[1.08rem] leading-[1.7] text-text-muted">
