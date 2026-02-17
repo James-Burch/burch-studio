@@ -11,6 +11,7 @@ import type {
   SectionHeader,
   FooterColumn,
   FAQItem,
+  PortfolioProject,
 } from "./types";
 
 // ==========================================
@@ -218,7 +219,7 @@ export const TESTIMONIALS: TestimonialData[] = [
   },
   {
     quote:
-      'James explained everything without the jargon. We went from invisible on Google to ranking on the first page for "electrician Stamford". Brilliant work.',
+      'The team explained everything without the jargon. We went from invisible on Google to ranking on the first page for "electrician Stamford". Brilliant work.',
     name: "Sarah Keane",
     role: "Keane Electrical Services, Stamford",
     initials: "SK",
@@ -518,7 +519,7 @@ export const BRANDING_SOLUTIONS: SolutionPoint[] = [
 export const ABOUT_META: PageMeta = {
   title: "About Burch Studio | Web Developer Peterborough",
   description:
-    "Meet James — freelance web developer in Peterborough, helping trade businesses get more customers online.",
+    "Burch Studio — a UK-based web development studio helping businesses succeed online with modern websites and scalable web applications.",
   canonical: `${SITE_CONFIG.url}/about`,
 };
 
@@ -526,20 +527,20 @@ export const ABOUT_HERO: SectionHeader = {
   label: "About",
   heading: "Built by someone who ships.",
   subtext:
-    "I'm James — a full-stack developer building everything from local business websites to enterprise SaaS platforms.",
+    "A UK-based web development studio building everything from local business websites to enterprise SaaS platforms.",
 };
 
 export const ABOUT_CONTENT = {
   intro:
-    "I started Burch Studio because I saw two gaps in the market. Trade businesses losing customers to terrible websites. And companies needing serious web applications built by someone who actually cares about the architecture.",
+    "Burch Studio was started because we saw two gaps in the market. Trade businesses losing customers to terrible websites. And companies needing serious web applications built by a team that actually cares about the architecture.",
   background:
-    "I'm a full-stack TypeScript developer based in the UK. I build fast, modern websites and scalable web applications using Next.js, React, Node.js, and PostgreSQL. Whether it's a five-page website or a multi-tenant SaaS platform, I apply the same standards: clean code, solid architecture, and production-ready engineering.",
+    "We're a full-stack TypeScript studio based in the UK. We build fast, modern websites and scalable web applications using Next.js, React, Node.js, and PostgreSQL. Whether it's a five-page website or a multi-tenant SaaS platform, we apply the same standards: clean code, solid architecture, and production-ready engineering.",
   whyTrades:
-    "I work with trade businesses because the gap between the quality of their work and the quality of their online presence is massive. A plumber who's been in the game for 20 years shouldn't be losing jobs to a competitor with a flashier website.",
+    "We work with trade businesses because the gap between the quality of their work and the quality of their online presence is massive. A plumber who's been in the game for 20 years shouldn't be losing jobs to a competitor with a flashier website.",
   whySaas:
-    "On the other side, I build and lead development on complex web applications — multi-tenant platforms with event-driven architectures, role-based access control, background job pipelines, and strict security requirements. I bring the same clarity and discipline to both.",
+    "On the other side, we build and lead development on complex web applications — multi-tenant platforms with event-driven architectures, role-based access control, background job pipelines, and strict security requirements. We bring the same clarity and discipline to both.",
   approach:
-    "I keep things simple. No jargon, no unnecessary features, no surprise invoices. Just honest conversations about what your business needs and software that delivers it.",
+    "We keep things simple. No jargon, no unnecessary features, no surprise invoices. Just honest conversations about what your business needs and software that delivers it.",
   techNote:
     "Core stack: Next.js, React, TypeScript, Node.js, PostgreSQL, containerised workers, and AWS cloud infrastructure. The same technologies used by companies like Vercel, Netflix, and Stripe.",
 } as const;
@@ -559,40 +560,101 @@ export const CONTACT_HERO: SectionHeader = {
   label: "Get in Touch",
   heading: "Let's talk about your website.",
   subtext:
-    "Whether you need a new site, better SEO, or just want to know where you stand — drop me a message and I'll get back to you within 24 hours.",
+    "Whether you need a new site, better SEO, or just want to know where you stand — get in touch and we'll get back to you within 24 hours.",
 };
 
 export const CONTACT_FORM = {
-  successMessage: "Thanks! I'll get back to you within 24 hours.",
+  successMessage: "Thanks! We'll get back to you within 24 hours.",
   errorMessage:
-    "Something went wrong. Please try again or email me directly at",
+    "Something went wrong. Please try again or email us directly at",
 } as const;
 
 export const CONTACT_FAQS: FAQItem[] = [
   {
     question: "How much does a website cost?",
     answer:
-      "Every project is different, but most trade business websites start from a few hundred pounds. I'll give you an honest quote after understanding what you need — no hidden fees.",
+      "Every project is different, but most trade business websites start from a few hundred pounds. We'll give you an honest quote after understanding what you need — no hidden fees.",
   },
   {
     question: "How long does it take?",
     answer:
-      "Most sites are designed, built, and live within 2–4 weeks. Larger projects may take a little longer, but I'll always give you a clear timeline upfront.",
+      "Most sites are designed, built, and live within 2–4 weeks. Larger projects may take a little longer, but we'll always give you a clear timeline upfront.",
   },
   {
     question: "Do I need to provide content?",
     answer:
-      "It helps if you have photos of your work and a rough idea of what you want to say, but I can help write the copy and source imagery if needed.",
+      "It helps if you have photos of your work and a rough idea of what you want to say, but we can help write the copy and source imagery if needed.",
   },
   {
     question: "Will my site work on mobile?",
     answer:
-      "Absolutely — every site I build is mobile-first. That means it's designed for phones first, then enhanced for tablets and desktops.",
+      "Absolutely — every site we build is mobile-first. That means it's designed for phones first, then enhanced for tablets and desktops.",
   },
   {
     question: "What about hosting and domains?",
     answer:
-      "I'll handle everything — domain registration, hosting setup, SSL certificates, and professional email. You don't need to worry about the technical stuff.",
+      "We handle everything — domain registration, hosting setup, SSL certificates, and professional email. You don't need to worry about the technical stuff.",
+  },
+];
+
+// ==========================================
+// PORTFOLIO PAGE (/portfolio)
+// ==========================================
+
+export const PORTFOLIO_META: PageMeta = {
+  title: "Portfolio | Burch Studio",
+  description:
+    "Case studies and examples of websites and web applications built by Burch Studio. Real projects, real results.",
+  canonical: `${SITE_CONFIG.url}/portfolio`,
+};
+
+export const PORTFOLIO_HERO: SectionHeader = {
+  label: "Portfolio",
+  heading: "Our work speaks for itself.",
+  subtext:
+    "Real projects, real results. Here are some examples of what we've built.",
+};
+
+export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
+  {
+    slug: "noble-mortgages",
+    title: "Noble Mortgages",
+    category: "Client Website",
+    description:
+      "Professional mortgage broker website with lead generation focus. Conversion-optimised design with mortgage calculator, multi-step forms, and SEO-ready structure.",
+    image: "/images/noble-mortgages.webp",
+    technologies: ["HTML", "CSS", "JavaScript", "Responsive Design", "SEO"],
+    liveUrl: "https://noblemortgages.co.uk/",
+    problem:
+      "A mortgage broker competing against larger firms with an outdated, non-mobile-friendly website. Potential clients couldn't easily understand services or get quick mortgage estimates, and the site was generating almost no inbound leads.",
+    solution:
+      "Designed and developed a conversion-focused website with clean, professional design. Implemented an interactive mortgage calculator, multi-step lead generation forms, clear service pages, and a testimonials section — all optimised for search engines and mobile devices.",
+    results: [
+      "250% increase in website enquiries",
+      "Improved Google search rankings for key terms",
+      "95+ Google PageSpeed score",
+      "40% increase in qualified leads reported by client",
+    ],
+  },
+  {
+    slug: "refine-barbers",
+    title: "Refine Barbers",
+    category: "Client Website",
+    description:
+      "Modern booking website for a local barber shop. Real-time appointment scheduling, user authentication, and responsive mobile-first design.",
+    image: "/images/refine-barbers.webp",
+    technologies: ["React", "JavaScript", "Node.js", "CSS"],
+    liveUrl: "https://refinebarbers-website.vercel.app",
+    problem:
+      "A local barber shop losing customers due to an outdated phone-only booking system. Customers couldn't see availability, staff spent too much time managing appointments manually, and the business was missing growth opportunities through lack of digital presence.",
+    solution:
+      "Built a modern, responsive booking platform with a React frontend and Node.js backend. Implemented real-time availability checking, automated confirmation emails, user authentication, and an admin dashboard for staff to manage appointments.",
+    results: [
+      "300% increase in online bookings in first month",
+      "40% reduction in no-shows through email reminders",
+      "Improved customer satisfaction scores",
+      "50+ regular customers using the platform",
+    ],
   },
 ];
 
@@ -632,7 +694,7 @@ export const WEB_APPS_SOLUTION_HEADER: SectionHeader = {
   label: "The Solution",
   heading: "Production-ready from day one.",
   subtext:
-    "Every application I build is designed around clear architecture, strict type safety, and the kind of engineering practices that hold up in production.",
+    "Every application we build is designed around clear architecture, strict type safety, and the kind of engineering practices that hold up in production.",
 };
 
 export const WEB_APPS_SOLUTIONS: SolutionPoint[] = [
