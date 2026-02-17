@@ -8,6 +8,7 @@ import {
 import { PageHero } from "@/components/ui/PageHero";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { ContactForm } from "@/components/forms/ContactForm";
+import { BreadcrumbJsonLd, FAQPageJsonLd } from "@/components/seo/JsonLd";
 
 // ==========================================
 // METADATA
@@ -31,6 +32,8 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
+      <BreadcrumbJsonLd items={[{ name: "Contact", href: "/contact" }]} />
+      <FAQPageJsonLd faqs={CONTACT_FAQS} />
       <PageHero
         label={CONTACT_HERO.label}
         heading={CONTACT_HERO.heading}
