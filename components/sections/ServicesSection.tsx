@@ -23,8 +23,8 @@ export function ServicesSection() {
         {/* Service cards grid */}
         <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
           {SERVICES.map((service, i) => (
-            <ScrollReveal key={service.title} delay={i * 0.1}>
-              <article className="group relative overflow-hidden rounded-[20px] border border-brand-border bg-brand-surface px-8 pt-10 pb-9 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-border-hover">
+            <ScrollReveal key={service.title} delay={i * 0.1} className="flex">
+              <article className="group relative flex flex-col overflow-hidden rounded-[20px] border border-brand-border bg-brand-surface px-8 pt-10 pb-9 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-border-hover">
                 {/* Top accent bar on hover */}
                 <div className="absolute top-0 right-0 left-0 h-0.75 origin-left scale-x-0 bg-brand-accent transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100" />
 
@@ -37,7 +37,7 @@ export function ServicesSection() {
                 <h3 className="mb-3 font-display text-[1.25rem] font-bold tracking-[-0.02em] text-text-heading">
                   {service.title}
                 </h3>
-                <p className="mb-6 text-[0.92rem] leading-[1.7] text-text-muted">
+                <p className="mb-6 flex-1 text-[0.92rem] leading-[1.7] text-text-muted">
                   {service.description}
                 </p>
 
