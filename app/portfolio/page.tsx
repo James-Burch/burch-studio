@@ -46,20 +46,9 @@ export default function Portfolio() {
           <div className="space-y-20">
             {PORTFOLIO_PROJECTS.map((project, i) => (
               <ScrollReveal key={project.slug} delay={i * 0.1}>
-                <article className="grid grid-cols-1 gap-10 overflow-hidden rounded-3xl border border-brand-border bg-brand-surface lg:grid-cols-2">
-                  {/* Image */}
-                  <div className="relative aspect-16/10 lg:aspect-auto">
-                    <Image
-                      src={project.image}
-                      alt={`${project.title} website screenshot`}
-                      fill
-                      className="object-cover object-top"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                  </div>
-
+                <article className="overflow-hidden rounded-3xl border border-brand-border bg-brand-surface">
                   {/* Content */}
-                  <div className="flex flex-col justify-center px-8 py-8 lg:px-10 lg:py-12">
+                  <div className="px-8 pt-8 lg:px-10 lg:pt-12">
                     <p className="mb-2 font-display text-[0.78rem] font-bold uppercase tracking-widest text-brand-accent">
                       {project.category}
                     </p>
@@ -130,6 +119,20 @@ export default function Portfolio() {
                         View Live Site <span className="inline-block">↗</span>
                       </Button>
                     )}
+                  </div>
+
+                  {/* Image */}
+                  <div className="bg-brand-bg p-6 sm:p-8 lg:p-10">
+                    <div className="overflow-hidden rounded-xl border border-brand-border">
+                      <Image
+                        src={project.image}
+                        alt={`${project.title} website screenshot`}
+                        width={1448}
+                        height={1084}
+                        className="block w-full"
+                        sizes="(max-width: 1024px) 100vw, 80vw"
+                      />
+                    </div>
                   </div>
                 </article>
               </ScrollReveal>
