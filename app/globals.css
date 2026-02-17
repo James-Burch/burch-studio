@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
 /* ========== BRAND TOKENS ========== */
-/* PLACEHOLDER: Replace these with your actual brand colours */
 :root {
   --color-brand-bg: #0a0a0c;
   --color-brand-surface: #111116;
@@ -15,8 +14,10 @@
   --color-text-muted: #71717a;
   --color-text-heading: #fafafa;
   --color-red: #ff4d4d;
+  --color-brand-success: #22c55e;
 }
 
+/* ========== TAILWIND v4 THEME ========== */
 @theme inline {
   --color-brand-bg: var(--color-brand-bg);
   --color-brand-surface: var(--color-brand-surface);
@@ -30,6 +31,7 @@
   --color-text-muted: var(--color-text-muted);
   --color-text-heading: var(--color-text-heading);
   --color-red: var(--color-red);
+  --color-brand-success: var(--color-brand-success);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
 }
@@ -49,6 +51,7 @@
     overflow-x: hidden;
   }
 
+  /* Noise texture overlay — subtle grain for premium feel */
   body::before {
     content: "";
     position: fixed;
@@ -61,6 +64,15 @@
 }
 
 /* ========== ACCESSIBILITY ========== */
+
+/* Visible focus indicators — WCAG 2.1 AA (Guardrails 8.1) */
+*:focus-visible {
+  outline: 2px solid var(--color-brand-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skip to content link */
 .skip-link {
   position: absolute;
   top: -100%;
@@ -76,4 +88,16 @@
 }
 .skip-link:focus {
   top: 1rem;
+}
+
+/* Reduced motion — respect user preference (Guardrails 5.3 / 8.1) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
