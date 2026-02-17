@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import {
   CONTACT_META,
   CONTACT_HERO,
@@ -7,7 +8,7 @@ import {
 } from "@/lib/constants";
 import { PageHero } from "@/components/ui/PageHero";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { ContactForm } from "@/components/forms/ContactForm";
+import { ContactFormSwitcher } from "@/components/forms/ContactFormSwitcher";
 import { BreadcrumbJsonLd, FAQPageJsonLd } from "@/components/seo/JsonLd";
 
 // ==========================================
@@ -46,7 +47,9 @@ export default function Contact() {
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr_380px]">
             {/* Form */}
             <ScrollReveal>
-              <ContactForm />
+              <Suspense fallback={null}>
+                <ContactFormSwitcher />
+              </Suspense>
             </ScrollReveal>
 
             {/* Contact info sidebar */}
