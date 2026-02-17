@@ -1,8 +1,4 @@
-import {
-  TESTIMONIALS_HEADER,
-  TESTIMONIALS,
-  TESTIMONIALS_DISCLAIMER,
-} from "@/lib/constants";
+import { TESTIMONIALS_HEADER, TESTIMONIALS } from "@/lib/constants";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -58,11 +54,6 @@ export function TestimonialsSection() {
             </ScrollReveal>
           ))}
         </div>
-
-        {/* Disclaimer */}
-        <p className="mt-8 text-center text-[0.85rem] text-text-muted italic">
-          {TESTIMONIALS_DISCLAIMER}
-        </p>
       </div>
     </section>
   );
