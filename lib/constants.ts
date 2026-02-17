@@ -40,7 +40,7 @@ export const NAV_LINKS: NavLink[] = [
 
 export const NAV_CTA = {
   label: "Free Audit",
-  href: "/contact",
+  href: "/contact?audit",
 } as const;
 
 // ==========================================
@@ -208,7 +208,7 @@ export const TESTIMONIALS_HEADER: SectionHeader = {
 export const TESTIMONIALS: TestimonialData[] = [
   {
     quote:
-      "We had no website at all before Burch Studio. Now customers can find us online, check our services and find our booksy through the site. It's made a real difference to the business.",
+      "We had no website at all before Burch Studio. Now customers can find us online, check our services, and book straight through the site. It's made a real difference to the business.",
     name: "Rob Cunliffe",
     role: "Refine Barbers",
     initials: "RC",
@@ -232,7 +232,7 @@ export const CTA_BANNER = {
   heading: "Not sure if your website is costing you customers?",
   subtext:
     "Get a free, no-obligation website audit. We'll show you exactly what's holding you back — and how to fix it.",
-  cta: { label: "Request Your Free Audit", href: "/contact" },
+  cta: { label: "Request Your Free Audit", href: "/contact?audit" },
 } as const;
 
 // ==========================================
