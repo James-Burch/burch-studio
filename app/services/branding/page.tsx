@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import {
   BRANDING_META,
@@ -12,6 +13,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Button } from "@/components/ui/Button";
+import { ServiceJsonLd, BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 
 // ==========================================
 // METADATA
@@ -35,6 +37,17 @@ export const metadata: Metadata = {
 export default function Branding() {
   return (
     <>
+      <ServiceJsonLd
+        name="Branding & Professional Setup"
+        description={BRANDING_META.description}
+        url={BRANDING_META.canonical}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Services", href: "/services" },
+          { name: "Branding", href: "/services/branding" },
+        ]}
+      />
       <PageHero
         label={BRANDING_HERO.label}
         heading={BRANDING_HERO.heading}
