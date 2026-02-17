@@ -8,6 +8,7 @@ import {
 import { PageHero } from "@/components/ui/PageHero";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Button } from "@/components/ui/Button";
+import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 
 // ==========================================
 // METADATA
@@ -31,6 +32,7 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
+      <BreadcrumbJsonLd items={[{ name: "About", href: "/about" }]} />
       <PageHero
         label={ABOUT_HERO.label}
         heading={ABOUT_HERO.heading}
