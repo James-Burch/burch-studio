@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { Syne, Outfit } from "next/font/google"; // PLACEHOLDER: Replace with your brand fonts
+import { Syne, Outfit } from "next/font/google";
 import "./globals.css";
+import { HOME_META, SITE_CONFIG } from "@/lib/constants";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 
 const fontDisplay = Syne({
   subsets: ["latin"],
@@ -15,17 +18,28 @@ const fontBody = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Burch Studio — Web Design for Local Trades | Peterborough",
-  description:
-    "Modern, mobile-first websites for plumbers, electricians & trade businesses in Peterborough. Built to rank on Google and win you more work.",
+  metadataBase: new URL(SITE_CONFIG.url),
+  title: {
+    default: HOME_META.title,
+    template: `%s | ${SITE_CONFIG.name}`,
+  },
+  description: HOME_META.description,
   openGraph: {
-    title: "Burch Studio — Web Design for Local Trades | Peterborough",
-    description:
-      "Modern, mobile-first websites for plumbers, electricians & trade businesses in Peterborough. Built to rank on Google and win you more work.",
-    url: "https://burchstudio.co.uk",
-    siteName: "Burch Studio",
+    title: HOME_META.title,
+    description: HOME_META.description,
+    url: SITE_CONFIG.url,
+    siteName: SITE_CONFIG.name,
     type: "website",
     locale: "en_GB",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: HOME_META.title,
+    description: HOME_META.description,
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -40,9 +54,9 @@ export default function RootLayout({
         <a href="#main" className="skip-link">
           Skip to content
         </a>
-        {/* TODO: Add Navbar component */}
+        <Navbar />
         <main id="main">{children}</main>
-        {/* TODO: Add Footer component */}
+        <Footer />
       </body>
     </html>
   );
