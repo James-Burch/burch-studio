@@ -12,6 +12,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Button } from "@/components/ui/Button";
+import { ServiceJsonLd, BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 
 // ==========================================
 // METADATA
@@ -35,6 +36,17 @@ export const metadata: Metadata = {
 export default function WebApps() {
   return (
     <>
+      <ServiceJsonLd
+        name="Web Applications & SaaS"
+        description={WEB_APPS_META.description}
+        url={WEB_APPS_META.canonical}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Services", href: "/services" },
+          { name: "Web Apps", href: "/services/web-apps" },
+        ]}
+      />
       <PageHero
         label={WEB_APPS_HERO.label}
         heading={WEB_APPS_HERO.heading}
