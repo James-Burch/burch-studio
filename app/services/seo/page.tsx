@@ -14,6 +14,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Button } from "@/components/ui/Button";
+import { ServiceJsonLd, BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 
 // ==========================================
 // METADATA
@@ -37,6 +38,17 @@ export const metadata: Metadata = {
 export default function SEO() {
   return (
     <>
+      <ServiceJsonLd
+        name="SEO & Google Ranking"
+        description={SEO_META.description}
+        url={SEO_META.canonical}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Services", href: "/services" },
+          { name: "SEO", href: "/services/seo" },
+        ]}
+      />
       <PageHero
         label={SEO_HERO.label}
         heading={SEO_HERO.heading}
