@@ -195,7 +195,7 @@ export const STATS: StatData[] = [
 ];
 
 // ==========================================
-// HOME PAGE — TESTIMONIALS (Replace with real feedback)
+// HOME PAGE — TESTIMONIALS
 // ==========================================
 
 export const TESTIMONIALS_HEADER: SectionHeader = {
@@ -205,24 +205,21 @@ export const TESTIMONIALS_HEADER: SectionHeader = {
     "Don't just take our word for it — here's what our clients have to say.",
 };
 
-export const TESTIMONIALS_DISCLAIMER =
-  "* Example testimonials — replace with real client feedback";
-
 export const TESTIMONIALS: TestimonialData[] = [
   {
     quote:
-      "Within two weeks of launching our new site, we had more enquiries than we'd had in the previous three months. The phone hasn't stopped ringing.",
-    name: "David Mitchell",
-    role: "Mitchell Plumbing & Heating, Peterborough",
-    initials: "DM",
+      "We had no website at all before Burch Studio. Now customers can find us online, check our services and find our booksy through the site. It's made a real difference to the business.",
+    name: "Rob Cunliffe",
+    role: "Refine Barbers",
+    initials: "RC",
     rating: 5,
   },
   {
     quote:
-      'The team explained everything without the jargon. We went from invisible on Google to ranking on the first page for "electrician Stamford". Brilliant work.',
-    name: "Sarah Keane",
-    role: "Keane Electrical Services, Stamford",
-    initials: "SK",
+      "Professional, straightforward, and no jargon. The site looks fantastic and we started getting enquiries within the first week of going live. Couldn't recommend them enough.",
+    name: "Alan Kingston",
+    role: "Noble Mortgages",
+    initials: "AK",
     rating: 5,
   },
 ];
@@ -624,7 +621,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "Professional mortgage broker website with lead generation focus. Conversion-optimised design with mortgage calculator, multi-step forms, and SEO-ready structure.",
     image: "/images/noble-mortgages.webp",
     technologies: ["HTML", "CSS", "JavaScript", "Responsive Design", "SEO"],
-    liveUrl: "https://noblemortgages.netlify.app/",
+    liveUrl: "https://noblemortgages.co.uk/",
     problem:
       "A mortgage broker with no website at all, relying entirely on word of mouth and referrals. Potential clients had no way to find them online, understand their services, or get in touch outside of business hours.",
     solution:
