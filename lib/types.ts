@@ -79,6 +79,13 @@ export interface ContactFormData {
   honeypot: string;
 }
 
+export interface AuditFormData {
+  name: string;
+  email: string;
+  websiteUrl: string;
+  honeypot: string;
+}
+
 export interface FAQItem {
   question: string;
   answer: string;
