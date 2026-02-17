@@ -624,7 +624,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "Professional mortgage broker website with lead generation focus. Conversion-optimised design with mortgage calculator, multi-step forms, and SEO-ready structure.",
     image: "/images/noble-mortgages.webp",
     technologies: ["HTML", "CSS", "JavaScript", "Responsive Design", "SEO"],
-    liveUrl: "https://noblemortgages.co.uk/",
+    liveUrl: "https://noblemortgages.netlify.app/",
     problem:
       "A mortgage broker with no website at all, relying entirely on word of mouth and referrals. Potential clients had no way to find them online, understand their services, or get in touch outside of business hours.",
     solution:
