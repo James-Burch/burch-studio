@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
+import { notificationEmail, autoReplyEmail } from "@/lib/email-templates";
 
 // ==========================================
 // CONFIG
@@ -161,19 +162,7 @@ export async function POST(request: Request) {
       to: NOTIFICATION_EMAIL,
       subject: `New enquiry from ${data.name}`,
       replyTo: data.email,
-      text: [
-        `New contact form submission`,
-        ``,
-        `Name: ${data.name}`,
-        `Email: ${data.email}`,
-        data.phone ? `Phone: ${data.phone}` : null,
-        data.business ? `Business: ${data.business}` : null,
-        ``,
-        `Message:`,
-        data.message,
-      ]
-        .filter(Boolean)
-        .join("\n"),
+      html: notificationEmail(data),
     });
 
     if (notificationError) {
@@ -189,17 +178,7 @@ export async function POST(request: Request) {
       from: FROM_EMAIL,
       to: data.email,
       subject: "Thanks for getting in touch — Burch Studio",
-      text: [
-        `Hi ${data.name},`,
-        ``,
-        `Thanks for reaching out to Burch Studio. We've received your message and will get back to you within 24 hours.`,
-        ``,
-        `In the meantime, if you have anything urgent, you can reach us at contact@burchstudio.co.uk.`,
-        ``,
-        `Speak soon,`,
-        `Burch Studio`,
-        `burch-studio.co.uk`,
-      ].join("\n"),
+      html: autoReplyEmail(data),
     });
 
     if (replyError) {
