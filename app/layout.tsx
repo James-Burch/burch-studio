@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Syne, Outfit } from "next/font/google";
 import "./globals.css";
 import { HOME_META, SITE_CONFIG } from "@/lib/constants";
+import { Analytics } from "@vercel/analytics/next";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
@@ -57,6 +58,7 @@ export default function RootLayout({
         <Navbar />
         <main id="main">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
