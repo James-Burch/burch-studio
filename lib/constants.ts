@@ -1,3 +1,13 @@
+import {
+  Smartphone,
+  LockOpen,
+  Timer,
+  EyeOff,
+  Zap,
+  Search,
+  Target,
+  Rocket,
+} from "lucide-react";
 import type {
   NavLink,
   HeroWord,
@@ -87,28 +97,28 @@ export const PROBLEMS_HEADER: SectionHeader = {
 
 export const PROBLEMS: ProblemCardData[] = [
   {
-    icon: "📱",
+    icon: Smartphone,
     title: "Not mobile-friendly",
     description:
       "Your customers are searching on their phones. If your site doesn't work on mobile, they'll tap the back button and call a competitor.",
     stat: "60%+ of all web traffic is now mobile",
   },
   {
-    icon: "🔓",
+    icon: LockOpen,
     title: "No SSL security",
     description:
       'Browsers show a "Not Secure" warning before customers even see your site. Many won\'t click past it — and Google penalises you for it.',
     stat: "Google has penalised non-HTTPS sites since 2014",
   },
   {
-    icon: "⏱️",
+    icon: Timer,
     title: "Painfully slow",
     description:
       "Every second your site takes to load, you lose visitors. Heavy images, old code, and cheap hosting are the usual culprits.",
     stat: "53% of visitors leave after 3 seconds",
   },
   {
-    icon: "👻",
+    icon: EyeOff,
     title: "Invisible on Google",
     description:
       "No SEO means no visibility. If your site has thin content and no local targeting, your competitors will always rank above you.",
@@ -129,7 +139,7 @@ export const SERVICES_HEADER: SectionHeader = {
 
 export const SERVICES: ServiceCardData[] = [
   {
-    icon: "⚡",
+    icon: Zap,
     title: "Website Design & Development",
     description:
       "Custom-built, mobile-first websites that load fast, look professional, and make it effortless for customers to get in touch. No templates. No page builders.",
@@ -137,7 +147,7 @@ export const SERVICES: ServiceCardData[] = [
     linkText: "Learn more",
   },
   {
-    icon: "🔍",
+    icon: Search,
     title: "SEO & Google Ranking",
     description:
       "Get found when it matters. Local SEO, technical optimisation, and content strategy that puts your business in front of the right people.",
@@ -145,7 +155,7 @@ export const SERVICES: ServiceCardData[] = [
     linkText: "Learn more",
   },
   {
-    icon: "🎯",
+    icon: Target,
     title: "Branding & Professional Setup",
     description:
       "Custom domain, professional email, SSL security, and consistent branding that makes your business look as good online as the service you deliver.",
@@ -153,7 +163,7 @@ export const SERVICES: ServiceCardData[] = [
     linkText: "Learn more",
   },
   {
-    icon: "🚀",
+    icon: Rocket,
     title: "Web Applications & SaaS",
     description:
       "Full-stack web applications and SaaS platforms built with Next.js, TypeScript, and PostgreSQL. Scalable architecture, secure by design.",
@@ -613,6 +623,34 @@ export const PORTFOLIO_HERO: SectionHeader = {
 };
 
 export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
+  {
+    slug: "seqenta",
+    title: "Seqenta",
+    category: "SaaS Platform",
+    description:
+      "A live company intelligence platform for UK businesses. Real-time monitoring of financial health, risk signals, and corporate events — powered by AI-generated analysis and multi-source data pipelines.",
+    image: "/images/seqenta.webp",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "Redis",
+      "Auth0",
+      "Anthropic Claude",
+      "Vercel",
+    ],
+    problem:
+      "Businesses trading with, lending to, or depending on UK companies had no simple way to monitor financial health and risk signals in real time. Existing tools were fragmented, expensive, and required manual effort to interpret raw filings and corporate data.",
+    solution:
+      "Designed and built the entire platform from scratch — architecture, frontend, API, background workers, and AI integration. The system pulls data from Companies House, The Gazette, and news sources into a unified feed. AI extracts financial data from both digital and paper filings, scores company health using established models, and generates plain-English summaries of every detected change. Multi-tenant with role-based access, configurable alerts, and a report builder for meeting-ready PDFs.",
+    results: [
+      "Live platform serving real users in production",
+      "100+ API endpoints, 30+ background job processors, 40+ UI pages",
+      "Sub-2-second page loads across the application",
+      "AI-powered extraction from both digital and paper-filed accounts",
+    ],
+  },
   {
     slug: "noble-mortgages",
     title: "Noble Mortgages",

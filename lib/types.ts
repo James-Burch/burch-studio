@@ -4,6 +4,8 @@
 // and live in their own component files — this file is for
 // data structures used across multiple files.
 
+import type { LucideIcon } from "lucide-react";
+
 // ==========================================
 // NAVIGATION
 // ==========================================
@@ -23,14 +25,14 @@ export interface HeroWord {
 }
 
 export interface ProblemCardData {
-  icon: string;
+  icon: LucideIcon;
   title: string;
   description: string;
   stat: string;
 }
 
 export interface ServiceCardData {
-  icon: string;
+  icon: LucideIcon;
   title: string;
   description: string;
   href: string;

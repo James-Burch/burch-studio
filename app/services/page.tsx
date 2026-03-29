@@ -58,8 +58,8 @@ export default function Services() {
                   <div className="absolute top-0 right-0 left-0 h-0.75 origin-left scale-x-0 bg-brand-accent transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100" />
 
                   {/* Icon */}
-                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[14px] bg-brand-accent-dim text-2xl">
-                    {service.icon}
+                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[14px] bg-brand-accent-dim text-brand-accent">
+                    <service.icon className="h-6 w-6" />
                   </div>
 
                   {/* Content */}
