@@ -28,7 +28,7 @@ export function ProblemSection() {
             <ScrollReveal key={problem.title} delay={i * 0.1} className="flex">
               <article className="flex flex-col rounded-2xl border border-brand-border bg-brand-surface-elevated p-7 transition-all duration-300 hover:-translate-y-1 hover:border-red/25">
                 {/* Icon */}
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-red/10 text-red">
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-red/10 text-red" aria-hidden="true">
                   <problem.icon className="h-5 w-5" />
                 </div>
 

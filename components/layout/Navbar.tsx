@@ -59,13 +59,13 @@ export function Navbar() {
           </Link>
 
           {/* Desktop links */}
-          <ul className="hidden items-center gap-9 md:flex">
+          <ul className="hidden items-center gap-2 md:flex">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   className={cn(
-                    "text-[0.9rem] font-normal tracking-[0.01em] transition-colors duration-300 hover:text-text-heading",
+                    "rounded-md px-3 py-2 text-[0.9rem] font-normal tracking-[0.01em] transition-colors duration-300 hover:text-text-heading",
                     pathname === link.href
                       ? "text-text-heading"
                       : "text-text-muted",

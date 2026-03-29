@@ -41,8 +41,9 @@ export default function Portfolio() {
       />
 
       {/* Project cards */}
-      <section className="pb-25 md:pb-32">
+      <section className="pb-25 md:pb-32" aria-labelledby="portfolio-projects">
         <div className="mx-auto max-w-300 px-5 sm:px-8 lg:px-10">
+          <h2 id="portfolio-projects" className="sr-only">Projects</h2>
           <div className="space-y-20">
             {PORTFOLIO_PROJECTS.map((project, i) => (
               <ScrollReveal key={project.slug} delay={i * 0.1}>
@@ -60,10 +61,11 @@ export default function Portfolio() {
                     </p>
 
                     {/* Tech tags */}
-                    <div className="mb-6 flex flex-wrap gap-2">
+                    <div className="mb-6 flex flex-wrap gap-2" role="list" aria-label="Technologies used">
                       {project.technologies.map((tech) => (
                         <span
                           key={tech}
+                          role="listitem"
                           className="rounded-md border border-brand-border bg-brand-surface-elevated px-2.5 py-1 text-[0.75rem] font-medium text-text-muted"
                         >
                           {tech}
@@ -102,7 +104,7 @@ export default function Portfolio() {
                             key={result}
                             className="flex items-start gap-2.5 text-[0.88rem] leading-normal text-text-muted"
                           >
-                            <span className="mt-0.5 text-brand-accent">✓</span>
+                            <span className="mt-0.5 text-brand-accent" aria-hidden="true">✓</span>
                             {result}
                           </li>
                         ))}
@@ -115,8 +117,9 @@ export default function Portfolio() {
                         variant="secondary"
                         href={project.liveUrl}
                         className="w-fit"
+                        ariaLabel={`View live site: ${project.title}`}
                       >
-                        View Live Site <span className="inline-block">↗</span>
+                        View Live Site <span className="inline-block" aria-hidden="true">↗</span>
                       </Button>
                     )}
                   </div>
@@ -147,7 +150,7 @@ export default function Portfolio() {
                 for you.
               </p>
               <Button variant="primary" href="/contact">
-                Get in Touch <span className="inline-block">→</span>
+                Get in Touch <span className="inline-block" aria-hidden="true">→</span>
               </Button>
             </div>
           </ScrollReveal>

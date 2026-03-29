@@ -105,7 +105,7 @@ export default function About() {
               <ScrollReveal delay={0.4}>
                 <Button variant="primary" href="/contact">
                   Let&apos;s Work Together{" "}
-                  <span className="inline-block">→</span>
+                  <span className="inline-block" aria-hidden="true">→</span>
                 </Button>
               </ScrollReveal>
             </div>
@@ -139,7 +139,7 @@ export default function About() {
                 href={CTA_BANNER.cta.href}
                 className="relative"
               >
-                {CTA_BANNER.cta.label} <span className="inline-block">→</span>
+                {CTA_BANNER.cta.label} <span className="inline-block" aria-hidden="true">→</span>
               </Button>
             </div>
           </ScrollReveal>

@@ -25,9 +25,9 @@ export function TestimonialsSection() {
             <ScrollReveal key={testimonial.name} delay={i * 0.1}>
               <article className="rounded-[20px] border border-brand-border bg-brand-surface px-8 py-9">
                 {/* Stars */}
-                <div className="mb-4.5 text-[0.95rem] tracking-[2px] text-brand-accent">
+                <div className="mb-4.5 text-[0.95rem] tracking-[2px] text-brand-accent" aria-label={`${testimonial.rating} out of 5 stars`}>
                   {Array.from({ length: testimonial.rating }, (_, j) => (
-                    <span key={j}>★</span>
+                    <span key={j} aria-hidden="true">★</span>
                   ))}
                 </div>
 
