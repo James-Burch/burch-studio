@@ -60,8 +60,8 @@ export function AuditForm() {
   // Success state
   if (status === "success") {
     return (
-      <div className="rounded-2xl border border-brand-success/20 bg-brand-success/5 p-10 text-center">
-        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-brand-success/10 text-2xl">
+      <div className="rounded-2xl border border-brand-success/20 bg-brand-success/5 p-10 text-center" role="status" aria-live="polite">
+        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-brand-success/10 text-2xl" aria-hidden="true">
           ✓
         </div>
         <p className="font-display text-lg font-bold text-text-heading">
@@ -222,7 +222,7 @@ export function AuditForm() {
         className="w-full sm:w-auto"
       >
         {status === "loading" ? "Sending..." : "Request Free Audit"}{" "}
-        {status !== "loading" && <span className="inline-block">→</span>}
+        {status !== "loading" && <span className="inline-block" aria-hidden="true">→</span>}
       </Button>
 
       {/* Error message */}

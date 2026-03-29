@@ -58,7 +58,7 @@ export default function Services() {
                   <div className="absolute top-0 right-0 left-0 h-0.75 origin-left scale-x-0 bg-brand-accent transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-x-100" />
 
                   {/* Icon */}
-                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[14px] bg-brand-accent-dim text-brand-accent">
+                  <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-[14px] bg-brand-accent-dim text-brand-accent" aria-hidden="true">
                     <service.icon className="h-6 w-6" />
                   </div>
 
@@ -73,7 +73,7 @@ export default function Services() {
                   {/* Link indicator */}
                   <span className="inline-flex items-center gap-1.5 text-[0.88rem] font-semibold text-brand-accent transition-[gap] duration-300 group-hover:gap-2.5">
                     {service.linkText ?? "Learn more"}
-                    <span>→</span>
+                    <span aria-hidden="true">→</span>
                   </span>
                 </Link>
               </ScrollReveal>
@@ -106,7 +106,7 @@ export default function Services() {
                 className="relative"
               >
                 {SERVICES_HUB_BOTTOM_CTA.cta.label}{" "}
-                <span className="inline-block">→</span>
+                <span className="inline-block" aria-hidden="true">→</span>
               </Button>
             </div>
           </ScrollReveal>

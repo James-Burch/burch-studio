@@ -100,7 +100,7 @@ export default function WebApps() {
             {WEB_APPS_SOLUTIONS.map((point, i) => (
               <ScrollReveal key={point.title} delay={i * 0.08} className="flex">
                 <div className="flex flex-col rounded-2xl border border-brand-border bg-brand-surface p-7">
-                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-accent-dim text-sm font-bold text-brand-accent">
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-accent-dim text-sm font-bold text-brand-accent" aria-hidden="true">
                     ✓
                   </div>
                   <h3 className="mb-2 font-display text-[1.05rem] font-bold tracking-[-0.02em] text-text-heading">
@@ -179,7 +179,7 @@ export default function WebApps() {
                 leadership on an existing project — let&apos;s talk.
               </p>
               <Button variant="primary" href="/contact" className="relative">
-                Get in Touch <span className="inline-block">→</span>
+                Get in Touch <span className="inline-block" aria-hidden="true">→</span>
               </Button>
             </div>
           </ScrollReveal>

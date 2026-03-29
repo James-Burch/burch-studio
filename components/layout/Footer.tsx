@@ -44,7 +44,7 @@ export function Footer() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[0.88rem] text-text-muted transition-colors duration-300 hover:text-text-heading"
+                        className="inline-block py-1 text-[0.88rem] text-text-muted transition-colors duration-300 hover:text-text-heading"
                       >
                         {link.label}
                       </a>
@@ -55,7 +55,7 @@ export function Footer() {
                     ) : (
                       <Link
                         href={link.href}
-                        className="text-[0.88rem] text-text-muted transition-colors duration-300 hover:text-text-heading"
+                        className="inline-block py-1 text-[0.88rem] text-text-muted transition-colors duration-300 hover:text-text-heading"
                       >
                         {link.label}
                       </Link>

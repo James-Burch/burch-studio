@@ -35,7 +35,7 @@ export function CTABanner() {
               href={CTA_BANNER.cta.href}
               className="relative"
             >
-              {CTA_BANNER.cta.label} <span className="inline-block">→</span>
+              {CTA_BANNER.cta.label} <span className="inline-block" aria-hidden="true">→</span>
             </Button>
           </div>
         </ScrollReveal>

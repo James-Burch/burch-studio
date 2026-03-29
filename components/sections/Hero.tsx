@@ -42,7 +42,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
-            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand-accent" />
+            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-brand-accent" aria-hidden="true" />
             {HERO.tag}
           </motion.div>
 
@@ -98,12 +98,12 @@ export function Hero() {
           >
             <Button variant="primary" href={HERO.primaryCTA.href}>
               {HERO.primaryCTA.label}{" "}
-              <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5">
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-0.5" aria-hidden="true">
                 →
               </span>
             </Button>
             <Button variant="secondary" href={HERO.secondaryCTA.href}>
-              {HERO.secondaryCTA.label} <span className="inline-block">↓</span>
+              {HERO.secondaryCTA.label} <span className="inline-block" aria-hidden="true">↓</span>
             </Button>
           </motion.div>
         </div>

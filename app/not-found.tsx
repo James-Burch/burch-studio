@@ -15,7 +15,7 @@ export default function NotFound() {
       </p>
       <div className="flex flex-wrap justify-center gap-3.5">
         <Button variant="primary" href="/">
-          Back to Home <span className="inline-block">→</span>
+          Back to Home <span className="inline-block" aria-hidden="true">→</span>
         </Button>
         <Button variant="secondary" href="/contact">
           Get in Touch

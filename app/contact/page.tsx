@@ -67,7 +67,7 @@ export default function Contact() {
                       </p>
                       <a
                         href={`mailto:${SITE_CONFIG.email}`}
-                        className="text-[0.95rem] text-brand-accent transition-colors duration-200 hover:text-brand-accent-hover"
+                        className="inline-block py-1 text-[0.95rem] text-brand-accent transition-colors duration-200 hover:text-brand-accent-hover"
                       >
                         {SITE_CONFIG.email}
                       </a>
@@ -78,7 +78,7 @@ export default function Contact() {
                       </p>
                       <a
                         href={`tel:${SITE_CONFIG.phone.replace(/\s/g, "")}`}
-                        className="text-[0.95rem] text-brand-accent transition-colors duration-200 hover:text-brand-accent-hover"
+                        className="inline-block py-1 text-[0.95rem] text-brand-accent transition-colors duration-200 hover:text-brand-accent-hover"
                       >
                         {SITE_CONFIG.phone}
                       </a>
