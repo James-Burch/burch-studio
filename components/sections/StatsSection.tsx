@@ -1,6 +1,7 @@
 import { STATS_HEADER, STATS } from "@/lib/constants";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { StatCounter } from "@/components/ui/StatCounter";
 
 // ==========================================
 // COMPONENT
@@ -33,7 +34,7 @@ export function StatsSection() {
                 )}
 
                 <p className="mb-2.5 font-display text-[clamp(2.2rem,5vw,3.4rem)] font-bold leading-none tracking-[-0.04em] text-brand-accent">
-                  {stat.value}
+                  <StatCounter value={stat.value} />
                 </p>
                 <p className="mx-auto max-w-45 text-[0.88rem] leading-normal text-text-muted">
                   {stat.label}
