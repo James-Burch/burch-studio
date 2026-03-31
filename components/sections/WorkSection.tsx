@@ -72,14 +72,16 @@ export function WorkSection() {
                   <div className="lg:justify-self-end">
                     {project.image ? (
                       <div className="overflow-hidden rounded-2xl border border-brand-border bg-brand-bg lg:max-w-[28rem]">
-                        <Image
-                          src={project.image}
-                          alt={project.imageAlt ?? `${project.title} project preview`}
-                          width={1448}
-                          height={1084}
-                          sizes="(min-width: 1024px) 448px, (min-width: 768px) 40vw, 100vw"
-                          className="block h-auto w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
-                        />
+                        <div className="aspect-[4/3]">
+                          <Image
+                            src={project.image}
+                            alt={project.imageAlt ?? `${project.title} project preview`}
+                            width={1448}
+                            height={1084}
+                            sizes="(min-width: 1024px) 448px, (min-width: 768px) 40vw, 100vw"
+                            className="block h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                          />
+                        </div>
                       </div>
                     ) : project.stats ? (
                       <div className="overflow-hidden rounded-2xl border border-brand-border bg-brand-bg lg:max-w-[28rem]">
