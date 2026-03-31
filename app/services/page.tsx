@@ -40,7 +40,7 @@ export default function Services() {
         subtext={SERVICES_HUB_HERO.subtext}
       />
 
-      {/* Service cards — larger versions */}
+      {/* Service cards - larger versions */}
       <section className="pb-25 md:pb-32">
         <div className="mx-auto max-w-300 px-5 sm:px-8 lg:px-10">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">

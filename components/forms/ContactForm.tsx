@@ -33,7 +33,7 @@ export function ContactForm() {
   });
 
   const onSubmit = async (data: ContactFormData) => {
-    // Honeypot check — bots fill hidden fields
+    // Honeypot check - bots fill hidden fields
     if (data.honeypot) return;
 
     setStatus("loading");
@@ -81,7 +81,7 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-5">
-      {/* Honeypot — hidden from real users */}
+      {/* Honeypot - hidden from real users */}
       <div className="absolute -left-2499.75" aria-hidden="true">
         <label htmlFor="honeypot">
           Do not fill this field

@@ -31,7 +31,7 @@ export function ScrollReveal({
   const isInView = useInView(ref, { once, margin: "0px 0px -40px 0px" });
   const prefersReducedMotion = useReducedMotion();
 
-  // Respect prefers-reduced-motion — render children immediately
+  // Respect prefers-reduced-motion - render children immediately
   if (prefersReducedMotion) {
     return <div className={className}>{children}</div>;
   }

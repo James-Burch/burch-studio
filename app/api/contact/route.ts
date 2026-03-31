@@ -136,11 +136,11 @@ export async function POST(request: Request) {
       );
     }
 
-    // Honeypot check — if this field has a value, it's a bot
+    // Honeypot check - if this field has a value, it's a bot
     if (body && typeof body === "object" && "honeypot" in body) {
       const honeypot = (body as Record<string, unknown>).honeypot;
       if (typeof honeypot === "string" && honeypot.length > 0) {
-        // Silently accept — don't reveal the trap
+        // Silently accept - don't reveal the trap
         return NextResponse.json({ success: true }, { status: 200 });
       }
     }
@@ -177,12 +177,12 @@ export async function POST(request: Request) {
     const { error: replyError } = await resend.emails.send({
       from: FROM_EMAIL,
       to: data.email,
-      subject: "Thanks for getting in touch — Burch Studio",
+      subject: "Thanks for getting in touch - Burch Studio",
       html: autoReplyEmail(data),
     });
 
     if (replyError) {
-      // Log but don't fail — the notification was sent successfully
+      // Log but don't fail - the notification was sent successfully
       console.error("Failed to send auto-reply:", replyError);
     }
 

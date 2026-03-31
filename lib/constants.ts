@@ -54,18 +54,18 @@ export const NAV_CTA = {
 } as const;
 
 // ==========================================
-// HOME PAGE — META
+// HOME PAGE - META
 // ==========================================
 
 export const HOME_META: PageMeta = {
-  title: "Burch Studio — Web Design & Development | UK",
+  title: "Burch Studio - Web Design & Development | UK",
   description:
     "Modern websites and web applications for businesses of all sizes. From trade business sites to full-scale SaaS platforms, built to perform.",
   canonical: SITE_CONFIG.url,
 };
 
 // ==========================================
-// HOME PAGE — HERO
+// HOME PAGE - HERO
 // ==========================================
 
 export const HERO = {
@@ -79,7 +79,7 @@ export const HERO = {
 } as const;
 
 // ==========================================
-// HOME PAGE — TRUSTED BY
+// HOME PAGE - TRUSTED BY
 // ==========================================
 
 export const TRUSTED_BY = {
@@ -88,7 +88,7 @@ export const TRUSTED_BY = {
 } as const;
 
 // ==========================================
-// HOME PAGE — SELECTED WORK
+// HOME PAGE - SELECTED WORK
 // ==========================================
 
 export const WORK_SECTION_HEADER: SectionHeader = {
@@ -133,7 +133,7 @@ export const WORK_PROJECTS: WorkProject[] = [
 ];
 
 // ==========================================
-// HOME PAGE — HOW WE WORK
+// HOME PAGE - HOW WE WORK
 // ==========================================
 
 export const HOW_WE_WORK = {
@@ -147,14 +147,14 @@ export const HOW_WE_WORK = {
 } as const;
 
 // ==========================================
-// HOME PAGE — PROBLEMS
+// HOME PAGE - PROBLEMS
 // ==========================================
 
 export const PROBLEMS_HEADER: SectionHeader = {
   label: "The Problem",
   heading: "Your website might be costing you customers.",
   subtext:
-    "We audit trade businesses every week. These are the issues we find most — and every one of them is losing you work.",
+    "We audit trade businesses every week. These are the issues we find most, and every one of them is losing you work.",
 };
 
 export const PROBLEMS: ProblemCardData[] = [
@@ -169,7 +169,7 @@ export const PROBLEMS: ProblemCardData[] = [
     icon: LockOpen,
     title: "No SSL security",
     description:
-      'Browsers show a "Not Secure" warning before customers even see your site. Many won\'t click past it — and Google penalises you for it.',
+      'Browsers show a "Not Secure" warning before customers even see your site. Many won\'t click past it, and Google penalises you for it.',
     stat: "Google has penalised non-HTTPS sites since 2014",
   },
   {
@@ -189,14 +189,14 @@ export const PROBLEMS: ProblemCardData[] = [
 ];
 
 // ==========================================
-// HOME PAGE — SERVICES OVERVIEW
+// HOME PAGE - SERVICES OVERVIEW
 // ==========================================
 
 export const SERVICES_HEADER: SectionHeader = {
   label: "What We Do",
   heading: "Here's how we help.",
   subtext:
-    "Whether you need a website that wins local customers or a platform that scales to thousands of users — we've got you covered.",
+    "Whether you need a website that wins local customers or a platform that scales to thousands of users, we've got you covered.",
 };
 
 export const SERVICES: ServiceCardData[] = [
@@ -235,7 +235,7 @@ export const SERVICES: ServiceCardData[] = [
 ];
 
 // ==========================================
-// HOME PAGE — STATS (PRD Section 6.2 — exact values only)
+// HOME PAGE - STATS (PRD Section 6.2 - exact values only)
 // ==========================================
 
 export const STATS_HEADER: SectionHeader = {
@@ -267,7 +267,7 @@ export const STATS: StatData[] = [
 ];
 
 // ==========================================
-// HOME PAGE — TESTIMONIALS
+// HOME PAGE - TESTIMONIALS
 // ==========================================
 
 export const TESTIMONIALS_HEADER: SectionHeader = {
@@ -295,7 +295,7 @@ export const TESTIMONIALS: TestimonialData[] = [
 ];
 
 // ==========================================
-// HOME PAGE — CTA BANNER
+// HOME PAGE - CTA BANNER
 // ==========================================
 
 export const CTA_BANNER = {
@@ -321,13 +321,13 @@ export const SERVICES_HUB_HERO: SectionHeader = {
   label: "Our Services",
   heading: "Everything you need to succeed online.",
   subtext:
-    "From a website that wins you work, to SEO that gets you found, to full-scale web applications — we build it all.",
+    "From a website that wins you work, to SEO that gets you found, to full-scale web applications, we build it all.",
 };
 
 export const SERVICES_HUB_BOTTOM_CTA = {
   heading: "Not sure what you need?",
   subtext:
-    "No worries — get in touch and we'll work it out together. No pressure, no jargon.",
+    "No worries, get in touch and we'll work it out together. No pressure, no jargon.",
   cta: { label: "Let's Chat", href: "/contact" },
 } as const;
 
@@ -346,7 +346,7 @@ export const WEB_DESIGN_HERO: SectionHeader = {
   label: "Website Design & Development",
   heading: "A website that works as hard as you do.",
   subtext:
-    "Custom-built, mobile-first websites for trade businesses — designed to load fast, rank on Google, and turn visitors into customers.",
+    "Custom-built, mobile-first websites for trade businesses, designed to load fast, rank on Google, and turn visitors into customers.",
 };
 
 export const WEB_DESIGN_PROBLEMS_HEADER: SectionHeader = {
@@ -420,7 +420,7 @@ export const WEB_DESIGN_PROCESS: ProcessStepData[] = [
     number: 3,
     title: "Build",
     description:
-      "Clean, fast code with SEO baked in. No page builders, no bloat — just performance.",
+      "Clean, fast code with SEO baked in. No page builders, no bloat, just performance.",
   },
   {
     number: 4,
@@ -462,10 +462,10 @@ export const SEO_PROBLEMS_HEADER: SectionHeader = {
 };
 
 export const SEO_PROBLEM_LIST = [
-  "No local keywords — Google doesn't know where you work or what you do",
-  "Thin content — pages with a few sentences give Google nothing to rank",
-  "No Google Business Profile — you're missing from Maps and local results",
-  "Poor mobile experience — Google uses mobile-first indexing since 2024",
+  "No local keywords - Google doesn't know where you work or what you do",
+  "Thin content - pages with a few sentences give Google nothing to rank",
+  "No Google Business Profile - you're missing from Maps and local results",
+  "Poor mobile experience - Google uses mobile-first indexing since 2024",
 ] as const;
 
 export const SEO_SOLUTION_HEADER: SectionHeader = {
@@ -479,7 +479,7 @@ export const SEO_SOLUTIONS: SolutionPoint[] = [
   {
     title: "Local keyword targeting",
     description:
-      'We optimise your site for the searches your customers actually make — "plumber Peterborough", "emergency electrician near me", and more.',
+      'We optimise your site for the searches your customers actually make, like "plumber Peterborough" and "emergency electrician near me".',
   },
   {
     title: "Google Business Profile",
@@ -489,7 +489,7 @@ export const SEO_SOLUTIONS: SolutionPoint[] = [
   {
     title: "Technical SEO",
     description:
-      "Page speed, SSL, structured data, meta tags — the behind-the-scenes work that tells Google your site is trustworthy.",
+      "Page speed, SSL, structured data, and meta tags. This is the behind-the-scenes work that tells Google your site is trustworthy.",
   },
   {
     title: "Content that ranks",
@@ -536,8 +536,8 @@ export const BRANDING_PROBLEMS_HEADER: SectionHeader = {
 export const BRANDING_PROBLEM_LIST = [
   "A Gmail or Outlook email address instead of info@yourbusiness.co.uk",
   '"Not Secure" warnings in the browser because there\'s no SSL certificate',
-  "Inconsistent branding — different logos, colours, and fonts everywhere",
-  "No Google Business Profile — invisible on Maps and local search",
+  "Inconsistent branding - different logos, colours, and fonts everywhere",
+  "No Google Business Profile - invisible on Maps and local search",
 ] as const;
 
 export const BRANDING_SOLUTION_HEADER: SectionHeader = {
@@ -551,7 +551,7 @@ export const BRANDING_SOLUTIONS: SolutionPoint[] = [
   {
     title: "Custom domain",
     description:
-      "Your own .co.uk domain that's easy to remember and looks professional — no more freebie URLs.",
+      "Your own .co.uk domain that's easy to remember and looks professional, with no more freebie URLs.",
   },
   {
     title: "Professional email",
@@ -571,7 +571,7 @@ export const BRANDING_SOLUTIONS: SolutionPoint[] = [
   {
     title: "Google Business Profile",
     description:
-      "Show up on Google Maps with your hours, reviews, and contact details — where customers actually look.",
+      "Show up on Google Maps with your hours, reviews, and contact details, where customers actually look.",
   },
   {
     title: "Social media setup",
@@ -587,7 +587,7 @@ export const BRANDING_SOLUTIONS: SolutionPoint[] = [
 export const ABOUT_META: PageMeta = {
   title: "About Burch Studio | Web Developer Peterborough",
   description:
-    "Burch Studio — a UK-based web development studio helping businesses succeed online with modern websites and scalable web applications.",
+    "Burch Studio is a UK-based web development studio helping businesses succeed online with modern websites and scalable web applications.",
   canonical: `${SITE_CONFIG.url}/about`,
 };
 
@@ -606,7 +606,7 @@ export const ABOUT_CONTENT = {
   whyTrades:
     "We work with trade businesses because the gap between the quality of their work and the quality of their online presence is massive. A plumber who's been in the game for 20 years shouldn't be losing jobs to a competitor with a flashier website.",
   whySaas:
-    "On the other side, we build and lead development on complex web applications — multi-tenant platforms with event-driven architectures, role-based access control, background job pipelines, and strict security requirements. We bring the same clarity and discipline to both.",
+    "On the other side, we build and lead development on complex web applications, including multi-tenant platforms with event-driven architectures, role-based access control, background job pipelines, and strict security requirements. We bring the same clarity and discipline to both.",
   approach:
     "We keep things simple. No jargon, no unnecessary features, no surprise invoices. Just honest conversations about what your business needs and software that delivers it.",
   techNote:
@@ -628,7 +628,7 @@ export const CONTACT_HERO: SectionHeader = {
   label: "Get in Touch",
   heading: "Let's talk about your website.",
   subtext:
-    "Whether you need a new site, better SEO, or just want to know where you stand — get in touch and we'll get back to you within 24 hours.",
+    "Whether you need a new site, better SEO, or just want to know where you stand, get in touch and we'll get back to you within 24 hours.",
 };
 
 export const CONTACT_FORM = {
@@ -641,7 +641,7 @@ export const CONTACT_FAQS: FAQItem[] = [
   {
     question: "How much does a website cost?",
     answer:
-      "Every project is different, but most trade business websites start from a few hundred pounds. We'll give you an honest quote after understanding what you need — no hidden fees.",
+      "Every project is different, but most trade business websites start from a few hundred pounds. We'll give you an honest quote after understanding what you need, with no hidden fees.",
   },
   {
     question: "How long does it take?",
@@ -656,12 +656,12 @@ export const CONTACT_FAQS: FAQItem[] = [
   {
     question: "Will my site work on mobile?",
     answer:
-      "Absolutely — every site we build is mobile-first. That means it's designed for phones first, then enhanced for tablets and desktops.",
+      "Absolutely. Every site we build is mobile-first. That means it's designed for phones first, then enhanced for tablets and desktops.",
   },
   {
     question: "What about hosting and domains?",
     answer:
-      "We handle everything — domain registration, hosting setup, SSL certificates, and professional email. You don't need to worry about the technical stuff.",
+      "We handle everything: domain registration, hosting setup, SSL certificates, and professional email. You don't need to worry about the technical stuff.",
   },
 ];
 
@@ -689,7 +689,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     title: "Private SaaS Client",
     category: "SaaS Platform",
     description:
-      "A live company intelligence platform for UK businesses. Real-time monitoring of financial health, risk signals, and corporate events — powered by AI-generated analysis and multi-source data pipelines.",
+      "A live company intelligence platform for UK businesses. Real-time monitoring of financial health, risk signals, and corporate events, powered by AI-generated analysis and multi-source data pipelines.",
     image: "/images/private-saas.webp",
     technologies: [
       "Next.js",
@@ -704,7 +704,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     problem:
       "Businesses trading with, lending to, or depending on UK companies had no simple way to monitor financial health and risk signals in real time. Existing tools were fragmented, expensive, and required manual effort to interpret raw filings and corporate data.",
     solution:
-      "Designed and built the entire platform from scratch — architecture, frontend, API, background workers, and AI integration. The system pulls data from Companies House, The Gazette, and news sources into a unified feed. AI extracts financial data from both digital and paper filings, scores company health using established models, and generates plain-English summaries of every detected change. Multi-tenant with role-based access, configurable alerts, and a report builder for meeting-ready PDFs.",
+      "Designed and built the entire platform from scratch: architecture, frontend, API, background workers, and AI integration. The system pulls data from Companies House, The Gazette, and news sources into a unified feed. AI extracts financial data from both digital and paper filings, scores company health using established models, and generates plain-English summaries of every detected change. Multi-tenant with role-based access, configurable alerts, and a report builder for meeting-ready PDFs.",
     results: [
       "Live platform serving real users in production",
       "100+ API endpoints, 30+ background job processors, 40+ UI pages",
@@ -724,7 +724,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     problem:
       "A mortgage broker with no website at all, relying entirely on word of mouth and referrals. Potential clients had no way to find them online, understand their services, or get in touch outside of business hours.",
     solution:
-      "Designed and developed a conversion-focused website with clean, professional design. Implemented an interactive mortgage calculator, multi-step lead generation forms, clear service pages, and a testimonials section — all optimised for search engines and mobile devices.",
+      "Designed and developed a conversion-focused website with clean, professional design. Implemented an interactive mortgage calculator, multi-step lead generation forms, clear service pages, and a testimonials section, all optimised for search engines and mobile devices.",
     results: [
       "First professional web presence for the business",
       "Generating inbound enquiries from day one",
@@ -749,7 +749,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "First online presence for the business",
       "Customers can now check services and pricing anytime",
       "Direct Booksy integration drives online bookings",
-      "Mobile-first design — works perfectly on phones",
+      "Mobile-first design - works perfectly on phones",
     ],
   },
 ];
@@ -769,7 +769,7 @@ export const WEB_APPS_HERO: SectionHeader = {
   label: "Web Applications & SaaS",
   heading: "Software built to scale.",
   subtext:
-    "Full-stack web applications and SaaS platforms — architected for growth, engineered for reliability, built with modern TypeScript.",
+    "Full-stack web applications and SaaS platforms, architected for growth, engineered for reliability, and built with modern TypeScript.",
 };
 
 export const WEB_APPS_PROBLEMS_HEADER: SectionHeader = {
@@ -781,7 +781,7 @@ export const WEB_APPS_PROBLEMS_HEADER: SectionHeader = {
 
 export const WEB_APPS_PROBLEM_LIST = [
   "Rushed architecture that crumbles when real users arrive",
-  "No separation of concerns — everything tangled together",
+  "No separation of concerns - everything tangled together",
   "Security as an afterthought, not a foundation",
   "No plan for scaling beyond the first version",
 ] as const;
@@ -807,7 +807,7 @@ export const WEB_APPS_SOLUTIONS: SolutionPoint[] = [
   {
     title: "Secure by design",
     description:
-      "Role-based access control, secure authentication flows, audit logging, and encryption built in from the start — not bolted on later.",
+      "Role-based access control, secure authentication flows, audit logging, and encryption built in from the start, not bolted on later.",
   },
   {
     title: "Database design",
