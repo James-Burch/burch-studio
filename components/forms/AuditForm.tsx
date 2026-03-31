@@ -97,7 +97,7 @@ export function AuditForm() {
         </p>
         <p className="text-[0.92rem] leading-[1.6] text-text-muted">
           Enter your website URL and we&apos;ll send you a free audit covering
-          mobile-friendliness, speed, SEO, and security.
+          mobile-friendliness, speed, SEO and security.
         </p>
       </div>
 

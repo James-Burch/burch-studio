@@ -34,7 +34,7 @@ export function LocalBusinessJsonLd() {
     email: SITE_CONFIG.email,
     telephone: SITE_CONFIG.phone,
     description:
-      "Web design, development, SEO, and branding for businesses of all sizes. From trade business websites to full-scale SaaS platforms.",
+      "Web design, development, SEO and branding for businesses of all sizes. From trade business websites to full-scale SaaS platforms.",
     areaServed: {
       "@type": "Country",
       name: "United Kingdom",

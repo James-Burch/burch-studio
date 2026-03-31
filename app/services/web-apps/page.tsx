@@ -125,8 +125,8 @@ export default function WebApps() {
           <ScrollReveal className="mb-12">
             <SectionHeading
               label="The Stack"
-              heading="Built with serious tools."
-              subtext="The same technologies used by the best engineering teams in the world."
+              heading="Chosen for reliability."
+              subtext="Modern tools selected to keep the product fast, maintainable and dependable as the service grows."
             />
           </ScrollReveal>
 
@@ -172,11 +172,12 @@ export default function WebApps() {
                 id="webapps-cta-heading"
                 className="relative mb-4 font-display text-[clamp(1.8rem,4vw,2.8rem)] font-bold tracking-[-0.035em] text-text-heading"
               >
-                Got a project in mind?
+                Need a platform you can trust?
               </h2>
               <p className="relative mx-auto mb-9 max-w-125 text-[1.08rem] leading-[1.7] text-text-muted">
-                Whether you need a full platform built from scratch or technical
-                leadership on an existing project, let&apos;s talk.
+                If you&apos;re building a serious service and need the platform
+                to match, we can help with the architecture, product thinking,
+                and delivery.
               </p>
               <Button variant="primary" href="/contact" className="relative">
                 Get in Touch <span className="inline-block" aria-hidden="true">→</span>

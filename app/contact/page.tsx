@@ -58,7 +58,7 @@ export default function Contact() {
                 {/* Direct contact */}
                 <div className="rounded-2xl border border-brand-border bg-brand-surface p-7">
                   <h2 className="mb-5 font-display text-lg font-bold text-text-heading">
-                    Direct contact
+                    Talk to us directly
                   </h2>
                   <div className="space-y-4">
                     <div>
@@ -97,11 +97,11 @@ export default function Contact() {
                 {/* Response time */}
                 <div className="rounded-2xl border border-brand-border bg-brand-surface p-7">
                   <h2 className="mb-3 font-display text-lg font-bold text-text-heading">
-                    Response time
+                    What happens next
                   </h2>
                   <p className="text-[0.92rem] leading-[1.65] text-text-muted">
-                    We aim to get back to every enquiry within 24 hours. If
-                    it&apos;s urgent, give us a call.
+                    We aim to reply within 24 hours with a clear next step. If
+                    it&apos;s urgent, call and we&apos;ll pick it up faster.
                   </p>
                 </div>
               </div>
@@ -121,7 +121,7 @@ export default function Contact() {
               id="faq-heading"
               className="font-display text-[clamp(1.8rem,3.5vw,2.5rem)] font-bold tracking-[-0.035em] text-text-heading"
             >
-              Frequently asked questions
+              Questions people usually ask
             </h2>
           </ScrollReveal>
 

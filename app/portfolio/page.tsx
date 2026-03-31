@@ -48,93 +48,108 @@ export default function Portfolio() {
             {PORTFOLIO_PROJECTS.map((project, i) => (
               <ScrollReveal key={project.slug} delay={i * 0.1}>
                 <article className="overflow-hidden rounded-3xl border border-brand-border bg-brand-surface">
-                  {/* Content */}
-                  <div className="px-8 pt-8 lg:px-10 lg:pt-12">
-                    <p className="mb-2 font-display text-[0.78rem] font-bold uppercase tracking-widest text-brand-accent">
-                      {project.category}
-                    </p>
-                    <h2 className="mb-4 font-display text-[clamp(1.6rem,3vw,2.2rem)] font-bold tracking-[-0.035em] text-text-heading">
-                      {project.title}
-                    </h2>
-                    <p className="mb-6 text-[0.95rem] leading-[1.7] text-text-muted">
-                      {project.description}
-                    </p>
+                  <div className="grid grid-cols-1 lg:grid-cols-[minmax(340px,0.9fr)_minmax(0,1.1fr)] lg:items-start">
+                    {/* Content */}
+                    <div
+                      className={`px-8 pt-8 lg:px-10 lg:pt-12 lg:pb-10 ${
+                        i % 2 === 0 ? "lg:order-1" : "lg:order-2"
+                      }`}
+                    >
+                      <p className="mb-2 font-display text-[0.78rem] font-bold uppercase tracking-widest text-brand-accent">
+                        {project.category}
+                      </p>
+                      <h2 className="mb-4 font-display text-[clamp(1.6rem,3vw,2.2rem)] font-bold tracking-[-0.035em] text-text-heading">
+                        {project.title}
+                      </h2>
+                      <p className="mb-6 text-[0.95rem] leading-[1.7] text-text-muted">
+                        {project.description}
+                      </p>
 
-                    {/* Tech tags */}
-                    <div className="mb-6 flex flex-wrap gap-2" role="list" aria-label="Technologies used">
-                      {project.technologies.map((tech) => (
-                        <span
-                          key={tech}
-                          role="listitem"
-                          className="rounded-md border border-brand-border bg-brand-surface-elevated px-2.5 py-1 text-[0.75rem] font-medium text-text-muted"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-
-                    {/* Problem → Solution */}
-                    <div className="mb-6 space-y-4">
-                      <div>
-                        <h3 className="mb-1.5 text-[0.82rem] font-bold uppercase tracking-widest text-red">
-                          The Problem
-                        </h3>
-                        <p className="text-[0.88rem] leading-[1.65] text-text-muted">
-                          {project.problem}
-                        </p>
-                      </div>
-                      <div>
-                        <h3 className="mb-1.5 text-[0.82rem] font-bold uppercase tracking-widest text-brand-accent">
-                          The Solution
-                        </h3>
-                        <p className="text-[0.88rem] leading-[1.65] text-text-muted">
-                          {project.solution}
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Results */}
-                    <div className="mb-8 rounded-xl border border-brand-border bg-brand-surface-elevated p-5">
-                      <h3 className="mb-3 text-[0.82rem] font-bold uppercase tracking-widest text-text-heading">
-                        Results
-                      </h3>
-                      <ul className="space-y-2">
-                        {project.results.map((result) => (
-                          <li
-                            key={result}
-                            className="flex items-start gap-2.5 text-[0.88rem] leading-normal text-text-muted"
+                      {/* Tech tags */}
+                      <div className="mb-6 flex flex-wrap gap-2" role="list" aria-label="Technologies used">
+                        {project.technologies.map((tech) => (
+                          <span
+                            key={tech}
+                            role="listitem"
+                            className="rounded-md border border-brand-border bg-brand-surface-elevated px-2.5 py-1 text-[0.75rem] font-medium text-text-muted"
                           >
-                            <span className="mt-0.5 text-brand-accent" aria-hidden="true">✓</span>
-                            {result}
-                          </li>
+                            {tech}
+                          </span>
                         ))}
-                      </ul>
+                      </div>
+
+                      {/* Problem → Solution */}
+                      <div className="mb-6 space-y-4">
+                        <div>
+                          <h3 className="mb-1.5 text-[0.82rem] font-bold uppercase tracking-widest text-red">
+                            The Problem
+                          </h3>
+                          <p className="text-[0.88rem] leading-[1.65] text-text-muted">
+                            {project.problem}
+                          </p>
+                        </div>
+                        <div>
+                          <h3 className="mb-1.5 text-[0.82rem] font-bold uppercase tracking-widest text-brand-accent">
+                            The Solution
+                          </h3>
+                          <p className="text-[0.88rem] leading-[1.65] text-text-muted">
+                            {project.solution}
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Link */}
+                      {project.liveUrl && (
+                        <Button
+                          variant="secondary"
+                          href={project.liveUrl}
+                          className="w-fit"
+                          ariaLabel={`View live site: ${project.title}`}
+                        >
+                          View Live Site <span className="inline-block" aria-hidden="true">↗</span>
+                        </Button>
+                      )}
                     </div>
 
-                    {/* Link */}
-                    {project.liveUrl && (
-                      <Button
-                        variant="secondary"
-                        href={project.liveUrl}
-                        className="w-fit"
-                        ariaLabel={`View live site: ${project.title}`}
-                      >
-                        View Live Site <span className="inline-block" aria-hidden="true">↗</span>
-                      </Button>
-                    )}
-                  </div>
+                    {/* Image */}
+                    <div
+                      className={`bg-brand-bg p-6 sm:p-8 lg:h-full lg:p-8 ${
+                        i % 2 === 0
+                          ? "lg:order-2 lg:border-l lg:border-brand-border"
+                          : "lg:order-1 lg:border-r lg:border-brand-border"
+                      }`}
+                    >
+                      <div className="mx-auto max-w-170 lg:sticky lg:top-28 lg:max-w-none">
+                        <div className="overflow-hidden rounded-xl border border-brand-border">
+                          <div className="aspect-[4/3]">
+                            <Image
+                              src={project.image}
+                              alt={`${project.title} website screenshot`}
+                              width={1448}
+                              height={1084}
+                              className="block h-full w-full object-cover object-top"
+                              sizes="(max-width: 1024px) 100vw, 42vw"
+                            />
+                          </div>
+                        </div>
 
-                  {/* Image */}
-                  <div className="bg-brand-bg p-6 sm:p-8 lg:p-10">
-                    <div className="overflow-hidden rounded-xl border border-brand-border">
-                      <Image
-                        src={project.image}
-                        alt={`${project.title} website screenshot`}
-                        width={1448}
-                        height={1084}
-                        className="block w-full"
-                        sizes="(max-width: 1024px) 100vw, 80vw"
-                      />
+                        <div className="mt-5 rounded-xl border border-brand-border bg-brand-surface-elevated p-5">
+                          <h3 className="mb-3 text-[0.82rem] font-bold uppercase tracking-widest text-text-heading">
+                            Results
+                          </h3>
+                          <ul className="space-y-2">
+                            {project.results.map((result) => (
+                              <li
+                                key={result}
+                                className="flex items-start gap-2.5 text-[0.88rem] leading-normal text-text-muted"
+                              >
+                                <span className="mt-0.5 text-brand-accent" aria-hidden="true">✓</span>
+                                {result}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </article>
@@ -146,8 +161,8 @@ export default function Portfolio() {
           <ScrollReveal>
             <div className="mt-20 text-center">
               <p className="mb-6 text-[1.05rem] leading-[1.7] text-text-muted">
-                Got a project in mind? Let&apos;s talk about what we can build
-                for you.
+                If you want work that reflects the standard of your business or
+                product, let&apos;s talk about what needs building.
               </p>
               <Button variant="primary" href="/contact">
                 Get in Touch <span className="inline-block" aria-hidden="true">→</span>
