@@ -1,6 +1,7 @@
 import { Hero } from "@/components/sections/Hero";
-import { ProblemSection } from "@/components/sections/ProblemSection";
-import { ServicesSection } from "@/components/sections/ServicesSection";
+import { TrustedBy } from "@/components/sections/TrustedBy";
+import { WorkSection } from "@/components/sections/WorkSection";
+import { HowWeWork } from "@/components/sections/HowWeWork";
 import { StatsSection } from "@/components/sections/StatsSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTABanner } from "@/components/sections/CTABanner";
@@ -12,8 +13,9 @@ export default function Home() {
       <LocalBusinessJsonLd />
       <BreadcrumbJsonLd items={[]} />
       <Hero />
-      <ProblemSection />
-      <ServicesSection />
+      <TrustedBy />
+      <WorkSection />
+      <HowWeWork />
       <StatsSection />
       <TestimonialsSection />
       <CTABanner />

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { cn } from "@/lib/utils";
 import { HERO } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 
@@ -46,30 +45,21 @@ export function Hero() {
             {HERO.tag}
           </motion.div>
 
-          {/* Headline — word-by-word reveal */}
-          <h1
+          {/* Headline */}
+          <motion.h1
             id="hero-heading"
             className="mb-6 font-display text-[clamp(2.6rem,6.5vw,4.5rem)] font-bold leading-[1.08] tracking-[-0.04em] text-text-heading"
+            initial={prefersReducedMotion ? {} : { opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.7,
+              delay: prefersReducedMotion ? 0 : 0.2,
+              ease: [0.16, 1, 0.3, 1],
+            }}
           >
-            {HERO.headlineWords.map((word, i) => (
-              <motion.span
-                key={i}
-                className={cn(
-                  "mr-[0.3em] inline-block last:mr-0",
-                  word.accent && "text-brand-accent",
-                )}
-                initial={prefersReducedMotion ? {} : { opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                  duration: 0.7,
-                  delay: prefersReducedMotion ? 0 : 0.2 + i * 0.1,
-                  ease: [0.16, 1, 0.3, 1],
-                }}
-              >
-                {word.text}
-              </motion.span>
-            ))}
-          </h1>
+            {HERO.headline}{" "}
+            <span className="text-brand-accent">{HERO.headlineAccent}</span>
+          </motion.h1>
 
           {/* Subtext */}
           <motion.p
@@ -78,7 +68,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.8,
-              delay: prefersReducedMotion ? 0 : 1,
+              delay: prefersReducedMotion ? 0 : 0.5,
               ease: [0.16, 1, 0.3, 1],
             }}
           >
@@ -92,7 +82,7 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.8,
-              delay: prefersReducedMotion ? 0 : 1.2,
+              delay: prefersReducedMotion ? 0 : 0.7,
               ease: [0.16, 1, 0.3, 1],
             }}
           >
@@ -103,7 +93,7 @@ export function Hero() {
               </span>
             </Button>
             <Button variant="secondary" href={HERO.secondaryCTA.href}>
-              {HERO.secondaryCTA.label} <span className="inline-block" aria-hidden="true">↓</span>
+              {HERO.secondaryCTA.label}
             </Button>
           </motion.div>
         </div>

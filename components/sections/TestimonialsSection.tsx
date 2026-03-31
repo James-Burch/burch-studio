@@ -24,31 +24,27 @@ export function TestimonialsSection() {
           {TESTIMONIALS.map((testimonial, i) => (
             <ScrollReveal key={testimonial.name} delay={i * 0.1}>
               <article className="rounded-[20px] border border-brand-border bg-brand-surface px-8 py-9">
-                {/* Stars */}
-                <div className="mb-4.5 text-[0.95rem] tracking-[2px] text-brand-accent" aria-label={`${testimonial.rating} out of 5 stars`}>
-                  {Array.from({ length: testimonial.rating }, (_, j) => (
-                    <span key={j} aria-hidden="true">★</span>
-                  ))}
-                </div>
+                {/* Opening quotation mark */}
+                <span
+                  className="block font-serif text-[4rem] leading-[1] text-brand-accent/15"
+                  aria-hidden="true"
+                >
+                  &ldquo;
+                </span>
 
                 {/* Quote */}
-                <blockquote className="mb-6 text-base leading-[1.75] text-text-primary italic">
-                  &ldquo;{testimonial.quote}&rdquo;
+                <blockquote className="mb-6 -mt-4 text-base leading-[1.75] text-text-primary">
+                  {testimonial.quote}
                 </blockquote>
 
                 {/* Author */}
-                <div className="flex items-center gap-3.5">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-full bg-brand-accent-dim font-display text-[0.9rem] font-bold text-brand-accent">
-                    {testimonial.initials}
-                  </div>
-                  <div>
-                    <p className="text-[0.92rem] font-semibold text-text-heading">
-                      {testimonial.name}
-                    </p>
-                    <p className="text-[0.82rem] text-text-muted">
-                      {testimonial.role}
-                    </p>
-                  </div>
+                <div>
+                  <p className="text-[0.92rem] font-semibold text-text-heading">
+                    {testimonial.name}
+                  </p>
+                  <p className="text-[0.82rem] text-text-muted">
+                    {testimonial.role}
+                  </p>
                 </div>
               </article>
             </ScrollReveal>

@@ -49,8 +49,19 @@ export interface TestimonialData {
   quote: string;
   name: string;
   role: string;
-  initials: string;
-  rating: number;
+  initials?: string;
+  rating?: number;
+}
+
+export interface WorkProject {
+  category: string;
+  categoryColor: string;
+  title: string;
+  description: string;
+  tags: string[];
+  href: string;
+  linkText: string;
+  stats?: string[];
 }
 
 // ==========================================
