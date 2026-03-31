@@ -126,7 +126,7 @@ export default function WebApps() {
             <SectionHeading
               label="The Stack"
               heading="Chosen for reliability."
-              subtext="Modern tools selected to keep the product fast, maintainable, and dependable as the service grows."
+              subtext="Modern tools selected to keep the product fast, maintainable and dependable as the service grows."
             />
           </ScrollReveal>
 

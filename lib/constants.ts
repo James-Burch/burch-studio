@@ -60,7 +60,7 @@ export const NAV_CTA = {
 export const HOME_META: PageMeta = {
   title: "Burch Studio - Web Design & Development | UK",
   description:
-    "Premium websites for businesses that want to be taken seriously, and robust web applications for companies building real digital products.",
+    "Premium websites for businesses that want to be taken seriously and robust web applications for companies building real digital products.",
   canonical: SITE_CONFIG.url,
 };
 
@@ -107,7 +107,7 @@ export const WORK_SECTION_HEADER: SectionHeader = {
   label: "Selected work",
   heading: "Every project has a story.",
   subtext:
-    "Different businesses. Different goals. The same standard of care in how the work is understood, designed, and built.",
+    "Different businesses. Different goals. The same standard of care in how the work is understood, designed and built.",
 };
 
 export const WORK_PROJECTS: WorkProject[] = [
@@ -139,7 +139,7 @@ export const WORK_PROJECTS: WorkProject[] = [
     categoryColor: "#f472b6",
     title: "Refine Barbers",
     description:
-      "A popular barber shop running on word of mouth alone. We gave them a clean, mobile-first website with Booksy booking integration. Now customers can find them, see prices, and book online.",
+      "A popular barber shop running on word of mouth alone. We gave them a clean, mobile-first website with Booksy booking integration. Now customers can find them, see prices and book online.",
     tags: ["React", "Node.js", "CSS"],
     href: "/portfolio",
     linkText: "Read the full story",
@@ -156,8 +156,8 @@ export const HOW_WE_WORK = {
   label: "How we work",
   heading: "Built on trust, not templates.",
   paragraphs: [
-    "Every project starts with understanding the business properly. How you win work, what customers look for, where trust is lost, and what your website or platform needs to do in the real world.",
-    "For service businesses, that means showing the quality of the work, telling the story clearly, and making it easy for the right people to get in touch. For software companies, it means building something stable, clear, and ready to support a real service.",
+    "Every project starts with understanding the business properly. How you win work, what customers look for, where trust is lost and what your website or platform needs to do in the real world.",
+    "For service businesses, that means showing the quality of the work, telling the story clearly and making it easy for the right people to get in touch. For software companies, it means building something stable, clear and ready to support a real service.",
     "We keep the standard high in both worlds. Thoughtful design. Careful engineering. Straight answers. No unnecessary features. No inflated process. No shortcuts that come back to bite later.",
   ],
 } as const;
@@ -170,7 +170,7 @@ export const PROBLEMS_HEADER: SectionHeader = {
   label: "The Problem",
   heading: "Your website might be costing you customers.",
   subtext:
-    "We audit trade businesses every week. These are the issues we find most, and every one of them is losing you work.",
+    "We audit trade businesses every week. These are the issues we find most and every one of them is losing you work.",
 };
 
 export const PROBLEMS: ProblemCardData[] = [
@@ -185,14 +185,14 @@ export const PROBLEMS: ProblemCardData[] = [
     icon: LockOpen,
     title: "No SSL security",
     description:
-      'Browsers show a "Not Secure" warning before customers even see your site. Many won\'t click past it, and Google penalises you for it.',
+      'Browsers show a "Not Secure" warning before customers even see your site. Many won\'t click past it and Google penalises you for it.',
     stat: "Google has penalised non-HTTPS sites since 2014",
   },
   {
     icon: Timer,
     title: "Painfully slow",
     description:
-      "Every second your site takes to load, you lose visitors. Heavy images, old code, and cheap hosting are the usual culprits.",
+      "Every second your site takes to load, you lose visitors. Heavy images, old code and cheap hosting are the usual culprits.",
     stat: "53% of visitors leave after 3 seconds",
   },
   {
@@ -220,7 +220,7 @@ export const SERVICES: ServiceCardData[] = [
     icon: Zap,
     title: "Website Design & Development",
     description:
-      "Custom-built, mobile-first websites that load fast, look professional, and make it effortless for customers to get in touch. No templates. No page builders.",
+      "Custom-built, mobile-first websites that load fast, look professional and make it effortless for customers to get in touch. No templates. No page builders.",
     href: "/services/web-design",
     linkText: "Learn more",
   },
@@ -228,7 +228,7 @@ export const SERVICES: ServiceCardData[] = [
     icon: Search,
     title: "SEO & Google Ranking",
     description:
-      "Get found when it matters. Local SEO, technical optimisation, and content strategy that puts your business in front of the right people.",
+      "Get found when it matters. Local SEO, technical optimisation and content strategy that puts your business in front of the right people.",
     href: "/services/seo",
     linkText: "Learn more",
   },
@@ -236,7 +236,7 @@ export const SERVICES: ServiceCardData[] = [
     icon: Target,
     title: "Branding & Professional Setup",
     description:
-      "Custom domain, professional email, SSL security, and consistent branding that makes your business look as good online as the service you deliver.",
+      "Custom domain, professional email, SSL security and consistent branding that makes your business look as good online as the service you deliver.",
     href: "/services/branding",
     linkText: "Learn more",
   },
@@ -244,7 +244,7 @@ export const SERVICES: ServiceCardData[] = [
     icon: Rocket,
     title: "Web Applications & SaaS",
     description:
-      "Full-stack web applications and SaaS platforms built with Next.js, TypeScript, and PostgreSQL. Scalable architecture, secure by design.",
+      "Full-stack web applications and SaaS platforms built with Next.js, TypeScript and PostgreSQL. Scalable architecture, secure by design.",
     href: "/services/web-apps",
     linkText: "Learn more",
   },
@@ -294,7 +294,7 @@ export const TESTIMONIALS_HEADER: SectionHeader = {
 export const TESTIMONIALS: TestimonialData[] = [
   {
     quote:
-      "We had no website at all before Burch Studio. Now customers can find us online, check our services, and book straight through the site. It's made a real difference to the business.",
+      "We had no website at all before Burch Studio. Now customers can find us online, check our services and book straight through the site. It's made a real difference to the business.",
     name: "Rob Cunliffe",
     role: "Refine Barbers",
     initials: "RC",
@@ -302,7 +302,7 @@ export const TESTIMONIALS: TestimonialData[] = [
   },
   {
     quote:
-      "Professional, straightforward, and no jargon. The site looks fantastic and we started getting enquiries within the first week of going live. Couldn't recommend them enough.",
+      "Professional, straightforward and no jargon. The site looks fantastic and we started getting enquiries within the first week of going live. Couldn't recommend them enough.",
     name: "Alan Kingston",
     role: "Noble Mortgages",
     initials: "AK",
@@ -329,7 +329,7 @@ export const CTA_BANNER = {
 export const SERVICES_HUB_META: PageMeta = {
   title: "Our Services | Web Design, SEO, Branding & Web Apps | Burch Studio",
   description:
-    "Website design, SEO, branding, and web application development for businesses that care about how they are seen and how their service is delivered.",
+    "Website design, SEO, branding and web application development for businesses that care about how they are seen and how their service is delivered.",
   canonical: `${SITE_CONFIG.url}/services`,
 };
 
@@ -337,13 +337,13 @@ export const SERVICES_HUB_HERO: SectionHeader = {
   label: "Our Services",
   heading: "Everything you need to succeed online.",
   subtext:
-    "From websites that help good businesses stand out, to web applications that support serious products, every service is built around clarity, trust, and long-term quality.",
+    "From websites that help good businesses stand out to web applications that support serious products, every service is built around clarity, trust and long-term quality.",
 };
 
 export const SERVICES_HUB_BOTTOM_CTA = {
   heading: "Not sure what you need?",
   subtext:
-    "Tell us where the business is now, what is missing, and where you want it to go. We'll help you choose the right next step.",
+    "Tell us where the business is now, what is missing and where you want it to go. We'll help you choose the right next step.",
   cta: { label: "Let's Chat", href: "/contact" },
 } as const;
 
@@ -362,7 +362,7 @@ export const WEB_DESIGN_HERO: SectionHeader = {
   label: "Website Design & Development",
   heading: "A website that works as hard as you do.",
   subtext:
-    "Custom-built, mobile-first websites for trade businesses, designed to load fast, rank on Google, and turn visitors into customers.",
+    "Custom-built, mobile-first websites for trade businesses, designed to load fast, rank on Google and turn visitors into customers.",
 };
 
 export const WEB_DESIGN_PROBLEMS_HEADER: SectionHeader = {
@@ -383,7 +383,7 @@ export const WEB_DESIGN_SOLUTION_HEADER: SectionHeader = {
   label: "The Solution",
   heading: "What a Burch Studio site delivers.",
   subtext:
-    "Every website we build is custom-designed around your business, your customers, and your goals.",
+    "Every website we build is custom-designed around your business, your customers and your goals.",
 };
 
 export const WEB_DESIGN_SOLUTIONS: SolutionPoint[] = [
@@ -400,7 +400,7 @@ export const WEB_DESIGN_SOLUTIONS: SolutionPoint[] = [
   {
     title: "Built to convert",
     description:
-      "Clear calls to action, visible contact details, and a layout designed to turn visitors into enquiries.",
+      "Clear calls to action, visible contact details and a layout designed to turn visitors into enquiries.",
   },
   {
     title: "Custom, not template",
@@ -415,7 +415,7 @@ export const WEB_DESIGN_SOLUTIONS: SolutionPoint[] = [
   {
     title: "Ongoing support",
     description:
-      "We don't disappear after launch. Updates, tweaks, and support whenever you need it.",
+      "We don't disappear after launch. Updates, tweaks and support whenever you need it.",
   },
 ];
 
@@ -424,7 +424,7 @@ export const WEB_DESIGN_PROCESS: ProcessStepData[] = [
     number: 1,
     title: "Discovery",
     description:
-      "We learn about your business, your customers, and what you need your website to do.",
+      "We learn about your business, your customers and what you need your website to do.",
   },
   {
     number: 2,
@@ -448,7 +448,7 @@ export const WEB_DESIGN_PROCESS: ProcessStepData[] = [
     number: 5,
     title: "Support",
     description:
-      "Ongoing support to keep your site fast, secure, and up to date.",
+      "Ongoing support to keep your site fast, secure and up to date.",
   },
 ];
 
@@ -488,7 +488,7 @@ export const SEO_SOLUTION_HEADER: SectionHeader = {
   label: "The Solution",
   heading: "How local SEO works for your business.",
   subtext:
-    "We make sure Google understands what you do, where you do it, and why you're the best choice.",
+    "We make sure Google understands what you do, where you do it and why you're the best choice.",
 };
 
 export const SEO_SOLUTIONS: SolutionPoint[] = [
@@ -505,12 +505,12 @@ export const SEO_SOLUTIONS: SolutionPoint[] = [
   {
     title: "Technical SEO",
     description:
-      "Page speed, SSL, structured data, and meta tags. This is the behind-the-scenes work that tells Google your site is trustworthy.",
+      "Page speed, SSL, structured data and meta tags. This is the behind-the-scenes work that tells Google your site is trustworthy.",
   },
   {
     title: "Content that ranks",
     description:
-      "Service pages, location pages, and blog content written to answer the questions your customers are searching for.",
+      "Service pages, location pages and blog content written to answer the questions your customers are searching for.",
   },
   {
     title: "Mobile-first indexing",
@@ -539,7 +539,7 @@ export const BRANDING_HERO: SectionHeader = {
   label: "Branding & Professional Setup",
   heading: "Look as professional online as you are in person.",
   subtext:
-    "Custom domain, professional email, SSL security, and consistent branding that builds trust before you even pick up the phone.",
+    "Custom domain, professional email, SSL security and consistent branding that builds trust before you even pick up the phone.",
 };
 
 export const BRANDING_PROBLEMS_HEADER: SectionHeader = {
@@ -552,7 +552,7 @@ export const BRANDING_PROBLEMS_HEADER: SectionHeader = {
 export const BRANDING_PROBLEM_LIST = [
   "A Gmail or Outlook email address instead of info@yourbusiness.co.uk",
   '"Not Secure" warnings in the browser because there\'s no SSL certificate',
-  "Inconsistent branding - different logos, colours, and fonts everywhere",
+  "Inconsistent branding - different logos, colours and fonts everywhere",
   "No Google Business Profile - invisible on Maps and local search",
 ] as const;
 
@@ -582,12 +582,12 @@ export const BRANDING_SOLUTIONS: SolutionPoint[] = [
   {
     title: "Consistent branding",
     description:
-      "Logo, colours, and fonts that work together across your website, email signature, and social profiles.",
+      "Logo, colours and fonts that work together across your website, email signature and social profiles.",
   },
   {
     title: "Google Business Profile",
     description:
-      "Show up on Google Maps with your hours, reviews, and contact details, where customers actually look.",
+      "Show up on Google Maps with your hours, reviews and contact details, where customers actually look.",
   },
   {
     title: "Social media setup",
@@ -611,22 +611,22 @@ export const ABOUT_HERO: SectionHeader = {
   label: "About",
   heading: "Built around high standards.",
   subtext:
-    "Burch Studio was started to help good businesses present themselves properly online, and to build software with the care serious companies need.",
+    "Burch Studio was started to help good businesses present themselves properly online and to build software with the care serious companies need.",
 };
 
 export const ABOUT_CONTENT = {
   intro:
-    "Burch Studio started with a simple belief. A business can do excellent work and still get overlooked if its website fails to show that standard. We wanted to fix that, and to build software with the same level of care.",
+    "Burch Studio started with a simple belief. A business can do excellent work and still get overlooked if its website fails to show that standard. We wanted to fix that and to build software with the same level of care.",
   background:
-    "We're a UK-based studio building fast, modern websites and robust web applications with Next.js, React, Node.js, and PostgreSQL. Whether it's a five-page website or a multi-tenant SaaS platform, the goal stays the same: understand the business properly, make the right decisions early, and build something that holds up.",
+    "We're a UK-based studio building fast, modern websites and robust web applications with Next.js, React, Node.js and PostgreSQL. Whether it's a five-page website or a multi-tenant SaaS platform, the goal stays the same: understand the business properly, make the right decisions early and build something that holds up.",
   whyTrades:
-    "We like working with trade and service businesses because the gap is so obvious. You can see years of graft, skill, and pride in the work, then land on a website that says none of it. A good website should carry that standard across, help people trust you faster, and make it easier for the right customers to choose you.",
+    "We like working with trade and service businesses because the gap is so obvious. You can see years of graft, skill and pride in the work, then land on a website that says none of it. A good website should carry that standard across, help people trust you faster and make it easier for the right customers to choose you.",
   whySaas:
-    "We also work with companies building software as a service, internal platforms, and more complex web products. In that world, care shows up in architecture, reliability, security, and clarity. The platform is the service, so it has to be built with real responsibility from the start.",
+    "We also work with companies building software as a service, internal platforms and more complex web products. In that world, care shows up in architecture, reliability, security and clarity. The platform is the service, so it has to be built with real responsibility from the start.",
   approach:
-    "We keep the process straightforward. We listen first, challenge what needs challenging, and stay focused on what will move the business forward. No jargon for the sake of it. No unnecessary features. No pretending every project needs a bloated process.",
+    "We keep the process straightforward. We listen first, challenge what needs challenging and stay focused on what will move the business forward. No jargon for the sake of it. No unnecessary features. No pretending every project needs a bloated process.",
   techNote:
-    "Our core stack includes Next.js, React, TypeScript, Node.js, PostgreSQL, containerised workers, and AWS infrastructure. Modern tools, chosen for performance, maintainability, and long-term reliability.",
+    "Our core stack includes Next.js, React, TypeScript, Node.js, PostgreSQL, containerised workers and AWS infrastructure. Modern tools, chosen for performance, maintainability and long-term reliability.",
 } as const;
 
 // ==========================================
@@ -662,7 +662,7 @@ export const CONTACT_FAQS: FAQItem[] = [
   {
     question: "How long does it take?",
     answer:
-      "Most sites are designed, built, and live within 2–4 weeks. Larger projects may take a little longer, but we'll always give you a clear timeline upfront.",
+      "Most sites are designed, built and live within 2–4 weeks. Larger projects may take a little longer but we'll always give you a clear timeline upfront.",
   },
   {
     question: "Do I need to provide content?",
@@ -677,7 +677,7 @@ export const CONTACT_FAQS: FAQItem[] = [
   {
     question: "What about hosting and domains?",
     answer:
-      "We handle everything: domain registration, hosting setup, SSL certificates, and professional email. You don't need to worry about the technical stuff.",
+      "We handle everything: domain registration, hosting setup, SSL certificates and professional email. You don't need to worry about the technical stuff.",
   },
 ];
 
@@ -696,7 +696,7 @@ export const PORTFOLIO_HERO: SectionHeader = {
   label: "Portfolio",
   heading: "Work built with care.",
   subtext:
-    "A look at the businesses and products we've helped shape, and the standard we bring to every project.",
+    "A look at the businesses and products we've helped shape and the standard we bring to every project.",
 };
 
 export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
@@ -705,7 +705,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     title: "Private SaaS Client",
     category: "SaaS Platform",
     description:
-      "A live company intelligence platform for UK businesses. Real-time monitoring of financial health, risk signals, and corporate events, powered by AI-generated analysis and multi-source data pipelines.",
+      "A live company intelligence platform for UK businesses. Real-time monitoring of financial health, risk signals and corporate events, powered by AI-generated analysis and multi-source data pipelines.",
     image: "/images/private-saas.webp",
     technologies: [
       "Next.js",
@@ -718,9 +718,9 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "Vercel",
     ],
     problem:
-      "Businesses trading with, lending to, or depending on UK companies had no simple way to monitor financial health and risk signals in real time. Existing tools were fragmented, expensive, and required manual effort to interpret raw filings and corporate data.",
+      "Businesses trading with, lending to or depending on UK companies had no simple way to monitor financial health and risk signals in real time. Existing tools were fragmented, expensive and required manual effort to interpret raw filings and corporate data.",
     solution:
-      "Designed and built the entire platform from scratch: architecture, frontend, API, background workers, and AI integration. The system pulls data from Companies House, The Gazette, and news sources into a unified feed. AI extracts financial data from both digital and paper filings, scores company health using established models, and generates plain-English summaries of every detected change. Multi-tenant with role-based access, configurable alerts, and a report builder for meeting-ready PDFs.",
+      "Designed and built the entire platform from scratch: architecture, frontend, API, background workers and AI integration. The system pulls data from Companies House, The Gazette and news sources into a unified feed. AI extracts financial data from both digital and paper filings, scores company health using established models and generates plain-English summaries of every detected change. Multi-tenant with role-based access, configurable alerts and a report builder for meeting-ready PDFs.",
     results: [
       "Live platform serving real users in production",
       "100+ API endpoints, 30+ background job processors, 40+ UI pages",
@@ -733,14 +733,14 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     title: "Noble Mortgages",
     category: "Client Website",
     description:
-      "Professional mortgage broker website with lead generation focus. Conversion-optimised design with mortgage calculator, multi-step forms, and SEO-ready structure.",
+      "Professional mortgage broker website with lead generation focus. Conversion-optimised design with mortgage calculator, multi-step forms and SEO-ready structure.",
     image: "/images/noble-mortgages.webp",
     technologies: ["HTML", "CSS", "JavaScript", "Responsive Design", "SEO"],
     liveUrl: "https://noblemortgages.netlify.app/",
     problem:
       "A mortgage broker with no website at all, relying entirely on word of mouth and referrals. Potential clients had no way to find them online, understand their services, or get in touch outside of business hours.",
     solution:
-      "Designed and developed a conversion-focused website with clean, professional design. Implemented an interactive mortgage calculator, multi-step lead generation forms, clear service pages, and a testimonials section, all optimised for search engines and mobile devices.",
+      "Designed and developed a conversion-focused website with clean, professional design. Implemented an interactive mortgage calculator, multi-step lead generation forms, clear service pages and a testimonials section, all optimised for search engines and mobile devices.",
     results: [
       "First professional web presence for the business",
       "Generating inbound enquiries from day one",
@@ -753,14 +753,14 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     title: "Refine Barbers",
     category: "Client Website",
     description:
-      "Modern website for a local barber shop with no previous online presence. Clean, mobile-first design showcasing services, pricing, and a direct link to their Booksy booking platform.",
+      "Modern website for a local barber shop with no previous online presence. Clean, mobile-first design showcasing services, pricing and a direct link to their Booksy booking platform.",
     image: "/images/refine-barbers.webp",
     technologies: ["React", "JavaScript", "Node.js", "CSS"],
     liveUrl: "https://refinebarbers-website.vercel.app",
     problem:
-      "A popular local barber shop with no website and zero online visibility. Customers could only find them through word of mouth, and there was no way to check services, pricing, or opening hours without calling or visiting in person.",
+      "A popular local barber shop with no website and zero online visibility. Customers could only find them through word of mouth and there was no way to check services, pricing or opening hours without calling or visiting in person.",
     solution:
-      "Built a clean, mobile-first website showcasing the shop's services, pricing, and team. Integrated a direct link to their existing Booksy booking platform so customers can book online without the shop needing to change their workflow.",
+      "Built a clean, mobile-first website showcasing the shop's services, pricing and team. Integrated a direct link to their existing Booksy booking platform so customers can book online without the shop needing to change their workflow.",
     results: [
       "First online presence for the business",
       "Customers can now check services and pricing anytime",
@@ -777,7 +777,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 export const WEB_APPS_META: PageMeta = {
   title: "Web Applications & SaaS Development | Burch Studio",
   description:
-    "Web application and SaaS development for companies that need reliable platforms, thoughtful architecture, and software built with care.",
+    "Web application and SaaS development for companies that need reliable platforms, thoughtful architecture and software built with care.",
   canonical: `${SITE_CONFIG.url}/services/web-apps`,
 };
 
@@ -785,7 +785,7 @@ export const WEB_APPS_HERO: SectionHeader = {
   label: "Web Applications & SaaS",
   heading: "Software built with responsibility.",
   subtext:
-    "For companies delivering a real service through software, we build platforms that are stable, clear, and ready to earn trust at scale.",
+    "For companies delivering a real service through software, we build platforms that are stable, clear and ready to earn trust at scale.",
 };
 
 export const WEB_APPS_PROBLEMS_HEADER: SectionHeader = {
@@ -818,27 +818,27 @@ export const WEB_APPS_SOLUTIONS: SolutionPoint[] = [
   {
     title: "Scalable architecture",
     description:
-      "Event-driven models, background workers, and clear separation between monitoring, processing, and presentation layers.",
+      "Event-driven models, background workers and clear separation between monitoring, processing and presentation layers.",
   },
   {
     title: "Secure by design",
     description:
-      "Role-based access control, secure authentication flows, audit logging, and encryption built in from the start, not bolted on later.",
+      "Role-based access control, secure authentication flows, audit logging and encryption built in from the start, not bolted on later.",
   },
   {
     title: "Database design",
     description:
-      "PostgreSQL with well-designed schemas, proper migrations, and query optimisation. Data modelling that scales with your business.",
+      "PostgreSQL with well-designed schemas, proper migrations and query optimisation. Data modelling that scales with your business.",
   },
   {
     title: "Multi-tenant ready",
     description:
-      "Strict data isolation between tenants, configurable per-tenant settings, and infrastructure that supports growth.",
+      "Strict data isolation between tenants, configurable per-tenant settings and infrastructure that supports growth.",
   },
   {
     title: "Cloud deployment",
     description:
-      "AWS infrastructure with containerised workers, CI/CD pipelines, and monitoring. Production-ready from launch day.",
+      "AWS infrastructure with containerised workers, CI/CD pipelines and monitoring. Production-ready from launch day.",
   },
 ];
 
@@ -883,4 +883,4 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
 ];
 
 export const FOOTER_TAGLINE =
-  "Premium websites for businesses that deserve to be noticed, and robust platforms for companies building real services.";
+  "Premium websites for businesses that deserve to be noticed and robust platforms for companies building real services.";
