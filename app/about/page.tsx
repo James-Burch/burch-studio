@@ -62,7 +62,7 @@ export default function About() {
             <div>
               <ScrollReveal>
                 <h2 className="mb-6 font-display text-[clamp(1.6rem,3vw,2.2rem)] font-bold tracking-[-0.035em] text-text-heading">
-                  Why we started Burch Studio
+                  Why this studio exists
                 </h2>
               </ScrollReveal>
 
@@ -104,7 +104,7 @@ export default function About() {
 
               <ScrollReveal delay={0.4}>
                 <Button variant="primary" href="/contact">
-                  Let&apos;s Work Together{" "}
+                  Start the Conversation{" "}
                   <span className="inline-block" aria-hidden="true">→</span>
                 </Button>
               </ScrollReveal>

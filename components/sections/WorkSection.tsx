@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { WORK_SECTION_HEADER, WORK_PROJECTS } from "@/lib/constants";
 import { SectionHeading } from "@/components/ui/SectionHeading";
@@ -67,9 +68,9 @@ export function WorkSection() {
                     </Link>
                   </div>
 
-                  {/* Image area / Stats placeholder */}
+                  {/* Media area */}
                   {project.stats ? (
-                    <div className="flex items-center justify-center rounded-2xl border border-brand-border bg-brand-bg p-10">
+                    <div className="flex min-h-64 items-center justify-center rounded-2xl border border-brand-border bg-brand-bg p-8 lg:min-h-72 lg:max-w-[28rem] lg:justify-self-end">
                       <div className="flex flex-wrap justify-center gap-6">
                         {project.stats.map((stat) => (
                           <p
@@ -81,8 +82,20 @@ export function WorkSection() {
                         ))}
                       </div>
                     </div>
+                  ) : project.image ? (
+                    <div className="relative overflow-hidden rounded-2xl border border-brand-border bg-brand-bg lg:max-w-[28rem] lg:justify-self-end">
+                      <div className="relative aspect-[4/3]">
+                        <Image
+                          src={project.image}
+                          alt={project.imageAlt ?? `${project.title} project preview`}
+                          fill
+                          sizes="(min-width: 1024px) 448px, (min-width: 768px) 40vw, 100vw"
+                          className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                        />
+                      </div>
+                    </div>
                   ) : (
-                    <div className="flex items-center justify-center rounded-2xl border border-brand-border bg-brand-bg p-10">
+                    <div className="flex min-h-64 items-center justify-center rounded-2xl border border-brand-border bg-brand-bg p-8 lg:min-h-72 lg:max-w-[28rem] lg:justify-self-end">
                       <p className="font-display text-[1.1rem] font-semibold text-text-muted/40">
                         {project.title}
                       </p>

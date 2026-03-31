@@ -62,6 +62,8 @@ export interface WorkProject {
   href: string;
   linkText: string;
   stats?: string[];
+  image?: string;
+  imageAlt?: string;
 }
 
 // ==========================================

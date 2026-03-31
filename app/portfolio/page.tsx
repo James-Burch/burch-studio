@@ -146,8 +146,8 @@ export default function Portfolio() {
           <ScrollReveal>
             <div className="mt-20 text-center">
               <p className="mb-6 text-[1.05rem] leading-[1.7] text-text-muted">
-                Got a project in mind? Let&apos;s talk about what we can build
-                for you.
+                If you want work that reflects the standard of your business or
+                product, let&apos;s talk about what needs building.
               </p>
               <Button variant="primary" href="/contact">
                 Get in Touch <span className="inline-block" aria-hidden="true">→</span>

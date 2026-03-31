@@ -60,7 +60,7 @@ export const NAV_CTA = {
 export const HOME_META: PageMeta = {
   title: "Burch Studio - Web Design & Development | UK",
   description:
-    "Modern websites and web applications for businesses of all sizes. From trade business sites to full-scale SaaS platforms, built to perform.",
+    "Premium websites for businesses that want to be taken seriously, and robust web applications for companies building real digital products.",
   canonical: SITE_CONFIG.url,
 };
 
@@ -70,10 +70,22 @@ export const HOME_META: PageMeta = {
 
 export const HERO = {
   tag: "Web design & development studio",
-  headline: "We build software that",
-  headlineAccent: "matters.",
+  headlines: [
+    {
+      lead: "Built for businesses",
+      accent: "worth noticing.",
+    },
+    {
+      lead: "Websites that show",
+      accent: "the standard.",
+    },
+    {
+      lead: "Software built with",
+      accent: "real care.",
+    },
+  ],
   subtext:
-    "Websites for businesses that need to be found. Web applications for companies that need things built properly. Every project gets the same standard.",
+    "We started Burch Studio to help good businesses get seen properly. Websites that show the standard of your work. Web platforms built with the care your customers depend on.",
   primaryCTA: { label: "See Our Work", href: "/portfolio" },
   secondaryCTA: { label: "Get in Touch", href: "/contact" },
 } as const;
@@ -95,7 +107,7 @@ export const WORK_SECTION_HEADER: SectionHeader = {
   label: "Selected work",
   heading: "Every project has a story.",
   subtext:
-    "These are real businesses we've worked with. Real problems we solved. Real results they got.",
+    "Different businesses. Different goals. The same standard of care in how the work is understood, designed, and built.",
 };
 
 export const WORK_PROJECTS: WorkProject[] = [
@@ -119,6 +131,8 @@ export const WORK_PROJECTS: WorkProject[] = [
     tags: ["HTML", "CSS", "JavaScript", "SEO"],
     href: "/portfolio",
     linkText: "Read the full story",
+    image: "/images/noble-mortgages.webp",
+    imageAlt: "Homepage preview of the Noble Mortgages website",
   },
   {
     category: "Client Website",
@@ -129,6 +143,8 @@ export const WORK_PROJECTS: WorkProject[] = [
     tags: ["React", "Node.js", "CSS"],
     href: "/portfolio",
     linkText: "Read the full story",
+    image: "/images/refine-barbers.webp",
+    imageAlt: "Homepage preview of the Refine Barbers website",
   },
 ];
 
@@ -140,9 +156,9 @@ export const HOW_WE_WORK = {
   label: "How we work",
   heading: "Built on trust, not templates.",
   paragraphs: [
-    "Every project starts with a conversation. Not a sales pitch, not a questionnaire. A real conversation about what you need and the simplest way to get there.",
-    "We work with trade businesses who need a website that actually brings in work. And we work with companies building web applications who need proper engineering, not just another developer for hire.",
-    "Whether it's a five-page site or a full SaaS platform, we apply the same standards: clean code, solid architecture and software that works on day one. No unnecessary features. No surprise invoices.",
+    "Every project starts with understanding the business properly. How you win work, what customers look for, where trust is lost, and what your website or platform needs to do in the real world.",
+    "For service businesses, that means showing the quality of the work, telling the story clearly, and making it easy for the right people to get in touch. For software companies, it means building something stable, clear, and ready to support a real service.",
+    "We keep the standard high in both worlds. Thoughtful design. Careful engineering. Straight answers. No unnecessary features. No inflated process. No shortcuts that come back to bite later.",
   ],
 } as const;
 
@@ -300,9 +316,9 @@ export const TESTIMONIALS: TestimonialData[] = [
 
 export const CTA_BANNER = {
   label: "Let's talk",
-  heading: "Got a project in mind?",
+  heading: "Ready to raise the standard?",
   subtext:
-    "Whether you need a new site, a better one or something more complex entirely. We'd love to hear about it.",
+    "If you want a website that reflects the standard of your business, or a platform that is ready to support a serious service, let's talk.",
   cta: { label: "Get in Touch", href: "/contact" },
 } as const;
 
@@ -313,7 +329,7 @@ export const CTA_BANNER = {
 export const SERVICES_HUB_META: PageMeta = {
   title: "Our Services | Web Design, SEO, Branding & Web Apps | Burch Studio",
   description:
-    "Website design, SEO, branding and web application development. From local business sites to scalable SaaS platforms.",
+    "Website design, SEO, branding, and web application development for businesses that care about how they are seen and how their service is delivered.",
   canonical: `${SITE_CONFIG.url}/services`,
 };
 
@@ -321,13 +337,13 @@ export const SERVICES_HUB_HERO: SectionHeader = {
   label: "Our Services",
   heading: "Everything you need to succeed online.",
   subtext:
-    "From a website that wins you work, to SEO that gets you found, to full-scale web applications, we build it all.",
+    "From websites that help good businesses stand out, to web applications that support serious products, every service is built around clarity, trust, and long-term quality.",
 };
 
 export const SERVICES_HUB_BOTTOM_CTA = {
   heading: "Not sure what you need?",
   subtext:
-    "No worries, get in touch and we'll work it out together. No pressure, no jargon.",
+    "Tell us where the business is now, what is missing, and where you want it to go. We'll help you choose the right next step.",
   cta: { label: "Let's Chat", href: "/contact" },
 } as const;
 
@@ -587,30 +603,30 @@ export const BRANDING_SOLUTIONS: SolutionPoint[] = [
 export const ABOUT_META: PageMeta = {
   title: "About Burch Studio | Web Developer Peterborough",
   description:
-    "Burch Studio is a UK-based web development studio helping businesses succeed online with modern websites and scalable web applications.",
+    "Burch Studio is a UK-based studio building premium websites for ambitious businesses and robust web applications for companies delivering real services.",
   canonical: `${SITE_CONFIG.url}/about`,
 };
 
 export const ABOUT_HERO: SectionHeader = {
   label: "About",
-  heading: "Built by someone who ships.",
+  heading: "Built around high standards.",
   subtext:
-    "A UK-based web development studio building everything from local business websites to enterprise SaaS platforms.",
+    "Burch Studio was started to help good businesses present themselves properly online, and to build software with the care serious companies need.",
 };
 
 export const ABOUT_CONTENT = {
   intro:
-    "Burch Studio was started because we saw two gaps in the market. Trade businesses losing customers to terrible websites. And companies needing serious web applications built by a team that actually cares about the architecture.",
+    "Burch Studio started with a simple belief. A business can do excellent work and still get overlooked if its website fails to show that standard. We wanted to fix that, and to build software with the same level of care.",
   background:
-    "We're a full-stack TypeScript studio based in the UK. We build fast, modern websites and scalable web applications using Next.js, React, Node.js, and PostgreSQL. Whether it's a five-page website or a multi-tenant SaaS platform, we apply the same standards: clean code, solid architecture, and production-ready engineering.",
+    "We're a UK-based studio building fast, modern websites and robust web applications with Next.js, React, Node.js, and PostgreSQL. Whether it's a five-page website or a multi-tenant SaaS platform, the goal stays the same: understand the business properly, make the right decisions early, and build something that holds up.",
   whyTrades:
-    "We work with trade businesses because the gap between the quality of their work and the quality of their online presence is massive. A plumber who's been in the game for 20 years shouldn't be losing jobs to a competitor with a flashier website.",
+    "We like working with trade and service businesses because the gap is so obvious. You can see years of graft, skill, and pride in the work, then land on a website that says none of it. A good website should carry that standard across, help people trust you faster, and make it easier for the right customers to choose you.",
   whySaas:
-    "On the other side, we build and lead development on complex web applications, including multi-tenant platforms with event-driven architectures, role-based access control, background job pipelines, and strict security requirements. We bring the same clarity and discipline to both.",
+    "We also work with companies building software as a service, internal platforms, and more complex web products. In that world, care shows up in architecture, reliability, security, and clarity. The platform is the service, so it has to be built with real responsibility from the start.",
   approach:
-    "We keep things simple. No jargon, no unnecessary features, no surprise invoices. Just honest conversations about what your business needs and software that delivers it.",
+    "We keep the process straightforward. We listen first, challenge what needs challenging, and stay focused on what will move the business forward. No jargon for the sake of it. No unnecessary features. No pretending every project needs a bloated process.",
   techNote:
-    "Core stack: Next.js, React, TypeScript, Node.js, PostgreSQL, containerised workers, and AWS cloud infrastructure. The same technologies used by companies like Vercel, Netflix, and Stripe.",
+    "Our core stack includes Next.js, React, TypeScript, Node.js, PostgreSQL, containerised workers, and AWS infrastructure. Modern tools, chosen for performance, maintainability, and long-term reliability.",
 } as const;
 
 // ==========================================
@@ -626,9 +642,9 @@ export const CONTACT_META: PageMeta = {
 
 export const CONTACT_HERO: SectionHeader = {
   label: "Get in Touch",
-  heading: "Let's talk about your website.",
+  heading: "Let's talk about what the business needs.",
   subtext:
-    "Whether you need a new site, better SEO, or just want to know where you stand, get in touch and we'll get back to you within 24 hours.",
+    "Whether you need a stronger website, better visibility, or a platform built with more care, get in touch and we'll come back with clear advice.",
 };
 
 export const CONTACT_FORM = {
@@ -678,9 +694,9 @@ export const PORTFOLIO_META: PageMeta = {
 
 export const PORTFOLIO_HERO: SectionHeader = {
   label: "Portfolio",
-  heading: "Our work speaks for itself.",
+  heading: "Work built with care.",
   subtext:
-    "Real projects, real results. Here are some examples of what we've built.",
+    "A look at the businesses and products we've helped shape, and the standard we bring to every project.",
 };
 
 export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
@@ -761,22 +777,22 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
 export const WEB_APPS_META: PageMeta = {
   title: "Web Applications & SaaS Development | Burch Studio",
   description:
-    "Full-stack web application and SaaS platform development. Next.js, TypeScript, PostgreSQL. Scalable, secure, production-ready.",
+    "Web application and SaaS development for companies that need reliable platforms, thoughtful architecture, and software built with care.",
   canonical: `${SITE_CONFIG.url}/services/web-apps`,
 };
 
 export const WEB_APPS_HERO: SectionHeader = {
   label: "Web Applications & SaaS",
-  heading: "Software built to scale.",
+  heading: "Software built with responsibility.",
   subtext:
-    "Full-stack web applications and SaaS platforms, architected for growth, engineered for reliability, and built with modern TypeScript.",
+    "For companies delivering a real service through software, we build platforms that are stable, clear, and ready to earn trust at scale.",
 };
 
 export const WEB_APPS_PROBLEMS_HEADER: SectionHeader = {
   label: "The Problem",
   heading: "Why most web apps fail.",
   subtext:
-    "Building a web application is hard. Building one that scales, stays secure, and doesn't fall apart under real-world usage is harder.",
+    "Too many platforms are rushed into the world before the foundations are strong enough to support the service behind them.",
 };
 
 export const WEB_APPS_PROBLEM_LIST = [
@@ -790,7 +806,7 @@ export const WEB_APPS_SOLUTION_HEADER: SectionHeader = {
   label: "The Solution",
   heading: "Production-ready from day one.",
   subtext:
-    "Every application we build is designed around clear architecture, strict type safety, and the kind of engineering practices that hold up in production.",
+    "We build around the service the platform needs to provide, then make the technical decisions that keep it dependable as the product grows.",
 };
 
 export const WEB_APPS_SOLUTIONS: SolutionPoint[] = [
@@ -867,4 +883,4 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
 ];
 
 export const FOOTER_TAGLINE =
-  "Modern, mobile-first websites for trade businesses. Built to rank. Designed to convert.";
+  "Premium websites for businesses that deserve to be noticed, and robust platforms for companies building real services.";
