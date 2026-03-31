@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 import type {
   NavLink,
-  HeroWord,
   ServiceCardData,
   StatData,
   ProblemCardData,
@@ -22,6 +21,7 @@ import type {
   FooterColumn,
   FAQItem,
   PortfolioProject,
+  WorkProject,
 } from "./types";
 
 // ==========================================
@@ -60,7 +60,7 @@ export const NAV_CTA = {
 export const HOME_META: PageMeta = {
   title: "Burch Studio — Web Design & Development | UK",
   description:
-    "Modern websites and web applications for businesses of all sizes. From trade business sites to full-scale SaaS platforms — built to perform.",
+    "Modern websites and web applications for businesses of all sizes. From trade business sites to full-scale SaaS platforms, built to perform.",
   canonical: SITE_CONFIG.url,
 };
 
@@ -70,18 +70,80 @@ export const HOME_META: PageMeta = {
 
 export const HERO = {
   tag: "Web design & development studio",
-  headlineWords: [
-    { text: "We", accent: false },
-    { text: "build", accent: false },
-    { text: "websites", accent: false },
-    { text: "that", accent: false },
-    { text: "actually", accent: true },
-    { text: "work.", accent: true },
-  ] satisfies HeroWord[],
+  headline: "We build software that",
+  headlineAccent: "matters.",
   subtext:
-    "From mobile-first websites for local businesses to full-scale web applications and SaaS platforms — we build fast, modern, production-ready software.",
-  primaryCTA: { label: "Get in Touch", href: "/contact" },
-  secondaryCTA: { label: "See What We Do", href: "/services" },
+    "Websites for businesses that need to be found. Web applications for companies that need things built properly. Every project gets the same standard.",
+  primaryCTA: { label: "See Our Work", href: "/portfolio" },
+  secondaryCTA: { label: "Get in Touch", href: "/contact" },
+} as const;
+
+// ==========================================
+// HOME PAGE — TRUSTED BY
+// ==========================================
+
+export const TRUSTED_BY = {
+  label: "Trusted by",
+  names: ["Private SaaS Client", "Noble Mortgages", "Refine Barbers"],
+} as const;
+
+// ==========================================
+// HOME PAGE — SELECTED WORK
+// ==========================================
+
+export const WORK_SECTION_HEADER: SectionHeader = {
+  label: "Selected work",
+  heading: "Every project has a story.",
+  subtext:
+    "These are real businesses we've worked with. Real problems we solved. Real results they got.",
+};
+
+export const WORK_PROJECTS: WorkProject[] = [
+  {
+    category: "SaaS Platform · Ongoing",
+    categoryColor: "var(--color-brand-accent)",
+    title: "Private SaaS Client",
+    description:
+      "A live company intelligence platform for UK businesses. Real-time financial health monitoring, AI-powered analysis and risk detection. Built from the ground up.",
+    tags: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Auth0"],
+    href: "/portfolio",
+    linkText: "Read the full story",
+    stats: ["100+ endpoints", "30+ workers", "40+ pages"],
+  },
+  {
+    category: "Client Website",
+    categoryColor: "#60a5fa",
+    title: "Noble Mortgages",
+    description:
+      "A mortgage broker with no website at all. We built their entire digital presence. Conversion-focused design, lead generation forms and SEO. Enquiries started arriving in week one.",
+    tags: ["HTML", "CSS", "JavaScript", "SEO"],
+    href: "/portfolio",
+    linkText: "Read the full story",
+  },
+  {
+    category: "Client Website",
+    categoryColor: "#f472b6",
+    title: "Refine Barbers",
+    description:
+      "A popular barber shop running on word of mouth alone. We gave them a clean, mobile-first website with Booksy booking integration. Now customers can find them, see prices, and book online.",
+    tags: ["React", "Node.js", "CSS"],
+    href: "/portfolio",
+    linkText: "Read the full story",
+  },
+];
+
+// ==========================================
+// HOME PAGE — HOW WE WORK
+// ==========================================
+
+export const HOW_WE_WORK = {
+  label: "How we work",
+  heading: "Built on trust, not templates.",
+  paragraphs: [
+    "Every project starts with a conversation. Not a sales pitch, not a questionnaire. A real conversation about what you need and the simplest way to get there.",
+    "We work with trade businesses who need a website that actually brings in work. And we work with companies building web applications who need proper engineering, not just another developer for hire.",
+    "Whether it's a five-page site or a full SaaS platform, we apply the same standards: clean code, solid architecture and software that works on day one. No unnecessary features. No surprise invoices.",
+  ],
 } as const;
 
 // ==========================================
@@ -209,10 +271,8 @@ export const STATS: StatData[] = [
 // ==========================================
 
 export const TESTIMONIALS_HEADER: SectionHeader = {
-  label: "Results",
-  heading: "What our clients say.",
-  subtext:
-    "Don't just take our word for it — here's what our clients have to say.",
+  label: "In their words",
+  heading: "Don't take ours for it.",
 };
 
 export const TESTIMONIALS: TestimonialData[] = [
@@ -239,10 +299,11 @@ export const TESTIMONIALS: TestimonialData[] = [
 // ==========================================
 
 export const CTA_BANNER = {
-  heading: "Not sure if your website is costing you customers?",
+  label: "Let's talk",
+  heading: "Got a project in mind?",
   subtext:
-    "Get a free, no-obligation website audit. We'll show you exactly what's holding you back — and how to fix it.",
-  cta: { label: "Request Your Free Audit", href: "/contact?audit" },
+    "Whether you need a new site, a better one or something more complex entirely. We'd love to hear about it.",
+  cta: { label: "Get in Touch", href: "/contact" },
 } as const;
 
 // ==========================================
@@ -624,12 +685,12 @@ export const PORTFOLIO_HERO: SectionHeader = {
 
 export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
   {
-    slug: "seqenta",
-    title: "Seqenta",
+    slug: "private-saas-client",
+    title: "Private SaaS Client",
     category: "SaaS Platform",
     description:
       "A live company intelligence platform for UK businesses. Real-time monitoring of financial health, risk signals, and corporate events — powered by AI-generated analysis and multi-source data pipelines.",
-    image: "/images/seqenta.webp",
+    image: "/images/private-saas.webp",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -637,7 +698,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "PostgreSQL",
       "Redis",
       "Auth0",
-      "Anthropic Claude",
+      "AI Integration",
       "Vercel",
     ],
     problem:
