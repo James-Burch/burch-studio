@@ -69,38 +69,46 @@ export function WorkSection() {
                   </div>
 
                   {/* Media area */}
-                  {project.stats ? (
-                    <div className="flex min-h-64 items-center justify-center rounded-2xl border border-brand-border bg-brand-bg p-8 lg:min-h-72 lg:max-w-[28rem] lg:justify-self-end">
-                      <div className="flex flex-wrap justify-center gap-6">
-                        {project.stats.map((stat) => (
-                          <p
-                            key={stat}
-                            className="font-display text-[0.88rem] font-semibold tracking-[0.02em] text-text-muted"
-                          >
-                            {stat}
-                          </p>
-                        ))}
-                      </div>
-                    </div>
-                  ) : project.image ? (
-                    <div className="relative overflow-hidden rounded-2xl border border-brand-border bg-brand-bg lg:max-w-[28rem] lg:justify-self-end">
-                      <div className="relative aspect-[4/3]">
+                  <div className="lg:justify-self-end">
+                    {project.image ? (
+                      <div className="overflow-hidden rounded-2xl border border-brand-border bg-brand-bg lg:max-w-[28rem]">
                         <Image
                           src={project.image}
                           alt={project.imageAlt ?? `${project.title} project preview`}
-                          fill
+                          width={1448}
+                          height={1084}
                           sizes="(min-width: 1024px) 448px, (min-width: 768px) 40vw, 100vw"
-                          className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                          className="block h-auto w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
                         />
                       </div>
-                    </div>
-                  ) : (
-                    <div className="flex min-h-64 items-center justify-center rounded-2xl border border-brand-border bg-brand-bg p-8 lg:min-h-72 lg:max-w-[28rem] lg:justify-self-end">
-                      <p className="font-display text-[1.1rem] font-semibold text-text-muted/40">
-                        {project.title}
-                      </p>
-                    </div>
-                  )}
+                    ) : project.stats ? (
+                      <div className="overflow-hidden rounded-2xl border border-brand-border bg-brand-bg lg:max-w-[28rem]">
+                        <div className="border-b border-brand-border bg-brand-surface-elevated px-5 py-3">
+                          <p className="font-display text-[0.75rem] font-bold uppercase tracking-[0.14em] text-text-muted">
+                            Platform snapshot
+                          </p>
+                        </div>
+                        <div className="grid gap-4 p-6 sm:grid-cols-3 sm:p-8">
+                          {project.stats.map((stat) => (
+                            <div
+                              key={stat}
+                              className="rounded-xl border border-brand-border bg-brand-surface px-4 py-5 text-center"
+                            >
+                              <p className="font-display text-[0.95rem] font-semibold tracking-[0.02em] text-text-heading">
+                                {stat}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="flex min-h-64 items-center justify-center rounded-2xl border border-brand-border bg-brand-bg p-8 lg:min-h-72 lg:max-w-[28rem]">
+                        <p className="font-display text-[1.1rem] font-semibold text-text-muted/40">
+                          {project.title}
+                        </p>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </article>
             </ScrollReveal>

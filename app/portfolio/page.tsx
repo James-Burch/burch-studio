@@ -126,14 +126,14 @@ export default function Portfolio() {
 
                   {/* Image */}
                   <div className="bg-brand-bg p-6 sm:p-8 lg:p-10">
-                    <div className="overflow-hidden rounded-xl border border-brand-border">
+                    <div className="mx-auto max-w-240 overflow-hidden rounded-xl border border-brand-border xl:max-w-220">
                       <Image
                         src={project.image}
                         alt={`${project.title} website screenshot`}
                         width={1448}
                         height={1084}
                         className="block w-full"
-                        sizes="(max-width: 1024px) 100vw, 80vw"
+                        sizes="(max-width: 1024px) 100vw, (max-width: 1536px) 70vw, 960px"
                       />
                     </div>
                   </div>
