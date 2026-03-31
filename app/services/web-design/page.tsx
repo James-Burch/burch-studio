@@ -124,7 +124,7 @@ export default function WebDesign() {
             <SectionHeading
               label="The Process"
               heading="How it works."
-              subtext="From first conversation to launch day — here's what to expect."
+              subtext="From first conversation to launch day, here's what to expect."
             />
           </ScrollReveal>
 

@@ -51,7 +51,7 @@
     overflow-x: hidden;
   }
 
-  /* Noise texture overlay — subtle grain for premium feel */
+  /* Noise texture overlay - subtle grain for premium feel */
   body::before {
     content: "";
     position: fixed;
@@ -65,7 +65,7 @@
 
 /* ========== ACCESSIBILITY ========== */
 
-/* Visible focus indicators — WCAG 2.1 AA (Guardrails 8.1) */
+/* Visible focus indicators - WCAG 2.1 AA (Guardrails 8.1) */
 *:focus-visible {
   outline: 2px solid var(--color-brand-accent);
   outline-offset: 2px;
@@ -90,7 +90,7 @@
   top: 1rem;
 }
 
-/* Reduced motion — respect user preference (Guardrails 5.3 / 8.1) */
+/* Reduced motion - respect user preference (Guardrails 5.3 / 8.1) */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

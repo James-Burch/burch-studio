@@ -10,7 +10,7 @@ export function HowWeWork() {
     <section className="py-25 md:py-32" aria-labelledby="how-we-work-heading">
       <div className="mx-auto max-w-300 px-5 sm:px-8 lg:px-10">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-20">
-          {/* Left — heading */}
+          {/* Left - heading */}
           <ScrollReveal>
             <div>
               <p className="mb-4 font-display text-[0.78rem] font-bold uppercase tracking-[0.14em] text-brand-accent">
@@ -25,7 +25,7 @@ export function HowWeWork() {
             </div>
           </ScrollReveal>
 
-          {/* Right — prose */}
+          {/* Right - prose */}
           <div className="flex flex-col gap-6">
             {HOW_WE_WORK.paragraphs.map((paragraph, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>

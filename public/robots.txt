@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://burchstudio.co.uk
+
+# Sitemaps
+Sitemap: https://burchstudio.co.uk/sitemap.xml

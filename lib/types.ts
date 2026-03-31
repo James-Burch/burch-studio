@@ -1,7 +1,7 @@
 // /lib/types.ts
 // Shared TypeScript interfaces for the Burch Studio project.
 // All component props use {ComponentName}Props convention
-// and live in their own component files — this file is for
+// and live in their own component files - this file is for
 // data structures used across multiple files.
 
 import type { LucideIcon } from "lucide-react";

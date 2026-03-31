@@ -176,7 +176,7 @@ export default function WebApps() {
               </h2>
               <p className="relative mx-auto mb-9 max-w-125 text-[1.08rem] leading-[1.7] text-text-muted">
                 Whether you need a full platform built from scratch or technical
-                leadership on an existing project — let&apos;s talk.
+                leadership on an existing project, let&apos;s talk.
               </p>
               <Button variant="primary" href="/contact" className="relative">
                 Get in Touch <span className="inline-block" aria-hidden="true">→</span>
