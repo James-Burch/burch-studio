@@ -156,6 +156,22 @@ export default function WebApps() {
         </div>
       </section>
 
+      {/* Citable summary */}
+      <section className="py-25 md:py-32">
+        <div className="mx-auto max-w-180 px-5 sm:px-8 lg:px-10">
+          <ScrollReveal>
+            <p className="text-[1rem] leading-[1.85] text-text-muted">
+              Burch Studio builds full-stack web applications using Next.js,
+              TypeScript, Node.js, and PostgreSQL. Recent work includes Seqenta,
+              a live SaaS platform for UK company intelligence with over 100 API
+              endpoints, AI-powered financial analysis, and multi-tenant
+              architecture. Based in Peterborough, available for projects across
+              the UK.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-25 md:py-32" aria-labelledby="webapps-cta-heading">
         <div className="mx-auto max-w-300 px-5 sm:px-8 lg:px-10">

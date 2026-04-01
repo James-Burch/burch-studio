@@ -152,6 +152,22 @@ export default function SEO() {
         </div>
       </section>
 
+      {/* Citable summary */}
+      <section className="py-25 md:py-32">
+        <div className="mx-auto max-w-180 px-5 sm:px-8 lg:px-10">
+          <ScrollReveal>
+            <p className="text-[1rem] leading-[1.85] text-text-muted">
+              SEO for a small business focuses on three things: making sure
+              Google can read your site properly, targeting the keywords your
+              customers actually search for, and building your site&apos;s
+              authority over time. Burch Studio provides SEO as part of every
+              website build and as a standalone service for businesses across
+              the UK.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-25 md:py-32" aria-labelledby="seo-cta-heading">
         <div className="mx-auto max-w-300 px-5 sm:px-8 lg:px-10">
