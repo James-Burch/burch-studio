@@ -18,6 +18,7 @@ export async function POST(request: Request) {
   const formData = await request.formData();
   const file = formData.get("file") as File | null;
   const slug = formData.get("slug") as string | null;
+  const bucket = (formData.get("bucket") as string) || "project-images";
 
   if (!file) {
     return NextResponse.json({ error: "No file provided" }, { status: 400 });
@@ -38,10 +39,10 @@ export async function POST(request: Request) {
   }
 
   const ext = file.name.split(".").pop() || "webp";
-  const filename = `${slug || "project"}-${Date.now()}.${ext}`;
+  const filename = `${slug || "upload"}-${Date.now()}.${ext}`;
 
   const { error } = await supabase.storage
-    .from("project-images")
+    .from(bucket)
     .upload(filename, file, {
       contentType: file.type,
       upsert: false,
@@ -53,7 +54,7 @@ export async function POST(request: Request) {
 
   const {
     data: { publicUrl },
-  } = supabase.storage.from("project-images").getPublicUrl(filename);
+  } = supabase.storage.from(bucket).getPublicUrl(filename);
 
   return NextResponse.json({ url: publicUrl });
 }
