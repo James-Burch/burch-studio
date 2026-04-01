@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import { WORK_SECTION_HEADER, WORK_PROJECTS } from "@/lib/constants";
+import { WORK_SECTION_HEADER } from "@/lib/constants";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { getWorkProjects } from "@/lib/supabase/queries";
 
 // ==========================================
 // COMPONENT
 // ==========================================
 
-export function WorkSection() {
+export async function WorkSection() {
+  const WORK_PROJECTS = await getWorkProjects();
   return (
     <section className="py-25 md:py-32" aria-labelledby="work-heading">
       <div className="mx-auto max-w-300 px-5 sm:px-8 lg:px-10">
