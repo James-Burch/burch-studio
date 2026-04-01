@@ -131,7 +131,7 @@ export const WORK_PROJECTS: WorkProject[] = [
     tags: ["HTML", "CSS", "JavaScript", "SEO"],
     href: "/portfolio",
     linkText: "Read the full story",
-    image: "/images/noble-mortgages.webp",
+    image: "/images/noble-mortgages-image-1.webp",
     imageAlt: "Homepage preview of the Noble Mortgages website",
   },
   {
@@ -734,9 +734,9 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     category: "Client Website",
     description:
       "Professional mortgage broker website with lead generation focus. Conversion-optimised design with mortgage calculator, multi-step forms and SEO-ready structure.",
-    image: "/images/noble-mortgages.webp",
+    image: "/images/noble-mortgages-image-1.webp",
     technologies: ["HTML", "CSS", "JavaScript", "Responsive Design", "SEO"],
-    liveUrl: "https://noblemortgages.netlify.app/",
+    liveUrl: "https://noble-mortgages-new.vercel.app/",
     problem:
       "A mortgage broker with no website at all, relying entirely on word of mouth and referrals. Potential clients had no way to find them online, understand their services, or get in touch outside of business hours.",
     solution:
