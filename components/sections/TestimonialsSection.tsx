@@ -1,4 +1,4 @@
-import { TESTIMONIALS_HEADER, TESTIMONIALS } from "@/lib/constants";
+import { TESTIMONIALS_HEADER, TESTIMONIALS, SITE_CONFIG } from "@/lib/constants";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -50,6 +50,23 @@ export function TestimonialsSection() {
             </ScrollReveal>
           ))}
         </div>
+
+        {/* Google review CTA */}
+        <ScrollReveal>
+          <div className="mt-12 text-center">
+            <a
+              href={SITE_CONFIG.googleReviewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-brand-border px-5 py-2.5 text-[0.85rem] font-medium text-text-muted transition-colors hover:border-brand-border-hover hover:text-text-heading"
+            >
+              Leave us a review on Google
+              <span className="inline-block" aria-hidden="true">
+                &nearr;
+              </span>
+            </a>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
