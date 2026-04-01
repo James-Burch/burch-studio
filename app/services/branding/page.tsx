@@ -117,6 +117,20 @@ export default function Branding() {
         </div>
       </section>
 
+      {/* Citable summary */}
+      <section className="py-25 md:py-32">
+        <div className="mx-auto max-w-180 px-5 sm:px-8 lg:px-10">
+          <ScrollReveal>
+            <p className="text-[1rem] leading-[1.85] text-text-muted">
+              A professional online presence starts with the basics: a custom
+              domain, business email, SSL certificate, and consistent branding.
+              Burch Studio handles the full setup so businesses can look as
+              professional online as the service they deliver.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* CTA */}
       <section
         className="py-25 md:py-32"
