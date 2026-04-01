@@ -3,8 +3,8 @@ import Image from "next/image";
 import {
   PORTFOLIO_META,
   PORTFOLIO_HERO,
-  PORTFOLIO_PROJECTS,
 } from "@/lib/constants";
+import { getPortfolioProjects } from "@/lib/supabase/queries";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -30,7 +30,8 @@ export const metadata: Metadata = {
 // PAGE
 // ==========================================
 
-export default function Portfolio() {
+export default async function Portfolio() {
+  const PORTFOLIO_PROJECTS = await getPortfolioProjects();
   return (
     <>
       <BreadcrumbJsonLd items={[{ name: "Portfolio", href: "/portfolio" }]} />
