@@ -59,9 +59,9 @@ export const NAV_CTA = {
 // ==========================================
 
 export const HOME_META: PageMeta = {
-  title: "Burch Studio - Web Design & Development | UK",
+  title: "Burch Studio — Web Design & Development | UK",
   description:
-    "Premium websites for businesses that want to be taken seriously and robust web applications for companies building real digital products.",
+    "Web design, development, and SaaS platforms for UK businesses. Based in Peterborough. Next.js, TypeScript, modern web standards. See our work.",
   canonical: SITE_CONFIG.url,
 };
 
