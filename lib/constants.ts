@@ -35,6 +35,7 @@ export const SITE_CONFIG = {
   email: "contact@burch-studio.co.uk",
   phone: "+44 7407 195061",
   location: "UK",
+  googleReviewUrl: "https://g.page/r/CYSELTzSo-aWEAI/review",
 } as const;
 
 // ==========================================
