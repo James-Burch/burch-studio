@@ -58,11 +58,11 @@ export function TestimonialsSection() {
               href={SITE_CONFIG.googleReviewUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg border border-brand-border px-5 py-2.5 text-[0.85rem] font-medium text-text-muted transition-colors hover:border-brand-border-hover hover:text-text-heading"
+              className="inline-flex items-center gap-2 rounded-lg bg-brand-accent px-5 py-2.5 text-[0.85rem] font-bold text-brand-bg transition-colors hover:bg-brand-accent-hover"
             >
               Leave us a review on Google
               <span className="inline-block" aria-hidden="true">
-                &nearr;
+                ↗
               </span>
             </a>
           </div>
