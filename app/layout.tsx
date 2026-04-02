@@ -58,7 +58,9 @@ export default async function RootLayout({
 
   return (
     <html lang="en" className={`${fontDisplay.variable} ${fontBody.variable}`}>
-      <meta name="msvalidate.01" content="A8963390321B65A02503B6AAEFBDDF34" />
+      <head>
+        <meta name="msvalidate.01" content="A8963390321B65A02503B6AAEFBDDF34" />
+      </head>
       <body className="antialiased">
         {!isAdmin && (
           <>
