@@ -80,7 +80,7 @@ export async function WorkSection() {
                           width={1448}
                           height={1084}
                           sizes="(min-width: 1024px) 448px, (min-width: 768px) 40vw, 100vw"
-                          className="block aspect-[4/3] w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                          className="block aspect-[16/10] w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
                         />
                       </div>
                     ) : project.stats ? (

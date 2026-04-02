@@ -122,12 +122,12 @@ export default async function Portfolio() {
                     >
                       <div className="mx-auto max-w-170 lg:sticky lg:top-28 lg:max-w-none">
                         <div className="overflow-hidden rounded-xl border border-brand-border">
-                          <div className="aspect-[4/3]">
+                          <div className="aspect-[16/10]">
                             <Image
                               src={project.image}
                               alt={`${project.title} website screenshot`}
                               width={1448}
-                              height={1084}
+                              height={905}
                               className="block h-full w-full object-cover object-top"
                               sizes="(max-width: 1024px) 100vw, 42vw"
                             />
