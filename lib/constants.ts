@@ -159,6 +159,7 @@ export const WORK_PROJECTS: WorkProject[] = [
     linkText: "Read the full story",
     image: "/images/refine-barbers.webp",
     imageAlt: "Homepage preview of the Refine Barbers website",
+    imagePosition: "center",
   },
 ];
 
@@ -795,6 +796,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     description:
       "Modern website for a local barber shop with no previous online presence. Clean, mobile-first design showcasing services, pricing and a direct link to their Booksy booking platform.",
     image: "/images/refine-barbers.webp",
+    imagePosition: "center",
     technologies: ["React", "JavaScript", "Node.js", "CSS"],
     liveUrl: "https://refinebarbers-website.vercel.app",
     problem:

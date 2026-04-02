@@ -128,7 +128,7 @@ export default async function Portfolio() {
                               alt={`${project.title} website screenshot`}
                               width={1448}
                               height={905}
-                              className="block h-full w-full object-cover object-top"
+                              className={`block h-full w-full object-cover ${project.imagePosition === "center" ? "object-center" : "object-top"}`}
                               sizes="(max-width: 1024px) 100vw, 42vw"
                             />
                           </div>
