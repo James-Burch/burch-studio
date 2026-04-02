@@ -18,6 +18,7 @@ interface FormState {
   featured_image_url: string;
   featured_image_alt: string;
   published: boolean;
+  published_at: string;
   meta_title: string;
   meta_description: string;
   sort_order: number;
@@ -33,6 +34,9 @@ function toFormState(post?: BlogPostRow): FormState {
     featured_image_url: post?.featured_image_url ?? "",
     featured_image_alt: post?.featured_image_alt ?? "",
     published: post?.published ?? false,
+    published_at: post?.published_at
+      ? new Date(post.published_at).toISOString().slice(0, 16)
+      : "",
     meta_title: post?.meta_title ?? "",
     meta_description: post?.meta_description ?? "",
     sort_order: post?.sort_order ?? 0,
@@ -107,6 +111,11 @@ export function BlogPostForm({ post }: BlogPostFormProps) {
       featured_image_url: form.featured_image_url || null,
       featured_image_alt: form.featured_image_alt || null,
       published: form.published,
+      published_at: form.published_at
+        ? new Date(form.published_at).toISOString()
+        : form.published
+          ? new Date().toISOString()
+          : null,
       meta_title: form.meta_title || null,
       meta_description: form.meta_description || null,
       sort_order: form.sort_order,
@@ -316,28 +325,52 @@ export function BlogPostForm({ post }: BlogPostFormProps) {
         </div>
       </div>
 
-      {/* Publish toggle + Sort */}
-      <div className="flex items-center gap-6">
-        <label className="flex cursor-pointer items-center gap-3">
-          <input
-            type="checkbox"
-            checked={form.published}
-            onChange={(e) => update("published", e.target.checked)}
-            className="h-4 w-4 rounded border-brand-border accent-brand-accent"
-          />
-          <span className="text-sm text-text-heading">Published</span>
-        </label>
-        <div className="flex items-center gap-2">
-          <label htmlFor="sort_order" className="text-sm text-text-muted">
-            Sort order:
+      {/* Publish + Schedule + Sort */}
+      <div className="rounded-xl border border-brand-border bg-brand-surface p-5">
+        <h3 className="mb-4 text-sm font-semibold text-text-heading">
+          Publishing
+        </h3>
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:gap-6">
+          <label className="flex cursor-pointer items-center gap-3">
+            <input
+              type="checkbox"
+              checked={form.published}
+              onChange={(e) => update("published", e.target.checked)}
+              className="h-4 w-4 rounded border-brand-border accent-brand-accent"
+            />
+            <span className="text-sm text-text-heading">Published</span>
           </label>
-          <input
-            id="sort_order"
-            type="number"
-            value={form.sort_order}
-            onChange={(e) => update("sort_order", parseInt(e.target.value) || 0)}
-            className={`${inputClass} w-20`}
-          />
+          <div>
+            <label htmlFor="published_at" className={labelClass}>
+              Schedule date
+            </label>
+            <input
+              id="published_at"
+              type="datetime-local"
+              value={form.published_at}
+              onChange={(e) => update("published_at", e.target.value)}
+              className={`${inputClass} w-56`}
+            />
+            <p className="mt-1 text-xs text-text-muted">
+              {form.published_at && new Date(form.published_at) > new Date()
+                ? "Scheduled — will appear automatically at this time"
+                : form.published_at
+                  ? "Published"
+                  : "Leave empty to publish immediately"}
+            </p>
+          </div>
+          <div>
+            <label htmlFor="sort_order" className="mb-1.5 block text-sm font-medium text-text-heading">
+              Sort order
+            </label>
+            <input
+              id="sort_order"
+              type="number"
+              value={form.sort_order}
+              onChange={(e) => update("sort_order", parseInt(e.target.value) || 0)}
+              className={`${inputClass} w-20`}
+            />
+          </div>
         </div>
       </div>
 
