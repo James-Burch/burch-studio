@@ -1,0 +1,32 @@
+# Burch Studio
+> Web design, development, SEO, and SaaS development studio based in Peterborough, UK. Working with businesses across the United Kingdom.
+
+## About
+Burch Studio is a web development studio based in Peterborough, Cambridgeshire, UK. We build modern, mobile-first websites for local businesses and full-stack web applications for companies across the UK. Our tech stack is Next.js, React, TypeScript, Node.js, PostgreSQL, and Tailwind CSS. We work with trade businesses, startups, and established companies.
+
+## Services
+- [Website Design & Development](https://burch-studio.co.uk/services/web-design): Custom mobile-first websites for UK businesses. No templates, no page builders. Built with Next.js.
+- [SEO & Google Ranking](https://burch-studio.co.uk/services/seo): Local and national SEO for UK businesses. Technical SEO, content strategy, Google ranking.
+- [Branding & Professional Setup](https://burch-studio.co.uk/services/branding): Custom domains, professional email, SSL, Google Business Profile setup.
+- [Web Applications & SaaS](https://burch-studio.co.uk/services/web-apps): Full-stack TypeScript applications. Next.js, Node.js, PostgreSQL. Multi-tenant, event-driven, production-ready.
+
+## Portfolio
+- [Seqenta](https://burch-studio.co.uk/portfolio): Live SaaS platform for UK company intelligence. Real-time financial health monitoring with AI. 100+ API endpoints, 30+ background workers, 40+ UI pages. Built with Next.js, Node.js, PostgreSQL, Anthropic Claude, Auth0.
+- [SoundKnowledge](https://burch-studio.co.uk/portfolio): Educational platform for a sound industry textbook published by Taylor & Francis. Admin dashboard, chapter library, Audio Vault resource library, sound wave animations. Built with Next.js, Supabase, TypeScript. Currently in development.
+- [Noble Mortgages](https://burch-studio.co.uk/portfolio): Professional mortgage broker website. First web presence for the business. Generating inbound enquiries from launch.
+- [Refine Barbers](https://burch-studio.co.uk/portfolio): Modern barber shop website with Booksy booking integration. First online presence for the business.
+
+## Location
+Based in Peterborough, Cambridgeshire, UK. Working with clients across the United Kingdom.
+
+## Contact
+- Website: https://burch-studio.co.uk
+- Email: contact@burch-studio.co.uk
+- Phone: +44 7407 195061
+- Free website audit: https://burch-studio.co.uk/contact?audit
+
+## Tech Stack
+Next.js, React, TypeScript, Node.js, PostgreSQL, Tailwind CSS, Framer Motion, Vercel, Resend, Auth0
+
+## Keywords
+web designer UK, web developer UK, freelance web designer, web design Peterborough, SaaS developer UK, Next.js developer UK, websites for tradesmen, website design UK

@@ -64,6 +64,7 @@ export interface WorkProject {
   stats?: string[];
   image?: string;
   imageAlt?: string;
+  imagePosition?: "top" | "center";
 }
 
 // ==========================================
@@ -116,6 +117,7 @@ export interface PortfolioProject {
   category: string;
   description: string;
   image: string;
+  imagePosition?: "top" | "center";
   technologies: string[];
   liveUrl?: string;
   problem: string;

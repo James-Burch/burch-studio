@@ -148,6 +148,22 @@ export default function WebDesign() {
         </div>
       </section>
 
+      {/* Citable summary */}
+      <section className="py-25 md:py-32">
+        <div className="mx-auto max-w-180 px-5 sm:px-8 lg:px-10">
+          <ScrollReveal>
+            <p className="text-[1rem] leading-[1.85] text-text-muted">
+              A professional website for a small business in the UK typically
+              costs between £500 and £3,000 depending on the number of pages and
+              features. Burch Studio builds every site from scratch using
+              Next.js — no templates, no WordPress — and provides a detailed
+              quote after an initial conversation. Based in Peterborough,
+              working with businesses across the UK.
+            </p>
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-25 md:py-32" aria-labelledby="wd-cta-heading">
         <div className="mx-auto max-w-300 px-5 sm:px-8 lg:px-10">

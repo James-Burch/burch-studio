@@ -35,6 +35,7 @@ export const SITE_CONFIG = {
   email: "contact@burch-studio.co.uk",
   phone: "+44 7407 195061",
   location: "UK",
+  googleReviewUrl: "https://g.page/r/CYSELTzSo-aWEAI/review",
 } as const;
 
 // ==========================================
@@ -45,6 +46,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: "Services", href: "/services" },
   { label: "About", href: "/about" },
   { label: "Portfolio", href: "/portfolio" },
+  { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -58,9 +60,9 @@ export const NAV_CTA = {
 // ==========================================
 
 export const HOME_META: PageMeta = {
-  title: "Burch Studio - Web Design & Development | UK",
+  title: "Burch Studio — Web Design & Development | UK",
   description:
-    "Premium websites for businesses that want to be taken seriously and robust web applications for companies building real digital products.",
+    "Web design, development, and SaaS platforms for UK businesses. Based in Peterborough. Next.js, TypeScript, modern web standards. See our work.",
   canonical: SITE_CONFIG.url,
 };
 
@@ -96,7 +98,7 @@ export const HERO = {
 
 export const TRUSTED_BY = {
   label: "Trusted by",
-  names: ["Private SaaS Client", "Noble Mortgages", "Refine Barbers"],
+  names: ["Private SaaS Client", "SoundKnowledge", "Noble Mortgages", "Refine Barbers"],
 } as const;
 
 // ==========================================
@@ -112,15 +114,16 @@ export const WORK_SECTION_HEADER: SectionHeader = {
 
 export const WORK_PROJECTS: WorkProject[] = [
   {
-    category: "SaaS Platform · Ongoing",
-    categoryColor: "var(--color-brand-accent)",
-    title: "Private SaaS Client",
+    category: "Educational Platform · In Development",
+    categoryColor: "#888888",
+    title: "SoundKnowledge",
     description:
-      "A live company intelligence platform for UK businesses. Real-time financial health monitoring, AI-powered analysis and risk detection. Built from the ground up.",
-    tags: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Auth0"],
+      "An educational brand and website for a comprehensive sound industry textbook published by Taylor & Francis. Immersive landing page, admin-managed content, chapter library and downloadable Audio Vault.",
+    tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Framer Motion"],
     href: "/portfolio",
     linkText: "Read the full story",
-    stats: ["100+ endpoints", "30+ workers", "40+ pages"],
+    image: "/images/soundknowledge.webp",
+    imageAlt: "Homepage preview of the SoundKnowledge website",
   },
   {
     category: "Client Website",
@@ -145,6 +148,7 @@ export const WORK_PROJECTS: WorkProject[] = [
     linkText: "Read the full story",
     image: "/images/refine-barbers.webp",
     imageAlt: "Homepage preview of the Refine Barbers website",
+    imagePosition: "center",
   },
 ];
 
@@ -729,6 +733,32 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     ],
   },
   {
+    slug: "soundknowledge",
+    title: "SoundKnowledge",
+    category: "Educational Platform · In Development",
+    description:
+      "An educational brand and website for a comprehensive sound industry textbook published by Taylor & Francis. Immersive landing page, admin-managed content, chapter library, and downloadable Audio Vault — built to feel as authoritative as the book itself.",
+    image: "/images/soundknowledge.webp",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Vercel",
+    ],
+    problem:
+      "An author with over 40 years of experience in the sound industry was publishing a comprehensive textbook through Taylor & Francis. He needed a website that matched the depth and authority of the book — not a basic landing page, but a full brand presence with admin-managed content, a chapter library, a downloadable resource vault, and the foundation for interactive educational features.",
+    solution:
+      "Designed and built an immersive, monochrome website with sound wave animations and scroll-driven reveals. The site features an admin dashboard for managing chapters, resources, FAQs, and reviews without touching code. The Audio Vault provides downloadable educational resources organised by chapter. Architecture is designed to support future features including user accounts, interactive tests, and a lecturer ecosystem.",
+    results: [
+      "Immersive landing page with sound wave animations",
+      "Full admin dashboard for content management",
+      "16 chapters + 3 appendices with expandable synopses",
+      "Audio Vault resource library with search and filtering",
+    ],
+  },
+  {
     slug: "noble-mortgages",
     title: "Noble Mortgages",
     category: "Client Website",
@@ -755,6 +785,7 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
     description:
       "Modern website for a local barber shop with no previous online presence. Clean, mobile-first design showcasing services, pricing and a direct link to their Booksy booking platform.",
     image: "/images/refine-barbers.webp",
+    imagePosition: "center",
     technologies: ["React", "JavaScript", "Node.js", "CSS"],
     liveUrl: "https://refinebarbers-website.vercel.app",
     problem:
@@ -861,6 +892,7 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
     links: [
       { label: "About", href: "/about" },
       { label: "Portfolio", href: "/portfolio" },
+      { label: "Blog", href: "/blog" },
       { label: "Contact", href: "/contact" },
       { label: "Cookies", href: "/cookies" },
     ],
