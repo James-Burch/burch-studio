@@ -127,16 +127,22 @@ export default function AdminBlogPage() {
                 </div>
               </div>
 
-              {/* Published badge */}
+              {/* Status badge */}
               <button
                 onClick={() => togglePublished(post.id, post.published)}
                 className={`shrink-0 rounded-full px-3 py-1 text-xs font-medium transition-colors ${
-                  post.published
-                    ? "bg-brand-success/15 text-brand-success"
-                    : "bg-brand-surface-elevated text-text-muted hover:text-text-primary"
+                  post.published && post.published_at && new Date(post.published_at) > new Date()
+                    ? "bg-brand-accent/15 text-brand-accent"
+                    : post.published
+                      ? "bg-brand-success/15 text-brand-success"
+                      : "bg-brand-surface-elevated text-text-muted hover:text-text-primary"
                 }`}
               >
-                {post.published ? "Published" : "Draft"}
+                {post.published && post.published_at && new Date(post.published_at) > new Date()
+                  ? `Scheduled`
+                  : post.published
+                    ? "Published"
+                    : "Draft"}
               </button>
 
               {/* Actions */}
