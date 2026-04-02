@@ -114,17 +114,6 @@ export const WORK_SECTION_HEADER: SectionHeader = {
 
 export const WORK_PROJECTS: WorkProject[] = [
   {
-    category: "SaaS Platform · Ongoing",
-    categoryColor: "var(--color-brand-accent)",
-    title: "Private SaaS Client",
-    description:
-      "A live company intelligence platform for UK businesses. Real-time financial health monitoring, AI-powered analysis and risk detection. Built from the ground up.",
-    tags: ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Auth0"],
-    href: "/portfolio",
-    linkText: "Read the full story",
-    stats: ["100+ endpoints", "30+ workers", "40+ pages"],
-  },
-  {
     category: "Educational Platform · In Development",
     categoryColor: "#888888",
     title: "SoundKnowledge",
