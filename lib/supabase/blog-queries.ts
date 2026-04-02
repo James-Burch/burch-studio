@@ -9,6 +9,7 @@ export async function getBlogPosts(): Promise<BlogPostSummary[]> {
       .from("blog_posts")
       .select("*")
       .eq("published", true)
+      .lte("published_at", new Date().toISOString())
       .order("published_at", { ascending: false });
 
     if (error) {
@@ -32,6 +33,7 @@ export async function getBlogPost(slug: string): Promise<BlogPostRow | null> {
       .select("*")
       .eq("slug", slug)
       .eq("published", true)
+      .lte("published_at", new Date().toISOString())
       .single();
 
     if (error) {
