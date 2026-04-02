@@ -12,6 +12,7 @@ Burch Studio is a web development studio based in Peterborough, Cambridgeshire, 
 
 ## Portfolio
 - [Seqenta](https://burch-studio.co.uk/portfolio): Live SaaS platform for UK company intelligence. Real-time financial health monitoring with AI. 100+ API endpoints, 30+ background workers, 40+ UI pages. Built with Next.js, Node.js, PostgreSQL, Anthropic Claude, Auth0.
+- [SoundKnowledge](https://burch-studio.co.uk/portfolio): Educational platform for a sound industry textbook published by Taylor & Francis. Admin dashboard, chapter library, Audio Vault resource library, sound wave animations. Built with Next.js, Supabase, TypeScript. Currently in development.
 - [Noble Mortgages](https://burch-studio.co.uk/portfolio): Professional mortgage broker website. First web presence for the business. Generating inbound enquiries from launch.
 - [Refine Barbers](https://burch-studio.co.uk/portfolio): Modern barber shop website with Booksy booking integration. First online presence for the business.
 

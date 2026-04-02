@@ -98,7 +98,7 @@ export const HERO = {
 
 export const TRUSTED_BY = {
   label: "Trusted by",
-  names: ["Private SaaS Client", "Noble Mortgages", "Refine Barbers"],
+  names: ["Private SaaS Client", "SoundKnowledge", "Noble Mortgages", "Refine Barbers"],
 } as const;
 
 // ==========================================
@@ -123,6 +123,18 @@ export const WORK_PROJECTS: WorkProject[] = [
     href: "/portfolio",
     linkText: "Read the full story",
     stats: ["100+ endpoints", "30+ workers", "40+ pages"],
+  },
+  {
+    category: "Educational Platform · In Development",
+    categoryColor: "#888888",
+    title: "SoundKnowledge",
+    description:
+      "An educational brand and website for a comprehensive sound industry textbook published by Taylor & Francis. Immersive landing page, admin-managed content, chapter library and downloadable Audio Vault.",
+    tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Framer Motion"],
+    href: "/portfolio",
+    linkText: "Read the full story",
+    image: "/images/soundknowledge.webp",
+    imageAlt: "Homepage preview of the SoundKnowledge website",
   },
   {
     category: "Client Website",
@@ -728,6 +740,32 @@ export const PORTFOLIO_PROJECTS: PortfolioProject[] = [
       "100+ API endpoints, 30+ background job processors, 40+ UI pages",
       "Sub-2-second page loads across the application",
       "AI-powered extraction from both digital and paper-filed accounts",
+    ],
+  },
+  {
+    slug: "soundknowledge",
+    title: "SoundKnowledge",
+    category: "Educational Platform · In Development",
+    description:
+      "An educational brand and website for a comprehensive sound industry textbook published by Taylor & Francis. Immersive landing page, admin-managed content, chapter library, and downloadable Audio Vault — built to feel as authoritative as the book itself.",
+    image: "/images/soundknowledge.webp",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Vercel",
+    ],
+    problem:
+      "An author with over 40 years of experience in the sound industry was publishing a comprehensive textbook through Taylor & Francis. He needed a website that matched the depth and authority of the book — not a basic landing page, but a full brand presence with admin-managed content, a chapter library, a downloadable resource vault, and the foundation for interactive educational features.",
+    solution:
+      "Designed and built an immersive, monochrome website with sound wave animations and scroll-driven reveals. The site features an admin dashboard for managing chapters, resources, FAQs, and reviews without touching code. The Audio Vault provides downloadable educational resources organised by chapter. Architecture is designed to support future features including user accounts, interactive tests, and a lecturer ecosystem.",
+    results: [
+      "Immersive landing page with sound wave animations",
+      "Full admin dashboard for content management",
+      "16 chapters + 3 appendices with expandable synopses",
+      "Audio Vault resource library with search and filtering",
     ],
   },
   {
