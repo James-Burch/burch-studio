@@ -62,8 +62,8 @@
     max-width: 700px;
     max-height: 700px;
     translate: -50% -50%;
-    background: url("/logos/icon-mono-white.svg") center / contain no-repeat;
-    opacity: 0.03;
+    background: url("/logos/wordmark-white.svg") center / contain no-repeat;
+    opacity: 0.025;
     pointer-events: none;
     z-index: 0;
   }
