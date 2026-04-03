@@ -133,7 +133,7 @@ export function autoReplyEmail(data: ContactEmailData): string {
     </p>
     <p style="margin:0 0 20px;font-size:15px;line-height:1.7;color:${BRAND.textPrimary};">
       We've received your message and will get back to you within 24 hours. If you have anything urgent in the meantime, you can reach us at
-      <a href="mailto:contact@burchstudio.co.uk" style="color:${BRAND.accent};text-decoration:none;">contact@burchstudio.co.uk</a>.
+      <a href="mailto:contact@burch-studio.co.uk" style="color:${BRAND.accent};text-decoration:none;">contact@burch-studio.co.uk</a>.
     </p>
 
     <div style="background-color:${BRAND.bg};border:1px solid ${BRAND.border};border-radius:10px;padding:20px;margin-bottom:24px;">

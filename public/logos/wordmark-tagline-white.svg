@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700');
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500');
+  </style>
+  <text x="0" y="52" font-family="'Syne', sans-serif" font-weight="700" font-size="48" fill="#fafafa" letter-spacing="-0.03em">burch<tspan fill="#c8ff3c">.</tspan>studio</text>
+  <text x="0" y="76" font-family="'Outfit', sans-serif" font-weight="500" font-size="11" fill="#666666" letter-spacing="0.16em">WEB DESIGN &amp; DEVELOPMENT</text>
+</svg>
