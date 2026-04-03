@@ -51,6 +51,23 @@
     overflow-x: hidden;
   }
 
+  /* Brand watermark – subtle icon mark for depth */
+  main::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 60vw;
+    height: 60vw;
+    max-width: 700px;
+    max-height: 700px;
+    translate: -50% -50%;
+    background: url("/logos/icon-mono-white.svg") center / contain no-repeat;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 0;
+  }
+
   /* Noise texture overlay - subtle grain for premium feel */
   body::before {
     content: "";
