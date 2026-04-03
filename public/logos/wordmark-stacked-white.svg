@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 120" width="260" height="120">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700');
+  </style>
+  <text x="0" y="56" font-family="'Syne', sans-serif" font-weight="700" font-size="56" fill="#fafafa" letter-spacing="-0.04em">burch</text>
+  <text x="182" y="56" font-family="'Syne', sans-serif" font-weight="700" font-size="56" fill="#c8ff3c" letter-spacing="-0.04em">.</text>
+  <text x="0" y="100" font-family="'Syne', sans-serif" font-weight="700" font-size="40" fill="#fafafa" letter-spacing="-0.03em" opacity="0.55">studio</text>
+</svg>

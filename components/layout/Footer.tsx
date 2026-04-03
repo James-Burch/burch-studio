@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SITE_CONFIG, FOOTER_COLUMNS, FOOTER_TAGLINE } from "@/lib/constants";
 
 // ==========================================
@@ -18,12 +19,13 @@ export function Footer() {
         <div className="mb-12 grid grid-cols-1 gap-10 md:grid-cols-[2fr_1fr_1fr_1fr]">
           {/* Brand column */}
           <div>
-            <Link
-              href="/"
-              className="font-display text-[1.35rem] font-bold tracking-[-0.03em] text-text-heading"
-              aria-label="Burch Studio home"
-            >
-              burch<span className="text-brand-accent">.</span>studio
+            <Link href="/" aria-label="Burch Studio home">
+              <Image
+                src="/logos/wordmark-white.svg"
+                alt="Burch Studio"
+                width={140}
+                height={24}
+              />
             </Link>
             <p className="mt-3.5 max-w-75 text-[0.9rem] leading-[1.65] text-text-muted">
               {FOOTER_TAGLINE}

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { NAV_LINKS, NAV_CTA } from "@/lib/constants";
@@ -52,10 +53,25 @@ export function Navbar() {
           {/* Logo */}
           <Link
             href="/"
-            className="font-display text-[1.35rem] font-bold tracking-[-0.03em] text-text-heading"
+            className="flex items-center"
             aria-label="Burch Studio home"
           >
-            burch<span className="text-brand-accent">.</span>studio
+            <Image
+              src="/logos/wordmark-white.svg"
+              alt="Burch Studio"
+              width={160}
+              height={28}
+              className="hidden sm:block"
+              priority
+            />
+            <Image
+              src="/logos/icon-white-accent.svg"
+              alt="Burch Studio"
+              width={32}
+              height={32}
+              className="block sm:hidden"
+              priority
+            />
           </Link>
 
           {/* Desktop links */}
