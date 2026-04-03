@@ -9,7 +9,7 @@ import { notificationEmail, autoReplyEmail } from "@/lib/email-templates";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const NOTIFICATION_EMAIL =
-  process.env.CONTACT_NOTIFICATION_EMAIL || "contact@burchstudio.co.uk";
+  process.env.CONTACT_NOTIFICATION_EMAIL || "contact@burch-studio.co.uk";
 const FROM_EMAIL =
   process.env.CONTACT_FROM_EMAIL || "Burch Studio <noreply@burch-studio.co.uk>";
 
