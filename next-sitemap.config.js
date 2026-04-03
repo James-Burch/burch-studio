@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: "https://burch-studio.co.uk",
-  generateRobotsTxt: true,
+  generateRobotsTxt: false,
   generateIndexSitemap: false,
   outDir: "./public",
   exclude: ["/icon.svg", "/apple-icon.png", "/admin/*"],
