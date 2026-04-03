@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700');
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500');
+    .logo-text { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 48px; letter-spacing: -0.03em; }
+    .tagline { font-family: 'Outfit', sans-serif; font-weight: 500; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; }
+  </style>
+  <text x="0" y="52" class="logo-text" fill="#fafafa">burch</text>
+  <text x="168" y="52" class="logo-text" fill="#c8ff3c">.</text>
+  <text x="184" y="52" class="logo-text" fill="#fafafa">studio</text>
+  <text x="0" y="76" class="tagline" fill="#666666">Web Design &amp; Development</text>
+</svg>

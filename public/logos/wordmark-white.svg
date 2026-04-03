@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="400" height="80">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700');
+    .logo-text { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 48px; letter-spacing: -0.03em; }
+  </style>
+  <text x="0" y="56" class="logo-text" fill="#fafafa">burch</text>
+  <text x="168" y="56" class="logo-text" fill="#c8ff3c">.</text>
+  <text x="184" y="56" class="logo-text" fill="#fafafa">studio</text>
+</svg>

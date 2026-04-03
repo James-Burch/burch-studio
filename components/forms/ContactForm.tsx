@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import Image from "next/image";
 import type { ContactFormData } from "@/lib/types";
 import { CONTACT_FORM, SITE_CONFIG } from "@/lib/constants";
 import { cn } from "@/lib/utils";
@@ -66,9 +67,14 @@ export function ContactForm() {
   if (status === "success") {
     return (
       <div className="rounded-2xl border border-brand-success/20 bg-brand-success/5 p-10 text-center" role="status" aria-live="polite">
-        <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-brand-success/10 text-2xl" aria-hidden="true">
-          ✓
-        </div>
+        <Image
+          src="/logos/icon-white-accent.svg"
+          alt=""
+          width={40}
+          height={40}
+          className="mx-auto mb-4"
+          aria-hidden="true"
+        />
         <p className="font-display text-lg font-bold text-text-heading">
           Message sent!
         </p>

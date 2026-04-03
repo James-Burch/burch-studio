@@ -1,7 +1,16 @@
+import Image from "next/image";
+
 export default function Loading() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <div className="h-8 w-8 animate-spin rounded-full border-2 border-brand-border border-t-brand-accent" />
+    <div className="flex min-h-screen items-center justify-center bg-brand-bg">
+      <div className="animate-pulse">
+        <Image
+          src="/logos/icon-white-accent.svg"
+          alt="Loading"
+          width={48}
+          height={48}
+        />
+      </div>
     </div>
   );
 }

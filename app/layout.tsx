@@ -28,6 +28,10 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description: HOME_META.description,
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
+    apple: [{ url: "/apple-icon.png", sizes: "512x512", type: "image/png" }],
+  },
   openGraph: {
     title: HOME_META.title,
     description: HOME_META.description,
@@ -35,11 +39,20 @@ export const metadata: Metadata = {
     siteName: SITE_CONFIG.name,
     type: "website",
     locale: "en_GB",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Burch Studio — Web Design & Development",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: HOME_META.title,
     description: HOME_META.description,
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

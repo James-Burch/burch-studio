@@ -1,8 +1,16 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 
 export default function NotFound() {
   return (
     <section className="flex min-h-screen flex-col items-center justify-center px-5 text-center">
+      <Image
+        src="/logos/wordmark-white.svg"
+        alt="Burch Studio"
+        width={140}
+        height={24}
+        className="mb-8"
+      />
       <p className="mb-4 font-display text-[0.78rem] font-bold uppercase tracking-widest text-brand-accent">
         404
       </p>
