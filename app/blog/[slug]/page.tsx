@@ -48,7 +48,7 @@ export async function generateMetadata({
       type: "article",
       publishedTime: post.published_at ?? undefined,
       ...(post.featured_image_url && {
-        images: [{ url: post.featured_image_url }],
+        images: [{ url: post.featured_image_url.startsWith("http") ? post.featured_image_url : `${SITE_CONFIG.url}/${post.featured_image_url.replace(/^\//, "")}` }],
       }),
     },
   };
@@ -58,8 +58,8 @@ export async function generateMetadata({
 // PAGE
 // ==========================================
 
-function estimateReadingTime(content: string): number {
-  const words = content.trim().split(/\s+/).length;
+function estimateReadingTime(content: string | null | undefined): number {
+  const words = (content ?? "").trim().split(/\s+/).length;
   return Math.max(1, Math.round(words / 200));
 }
 
@@ -113,7 +113,7 @@ export default async function BlogPostPage({
               url: SITE_CONFIG.url,
             },
             ...(post.featured_image_url && {
-              image: post.featured_image_url,
+              image: post.featured_image_url.startsWith("http") ? post.featured_image_url : `${SITE_CONFIG.url}/${post.featured_image_url.replace(/^\//, "")}`,
             }),
           }),
         }}
@@ -159,7 +159,7 @@ export default async function BlogPostPage({
           <ScrollReveal>
             <div className="overflow-hidden rounded-2xl border border-brand-border">
               <Image
-                src={post.featured_image_url}
+                src={post.featured_image_url.startsWith("http") || post.featured_image_url.startsWith("/") ? post.featured_image_url : `/${post.featured_image_url}`}
                 alt={post.featured_image_alt ?? post.title}
                 width={1200}
                 height={630}

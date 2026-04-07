@@ -30,6 +30,12 @@ export interface BlogPostSummary {
   readingTime: number;
 }
 
+function normalizeImageUrl(url: string | null): string | null {
+  if (!url) return null;
+  if (url.startsWith("http://") || url.startsWith("https://") || url.startsWith("/")) return url;
+  return `/${url}`;
+}
+
 function estimateReadingTime(content: string): number {
   const words = content.trim().split(/\s+/).length;
   return Math.max(1, Math.round(words / 200));
@@ -41,7 +47,7 @@ export function toBlogPostSummary(row: BlogPostRow): BlogPostSummary {
     title: row.title,
     excerpt: row.excerpt,
     category: row.category,
-    featuredImage: row.featured_image_url,
+    featuredImage: normalizeImageUrl(row.featured_image_url),
     featuredImageAlt: row.featured_image_alt,
     publishedAt: row.published_at ?? row.created_at,
     readingTime: estimateReadingTime(row.content),
