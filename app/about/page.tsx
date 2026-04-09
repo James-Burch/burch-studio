@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import {
   ABOUT_META,
   ABOUT_HERO,
@@ -43,18 +44,17 @@ export default function About() {
       <section className="pb-25 md:pb-32">
         <div className="mx-auto max-w-300 px-5 sm:px-8 lg:px-10">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-[1fr_1fr]">
-            {/* Photo / avatar placeholder */}
+            {/* Profile photo */}
             <ScrollReveal>
-              <div className="flex aspect-square items-center justify-center rounded-3xl border border-brand-border bg-brand-surface">
-                {/* TODO: Replace with professional photo via next/image */}
-                <div className="text-center">
-                  <div className="mx-auto mb-4 flex h-24 w-24 items-center justify-center rounded-full bg-brand-accent-dim font-display text-3xl font-bold text-brand-accent">
-                    JB
-                  </div>
-                  <p className="text-sm text-text-muted italic">
-                    Photo coming soon
-                  </p>
-                </div>
+              <div className="relative aspect-square overflow-hidden rounded-3xl border border-brand-border bg-brand-surface">
+                <Image
+                  src="/images/profile-photo.webp"
+                  alt="James Burch – founder of Burch Studio"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
               </div>
             </ScrollReveal>
 
