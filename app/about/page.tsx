@@ -56,6 +56,12 @@ export default function About() {
                   priority
                 />
               </div>
+              <div className="mt-3 text-center">
+                <p className="text-sm text-text-muted">James &mdash; Director, Burch Studio</p>
+                <a href="mailto:james@burch-studio.co.uk" className="text-sm text-brand-accent hover:underline">
+                  james@burch-studio.co.uk
+                </a>
+              </div>
             </ScrollReveal>
 
             {/* Content */}
