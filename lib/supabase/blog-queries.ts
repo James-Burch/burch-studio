@@ -1,9 +1,9 @@
-import { createClient } from "./server";
+import { createPublicClient } from "./server";
 import { toBlogPostSummary, type BlogPostRow, type BlogPostSummary } from "./blog-types";
 
 export async function getBlogPosts(): Promise<BlogPostSummary[]> {
   try {
-    const supabase = await createClient();
+    const supabase = createPublicClient();
 
     const { data, error } = await supabase
       .from("blog_posts")
@@ -26,7 +26,7 @@ export async function getBlogPosts(): Promise<BlogPostSummary[]> {
 
 export async function getBlogPost(slug: string): Promise<BlogPostRow | null> {
   try {
-    const supabase = await createClient();
+    const supabase = createPublicClient();
 
     const { data, error } = await supabase
       .from("blog_posts")
@@ -50,12 +50,13 @@ export async function getBlogPost(slug: string): Promise<BlogPostRow | null> {
 
 export async function getAllBlogSlugs(): Promise<string[]> {
   try {
-    const supabase = await createClient();
+    const supabase = createPublicClient();
 
     const { data, error } = await supabase
       .from("blog_posts")
       .select("slug")
-      .eq("published", true);
+      .eq("published", true)
+      .lte("published_at", new Date().toISOString());
 
     if (error) return [];
     return (data ?? []).map((row) => row.slug);
