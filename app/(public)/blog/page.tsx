@@ -8,6 +8,12 @@ import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { BreadcrumbJsonLd } from "@/components/seo/JsonLd";
 
 // ==========================================
+// CACHING
+// ==========================================
+
+export const revalidate = 1800;
+
+// ==========================================
 // METADATA
 // ==========================================
 
