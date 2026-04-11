@@ -4,7 +4,7 @@ module.exports = {
   generateRobotsTxt: false,
   generateIndexSitemap: false,
   outDir: "./public",
-  exclude: ["/icon.svg", "/apple-icon.png", "/admin/*"],
+  exclude: ["/icon.svg", "/apple-icon.png", "/admin", "/admin/*"],
   additionalPaths: async () => [
     { loc: "/", changefreq: "daily", priority: 1.0 },
     { loc: "/about", changefreq: "weekly", priority: 0.8 },
