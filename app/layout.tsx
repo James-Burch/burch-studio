@@ -4,10 +4,6 @@ import "./globals.css";
 import { HOME_META, SITE_CONFIG } from "@/lib/constants";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { CookieConsent } from "@/components/ui/CookieConsent";
-import { headers } from "next/headers";
 
 const fontDisplay = Syne({
   subsets: ["latin"],
@@ -60,32 +56,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const headersList = await headers();
-  const pathname = headersList.get("x-next-pathname") || "";
-  const isAdmin = pathname.startsWith("/admin");
-
   return (
     <html lang="en" className={`${fontDisplay.variable} ${fontBody.variable}`}>
       <head>
         <meta name="msvalidate.01" content="A8963390321B65A02503B6AAEFBDDF34" />
       </head>
       <body className="antialiased">
-        {!isAdmin && (
-          <>
-            <a href="#main" className="skip-link">
-              Skip to content
-            </a>
-            <Navbar />
-          </>
-        )}
-        <main id="main">{children}</main>
-        {!isAdmin && <Footer />}
-        {!isAdmin && <CookieConsent />}
+        {children}
         <Analytics />
         <SpeedInsights />
       </body>

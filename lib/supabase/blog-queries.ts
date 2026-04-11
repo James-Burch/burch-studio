@@ -1,3 +1,4 @@
+import { cache } from "react";
 import { createPublicClient } from "./server";
 import { toBlogPostSummary, type BlogPostRow, type BlogPostSummary } from "./blog-types";
 
@@ -24,7 +25,7 @@ export async function getBlogPosts(): Promise<BlogPostSummary[]> {
   }
 }
 
-export async function getBlogPost(slug: string): Promise<BlogPostRow | null> {
+export const getBlogPost = cache(async function getBlogPost(slug: string): Promise<BlogPostRow | null> {
   try {
     const supabase = createPublicClient();
 
@@ -46,7 +47,7 @@ export async function getBlogPost(slug: string): Promise<BlogPostRow | null> {
     console.error("Supabase unavailable for blog post:", err);
     return null;
   }
-}
+});
 
 export async function getAllBlogSlugs(): Promise<string[]> {
   try {

@@ -10,6 +10,12 @@ import { BlogContent } from "@/components/ui/BlogContent";
 import { Button } from "@/components/ui/Button";
 
 // ==========================================
+// CACHING
+// ==========================================
+
+export const revalidate = 1800;
+
+// ==========================================
 // GENERATE STATIC PARAMS
 // ==========================================
 
