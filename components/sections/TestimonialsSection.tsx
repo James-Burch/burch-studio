@@ -31,7 +31,7 @@ export async function TestimonialsSection() {
         {showGoogleBadge && (
           <ScrollReveal>
             <div className="mt-10 flex items-center justify-center gap-3">
-              <div className="flex gap-0.5" aria-label={`${googleData.overallRating} out of 5 stars`}>
+              <div className="flex gap-0.5" role="img" aria-label={`${googleData.overallRating} out of 5 stars`}>
                 {Array.from({ length: 5 }).map((_, i) => (
                   <svg
                     key={i}
@@ -62,7 +62,7 @@ export async function TestimonialsSection() {
               <article className="rounded-[20px] border border-brand-border bg-brand-surface px-8 py-9">
                 {/* Star rating */}
                 {testimonial.rating && (
-                  <div className="mb-4 flex gap-0.5" aria-label={`${testimonial.rating} out of 5 stars`}>
+                  <div className="mb-4 flex gap-0.5" role="img" aria-label={`${testimonial.rating} out of 5 stars`}>
                     {Array.from({ length: 5 }).map((_, j) => (
                       <svg
                         key={j}

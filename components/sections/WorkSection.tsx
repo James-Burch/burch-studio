@@ -79,7 +79,8 @@ export async function WorkSection() {
                           alt={project.imageAlt ?? `${project.title} project preview`}
                           width={1448}
                           height={1084}
-                          sizes="(min-width: 1024px) 448px, (min-width: 768px) 40vw, 100vw"
+                          quality={70}
+                          sizes="(min-width: 1024px) 400px, (min-width: 640px) 40vw, 90vw"
                           className={`block aspect-[16/10] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02] ${project.imagePosition === "center" ? "object-center" : "object-top"}`}
                         />
                       </div>

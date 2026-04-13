@@ -61,42 +61,25 @@ export function Hero() {
             {HERO.tag}
           </motion.div>
 
-          {/* Headline */}
-          <motion.div
-            initial={prefersReducedMotion ? {} : { opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 0.7,
-              delay: prefersReducedMotion ? 0 : 0.2,
-              ease: [0.16, 1, 0.3, 1],
-            }}
+          {/* Headline - rendered eagerly so it is the LCP element without waiting on JS */}
+          <h1
+            id="hero-heading"
+            className="mb-6 min-h-[5.9rem] font-display text-[clamp(2.6rem,6.5vw,4.5rem)] font-bold leading-[1.08] tracking-[-0.04em] text-text-heading sm:min-h-[7.2rem] lg:min-h-[9.8rem]"
           >
-            <h1
-              id="hero-heading"
-              className="mb-6 min-h-[5.9rem] font-display text-[clamp(2.6rem,6.5vw,4.5rem)] font-bold leading-[1.08] tracking-[-0.04em] text-text-heading sm:min-h-[7.2rem] lg:min-h-[9.8rem]"
-            >
-              {prefersReducedMotion ? (
-                <>
-                  {HERO.headlines[0].lead}{" "}
-                  <span className="text-brand-accent">{HERO.headlines[0].accent}</span>
-                </>
-              ) : (
-                <AnimatePresence mode="wait">
-                  <motion.span
-                    key={`${activeHeadline.lead}-${activeHeadline.accent}`}
-                    className="block"
-                    initial={{ opacity: 0, y: 18 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -18 }}
-                    transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-                  >
-                    {activeHeadline.lead}{" "}
-                    <span className="text-brand-accent">{activeHeadline.accent}</span>
-                  </motion.span>
-                </AnimatePresence>
-              )}
-            </h1>
-          </motion.div>
+            <AnimatePresence mode="wait" initial={false}>
+              <motion.span
+                key={`${activeHeadline.lead}-${activeHeadline.accent}`}
+                className="block"
+                initial={prefersReducedMotion ? false : { opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={prefersReducedMotion ? undefined : { opacity: 0, y: -18 }}
+                transition={{ duration: 0.45, ease: "easeOut" }}
+              >
+                {activeHeadline.lead}{" "}
+                <span className="text-brand-accent">{activeHeadline.accent}</span>
+              </motion.span>
+            </AnimatePresence>
+          </h1>
 
           {/* Subtext */}
           <motion.p
@@ -106,7 +89,7 @@ export function Hero() {
             transition={{
               duration: 0.8,
               delay: prefersReducedMotion ? 0 : 0.5,
-              ease: [0.16, 1, 0.3, 1],
+              ease: "easeOut",
             }}
           >
             {HERO.subtext}
@@ -120,7 +103,7 @@ export function Hero() {
             transition={{
               duration: 0.8,
               delay: prefersReducedMotion ? 0 : 0.7,
-              ease: [0.16, 1, 0.3, 1],
+              ease: "easeOut",
             }}
           >
             <Button variant="primary" href={HERO.primaryCTA.href}>

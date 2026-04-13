@@ -52,10 +52,11 @@ export function ScrollReveal({
       initial={{ opacity: 0, x, y }}
       animate={isInView ? { opacity: 1, x: 0, y: 0 } : { opacity: 0, x, y }}
       transition={{
-        duration: 0.8,
+        duration: 0.7,
         delay,
-        ease: [0.16, 1, 0.3, 1],
+        ease: "easeOut",
       }}
+      style={{ willChange: "transform, opacity" }}
     >
       {children}
     </motion.div>
